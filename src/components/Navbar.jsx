@@ -1,10 +1,30 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useEffect, useRef } from "react";
 
 const Navbar = () => {
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const nav = navRef.current;
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        nav.classList.add("nav--scrolled");
+      } else {
+        nav.classList.remove("nav--scrolled");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="">
+    <nav ref={navRef}>
       <Link href="/">
         <Image src="/logo-main.webp" alt="logo" width={170} height={70} />
       </Link>
