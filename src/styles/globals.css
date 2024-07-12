@@ -21,6 +21,30 @@ main {
   margin: 0px 20px;
 }
 
+/* scrollbar styling */
+::-webkit-scrollbar:horizontal {
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#572fde, #9435d9);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  border: 0;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#9435d9, #572fde);
+}
+
 @media screen and (max-width: 900px) {
   main {
     margin: 0px 0px;
