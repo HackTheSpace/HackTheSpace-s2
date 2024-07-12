@@ -39,9 +39,6 @@ main {
 }
 ::-webkit-scrollbar-thumb:hover {
   border: 0;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(#9435d9, #572fde);
 }
 
