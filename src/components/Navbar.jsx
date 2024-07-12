@@ -3,10 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const navRef = useRef(null);
+  const [HamBurger, setHamBurger] = useState(false);
 
   useEffect(() => {
     const nav = navRef.current;
@@ -23,34 +24,70 @@ const Navbar = () => {
     };
   }, []);
 
+  const toggleBurger = () => {
+    setHamBurger(!HamBurger);
+  };
+
   return (
     <nav ref={navRef}>
       <Link href="/">
         <Image src="/logo-main.webp" alt="logo" width={170} height={70} />
       </Link>
-      <div className="nav__links">
-        <Link href="/">Home</Link>
-        <Link href="/">About Us</Link>
-        <Link href="/">History</Link>
-        <Link href="/">Sponsors</Link>
-        <Link href="/">Tracks</Link>
-        <Link href="/">Prizes</Link>
-        <Link href="/">Team</Link>
-        <Link href="/">Contact</Link>
-      </div>
-      <div>
+
+      <button className="nav__toggle" onClick={toggleBurger}>
+        <Image
+          src={HamBurger ? "/close-64.png" : "/hamburger-48.png"}
+          width={40}
+          height={40}
+        />
+      </button>
+
+      <ul className={`nav__links ${HamBurger ? "nav__links--open" : ""}`}>
+        <li>
+          <Link href="/" onClick={toggleBurger}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={toggleBurger}>
+            About Us
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={toggleBurger}>
+            History
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={toggleBurger}>
+            Sponsors
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={toggleBurger}>
+            Tracks
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={toggleBurger}>
+            Prizes
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={toggleBurger}>
+            Team
+          </Link>
+        </li>
+        <li>
+          <Link href="/" onClick={toggleBurger}>
+            Contact
+          </Link>
+        </li>
+      </ul>
+
+      <div className="mlh-flag">
         <Link
           id="mlh-trust-badge"
-          style={{
-            display: "block",
-            maxWidth: "100px",
-            minWidth: "60px",
-            position: "fixed",
-            right: "50px",
-            top: "0",
-            width: "10%",
-            zIndex: "10000",
-          }}
           href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
           target="_blank"
         >
