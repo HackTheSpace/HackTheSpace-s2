@@ -1,0 +1,189 @@
+.whatIs--section{
+    /* too be edited */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* .whatIs-content__div{
+    display: flex;
+    justify-content: space-between;
+} */
+.whatIs-main__image{
+    position: absolute;
+    width: 60%;
+    height: 120%;
+    left: -350px;
+    top: 2251px;
+
+}
+/* .whatIs-text__container{
+    display: flex;
+
+} */
+.whatIs-text__shadow{
+    position: absolute;
+    width: 842px;
+    height: 299px;
+    /* left: 0px;
+    top: 0px; */
+
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 300px;
+    line-height: 99.83%;
+    /* or 299px */
+
+    color: rgba(255, 255, 255, 0.16);
+}
+
+
+/* WHAT IS HACKTHESPACE ? */
+.whatIs-text__heading{
+
+    position: absolute;
+    width: 788px;
+    height: 83px;
+    /* left: 44px;
+    top: 170px; */
+
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 83px;
+    line-height: 99.83%;
+    /* identical to box height, or 83px */
+
+    color: #FFFFFF;
+}
+
+.whatIs-text__para1{
+    position: absolute;
+    width: 686px;
+    height: 84px;
+    /* left: 115px;
+    top: 325px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 172%;
+    /* or 28px */
+    text-align: right;
+    letter-spacing: 0.08em;
+
+    color: #FFFFFF;
+}
+
+.whatIs-text__para2{
+    position: absolute;
+    width: 686px;
+    height: 168px;
+    /* left: 115px;
+    top: 464px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 172%;
+    /* or 28px */
+    text-align: right;
+    letter-spacing: 0.08em;
+
+    color: #FFFFFF;
+}
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 900px) {
+    .whatIs-main__image {
+        width: 80%;
+        left: -250px;
+    }
+
+    .whatIs-text__shadow {
+        font-size: 200px;
+    }
+
+    .whatIs-text__heading {
+        font-size: 60px;
+    }
+
+    .whatIs-text__para1,
+    .whatIs-text__para2 {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .whatIs--section {
+        flex-direction: column;
+    }
+
+    .whatIs-main__image {
+        width: 90%;
+        left: -200px;
+    }
+
+    .whatIs-text__shadow {
+        font-size: 150px;
+    }
+
+    .whatIs-text__heading {
+        font-size: 50px;
+    }
+
+    .whatIs-text__para1,
+    .whatIs-text__para2 {
+        width: 500px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .whatIs-main__image {
+        width: 100%;
+        left: -150px;
+    }
+
+    .whatIs-text__shadow {
+        font-size: 120px;
+    }
+
+    .whatIs-text__heading {
+        font-size: 40px;
+    }
+
+    .whatIs-text__para1,
+    .whatIs-text__para2 {
+        width: 400px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .whatIs-main__image {
+        left: -100px;
+    }
+
+    .whatIs-text__shadow {
+        font-size: 100px;
+    }
+
+    .whatIs-text__heading {
+        font-size: 30px;
+    }
+
+    .whatIs-text__para1,
+    .whatIs-text__para2 {
+        width: 300px;
+        font-size: 10px;
+    }
+}
