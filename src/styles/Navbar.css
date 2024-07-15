@@ -1,7 +1,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 50px 10px 0px;
+  padding: 50px 17rem 0px;
   padding-left: 50px;
   position: fixed;
   width: 100%;
@@ -23,6 +23,7 @@ nav {
   text-transform: uppercase;
   font-size: 0.9375rem;
   font-weight: 400;
+  list-style: none;
 }
 
 .nav__links a {
@@ -30,13 +31,61 @@ nav {
   font-family: "Roboto", sans-serif;
   color: white;
 }
-
+.mlh-flag {
+  display: block;
+  max-width: 100px;
+  min-width: 55px;
+  position: fixed;
+  right: 50px;
+  top: 0;
+  width: 10%;
+  /* z-index: 10000; */
+}
+.mlh-flag image {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+}
+.nav__toggle {
+  display: none;
+}
 @media screen and (max-width: 900px) {
   nav {
     padding-left: 20px;
   }
-
+  .nav--scrolled {
+    background: transparent;
+  }
   .nav__links {
-    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(0.5rem);
+    position: fixed;
+    inset: 0 0 0 30%;
+    text-align: center;
+    padding: min(10vh, 10rem);
+    transition: all 500ms;
+    transform: translateX(100%);
+  }
+  .nav__links.nav__links--open {
+    transform: translateX(0%);
+  }
+
+  .nav__toggle {
+    display: block;
+    background: none;
+    border: 0cap;
+    position: absolute;
+    z-index: 9999;
+    width: 2rem;
+    top: 2rem;
+    right: 1rem;
+  }
+  .mlh-flag {
+    top: -30px;
+    right: 60px;
+  }
+  .mlh-flag img {
+    max-width: 60px; /* Smaller size for mobile */
   }
 }
