@@ -2,12 +2,15 @@
 
 @import url("./Navbar.css");
 @import url("./HeroSection.css");
+@import url("./AboutUs.css");
+
+
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: white;
+  /* color: white; */
 }
 
 html,
@@ -15,6 +18,8 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: black;
+  color: white;
+
 }
 
 main {
