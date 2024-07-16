@@ -44,10 +44,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .hero-section__buttons button a {
   text-decoration: none;
+  color: white;
 }
 
 .hero-section__buttons button:nth-child(1) {

@@ -36,9 +36,10 @@
 .ParaDiv1, .ParaDiv2 {
     margin-bottom: 20px;
     margin-left: 5%;
-    line-height: 1.4;
+    line-height: 1.5;
     font-size: 1.3vw;
     text-align: justify;
+    font-family: "roboto";
     
 }
 
