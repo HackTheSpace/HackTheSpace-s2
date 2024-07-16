@@ -1,5 +1,5 @@
 .whatIs--section {
-  height: 244vh;
+  height: 210vh;
   width: 100vw;
 }
 .whatIs--image {
@@ -42,23 +42,23 @@
 }
 
 .whatIs-main__image {
-  height: 800px;
-  width: 800px;
+  height: 900px;
+  width: 900px;
 
   position: absolute;
-  left: -302px;
+  left: -392px;
   bottom: -10%;
   object-fit: contain;
 }
 .whatIs-text__container {
   position: absolute;
-  width: 806px;
-  height: 100%;
-  right: 0%;
+  width: 846px;
+  height: 100vh;
+  right: 5%;
 }
 .whatIs-text__main {
   height: 50%;
-  top: 8%;
+  top: 20px;
   position: relative;
 }
 
@@ -71,8 +71,8 @@
   font-family: "Anton";
   font-style: normal;
   font-weight: 400;
-  font-size: 250px;
-  line-height: 299.5px;
+  font-size: 300px;
+  line-height: 299.49px;
 
   color: rgba(255, 255, 255, 0.16);
 }
@@ -82,29 +82,28 @@
   width: 788px;
   height: 83px;
   top: 170px;
-  right: 0%;
+  right: 2%;
 
   font-family: "Anton";
   font-weight: 400;
-  font-size: 60px;
+  font-size: 83px;
   line-height: 82.86px;
 }
 .whatIs-text__para {
   position: absolute;
-  top: 50%;
-  right: 25%;
-  height: 50%;
-  width: 550px;
+  height: 333px;
+  width: 686px;
+  right: 5%;
 
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 16px;
   text-align: right;
   line-height: 27.52px;
+  letter-spacing: 1.28px;
   font-weight: 400;
 }
 
 .whatIs-text__para1 {
-  left: 155px;
   padding-bottom: 20px;
 }
 
@@ -132,25 +131,32 @@
     width: 700px;
     left: -300px;
   }
+  .whatIs-text__container {
+    width: 600px;
+    right: 0%;
+  }
   .whatIs-text__main {
-    top: 20%;
+    width: 600px;
+    /* right: ; */
   }
   .whatIs-text__shadow {
-    width: 600px;
-    height: 299px;
+    width: 540px;
+    height: 250px;
+    font-size: 180px;
     right: 0%;
-    font-size: 200px;
   }
   .whatIs-text__heading {
-    width: 550px;
+    width: 500px;
     height: 83px;
     top: 160px;
-    font-size: 50px;
+    font-size: 45px;
+    right: 0%;
   }
   .whatIs-text__para {
-    top: 55%;
+    top: 250px;
     right: 10%;
     width: 500px;
+    font-size: 14px;
   }
 }
 
@@ -186,35 +192,35 @@
     height: 100%;
     width: 100%;
     position: unset;
-
     top: 0%;
     mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0));
   }
 
   .whatIs-text__container {
-    top: 200px;
+    top: 400px;
     width: 100%;
     text-align: center;
   }
   .whatIs-text__main {
     width: 100%;
+    top: 0;
   }
   .whatIs-text__shadow {
-    font-size: 120px;
     width: 100%;
+    font-size: 150px;
   }
   .whatIs-text__heading {
     width: 100%;
     top: 140px;
-    font-size: 30px;
+    font-size: 40px;
   }
   .whatIs-text__para {
     width: 100%;
-    top: 50%;
+    top: 250px;
     right: 0%;
 
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     line-height: normal;
     padding: 20px;
   }
@@ -228,38 +234,19 @@
     height: 173px;
   }
 
-  .whatIs-container {
-    width: 100%;
-    text-align: center;
-  }
-  .whatIs-main__image {
-    height: 100%;
-    width: 100%;
-    position: unset;
-    top: 0%;
-    mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  }
-
   .whatIs-text__container {
-    top: 100px;
-    width: 100%;
-    text-align: center;
-  }
-  .whatIs-text__main {
-    width: 100%;
+    top: 150px;
   }
   .whatIs-text__shadow {
     font-size: 120px;
-    width: 100%;
   }
   .whatIs-text__heading {
-    width: 100%;
     top: 140px;
     font-size: 30px;
   }
   .whatIs-text__para {
     width: 100%;
-    top: 50%;
+    top: 200px;
     right: 0%;
     text-align: center;
     font-size: 10px;
