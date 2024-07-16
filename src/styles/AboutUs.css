@@ -1,0 +1,109 @@
+.AboutUsDiv {
+    background-color: white;
+    color: black;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.heading1 {
+    color: #e7e7e7;
+    font-size: 15vw;
+    margin-left: 2%;
+    position: relative;
+    font-family: 'anton', sans-serif;
+    letter-spacing: 0.5vw;
+    width: 100%;
+    
+}
+
+.heading2 {
+    font-size: 4vw;
+    font-family: 'anton', sans-serif;
+    margin-top: -11vw;
+    position: absolute;
+    margin-left: 4.5%;
+}
+
+.heading3 {
+    position: absolute;
+    margin-top: -6vw;
+    margin-left: 4.5%;
+    font-size: 2vw;
+    font-family: 'anton', sans-serif;
+}
+
+.ParaDiv1, .ParaDiv2 {
+    margin-bottom: 20px;
+    margin-left: 5%;
+    line-height: 1.4;
+    font-size: 1.3vw;
+    text-align: justify;
+    
+}
+
+.ParaDiv1 {
+    width: 40%;
+}
+
+.ParaDiv2 {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .heading1 {
+        font-size: 20vw;
+        margin-left: 1%;
+    }
+    
+    .heading2 {
+        font-size: 6vw;
+        margin-top: -17vw;
+        margin-left: 4.5%;
+    }
+    
+    .heading3 {
+        font-size: 3vw;
+        margin-top: -9vw;
+        margin-left: 4.5%;
+    }
+    
+    .ParaDiv1, .ParaDiv2 {
+        font-size: 2vw;
+        margin-left: 5%;
+        
+    }
+    .ParaDiv1{
+        width: 45vw;
+    }
+    .ParaDiv2{
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading1 {
+        font-size: 23vw;
+        margin-left: 1%;
+    }
+    
+    .heading2 {
+        font-size: 5vw;
+        margin-top: -17vw;
+        margin-left: 4%;
+    }
+    
+    .heading3 {
+        font-size: 3vw;
+        margin-top: -10vw;
+        margin-left: 4%;
+    }
+    
+    .ParaDiv1, .ParaDiv2 {
+        font-size: 3vw;
+        margin-left: 5%;
+        width: 80%;
+    }
+    
+
+}
