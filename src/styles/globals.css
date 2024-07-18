@@ -6,6 +6,7 @@
 @import url("./AboutUs.css");
 @import url("./Tracks.css");
 @import url("./FAQsSection.css");
+@import url("./preloader.css");
 
 * {
   box-sizing: border-box;
