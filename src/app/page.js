@@ -1,6 +1,7 @@
 import AboutUs from "@/components/AboutUs";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import Tracks from "@/components/Tracks";
 import WhatIsHTS from "@/components/WhatIsHTS";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <AboutUs />
       <WhatIsHTS />
+      <Tracks />
     </main>
   );
 }
