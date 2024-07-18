@@ -190,6 +190,11 @@ img {
   }
 }
 @media screen and (max-width: 550px) {
+  .box-bundle,
+  .horizontal-container,
+  .tracks-container {
+    gap: calc(1.736vw * 1.7);
+  }
   .Track-section {
     height: 100vh;
   }
@@ -197,16 +202,17 @@ img {
     padding-top: 10vw;
   }
   .vertical-box {
-    height: 28.703vw;
-    width: 23.489vw;
+    height: calc(28.703vw * 1.4);
+    width: calc(23.489vw * 1.4);
   }
   .horizontal-box {
-    width: 31.3749vw;
-    height: 13.296vw;
+    width: calc(31.3749vw * 1.4);
+    height: calc(13.296vw * 1.4);
   }
   .box-bundle {
+    background-color: aqua;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .box-bundle:nth-child(1),
@@ -215,6 +221,6 @@ img {
     margin-left: unset;
   }
   .box-bundle:nth-child(3) .vertical-box {
-    margin-left: 33%;
+    margin-left: 46%;
   }
 }
