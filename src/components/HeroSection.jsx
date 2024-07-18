@@ -11,7 +11,7 @@ const HeroSection = () => {
           <h1>SPACE</h1>
           <h1 className="outlined-text">2.0</h1>
         </div>
-        <div className="hero-section__buttons" >
+        <div className="hero-section__buttons">
           <button>
             <Link href="/register">Devfolio</Link>
           </button>

@@ -5,7 +5,7 @@ nav {
   padding-left: 50px;
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 10;
   left: 0;
 }
 
