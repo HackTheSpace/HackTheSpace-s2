@@ -5,6 +5,7 @@
 @import url("./HeroSection.css");
 @import url("./AboutUs.css");
 @import url("./Tracks.css");
+@import url("./FAQsSection.css");
 
 * {
   box-sizing: border-box;
