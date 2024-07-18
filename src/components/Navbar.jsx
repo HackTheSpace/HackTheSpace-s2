@@ -39,6 +39,7 @@ const Navbar = () => {
           src={HamBurger ? "/close-64.png" : "/hamburger-48.png"}
           width={40}
           height={40}
+          alt="toggle"
         />
       </button>
 

@@ -13,10 +13,10 @@ const HeroSection = () => {
         </div>
         <div className="hero-section__buttons">
           <button>
-            <Link href="/register">Devfolio</Link>
+            <Link href="/register">DEVFOLIO</Link>
           </button>
           <button>
-            <Link href="/register">Discord</Link>
+            <Link href="/register">DISCORD</Link>
           </button>
         </div>
       </div>

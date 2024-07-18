@@ -22,7 +22,7 @@ export default function Home() {
     const timeout = setTimeout(() => {
       setIsLoading(false);
       window.scrollTo(0, 0);
-    }, 4200);
+    }, 5700);
     return () => {
       clearTimeout(timeout);
     };

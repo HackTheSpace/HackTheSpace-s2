@@ -16,12 +16,15 @@ export const icon = {
   hidden: {
     opacity: 0,
     pathLength: 0,
-    fill: "rgba(255, 255, 255, 0)",
+    fill: "rgba(0, 0, 0, 0)",
   },
   visible: {
     opacity: 1,
     pathLength: 0.3,
-    fill: "rgba(255, 255, 255, 0)",
+    transition: {
+      pathLength: { delay: 2, type: "spring", duration: 6.5, bounce: 0 },
+      opacity: { delay: 2, duration: 1 },
+    },
   },
 };
 
@@ -29,12 +32,15 @@ export const icon2 = {
   hidden: {
     opacity: 0,
     pathLength: 0,
-    fill: "rgba(255, 255, 255, 0)",
+    fill: "rgba(0, 0, 0, 0)",
   },
   visible: {
     opacity: 1,
     pathLength: 0.5,
-    fill: "rgba(255, 255, 255, 0)",
+    transition: {
+      pathLength: { delay: 2, type: "spring", duration: 6.5, bounce: 0 },
+      opacity: { delay: 2, duration: 1 },
+    },
   },
 };
 
@@ -42,32 +48,39 @@ export const icon3 = {
   hidden: {
     opacity: 0,
     pathLength: 0,
-    fill: "rgba(255, 255, 255, 0)",
+    fill: "rgba(0, 0, 0, 0)",
   },
   visible: {
     opacity: 1,
     pathLength: 0.22,
-    fill: "rgba(255, 255, 255, 0)",
+    transition: {
+      pathLength: { delay: 2, type: "spring", duration: 6.5, bounce: 0 },
+      opacity: { delay: 2, duration: 1 },
+    },
   },
 };
 
 export const anim = {
   initial: {
-    scale: 6,
-    x: "-30%",
+    x: "0",
+    y: "-100vh",
+    opacity: 0,
   },
   animate: {
     scale: 0.65,
     x: "-4%",
+    y: "0",
+    opacity: 1,
     transition: {
-      duration: 1.5,
+      duration: 1,
       delay: 0.5,
     },
   },
   exit: {
     scale: 1.65,
+    opacity: 0,
     transition: {
-      duration: 1.5,
+      duration: 1.3,
       ease: "easeOut",
     },
   },

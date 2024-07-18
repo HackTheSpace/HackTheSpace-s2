@@ -30,7 +30,7 @@ export default function Index() {
         x: "200vw",
       },
       {
-        duration: 1,
+        duration: 0.8,
         delay: 1.4,
         ease: "easeOut",
       }
@@ -49,11 +49,12 @@ export default function Index() {
     animate4(
       rocket.current,
       {
+        x: "0",
         y: "-200vh",
       },
       {
         duration: 1,
-        delay: 1.5,
+        delay: 1.2,
         ease: "easeOut",
       }
     );
@@ -69,7 +70,7 @@ export default function Index() {
         x: "200vw",
       },
       {
-        duration: 1,
+        duration: 0.8,
         delay: 1,
         ease: "easeOut",
       }
@@ -86,7 +87,7 @@ export default function Index() {
         x: "-200vw",
       },
       {
-        duration: 1,
+        duration: 0.8,
         delay: 0.6,
         ease: "easeOut",
       }
@@ -95,9 +96,9 @@ export default function Index() {
 
   useEffect(() => {
     const timeouts = [
-      setTimeout(() => myAnimation(), 3200),
-      setTimeout(() => myAnimation2(), 3600),
-      setTimeout(() => myAnimation3(), 4000),
+      setTimeout(() => myAnimation(), 4700),
+      setTimeout(() => myAnimation2(), 5100),
+      setTimeout(() => myAnimation3(), 5500),
     ];
 
     return () => timeouts.forEach((timeout) => clearTimeout(timeout));
