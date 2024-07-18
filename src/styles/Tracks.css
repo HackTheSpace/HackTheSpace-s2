@@ -210,7 +210,6 @@ img {
     height: calc(13.296vw * 1.4);
   }
   .box-bundle {
-    background-color: aqua;
     justify-content: center;
     /* align-items: center; */
   }
