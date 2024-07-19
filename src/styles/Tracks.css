@@ -1,9 +1,9 @@
 .Track-section {
+  height: 205vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
 }
 
 .heading {
@@ -68,12 +68,14 @@ img {
 }
 
 .tracks-container {
+  /* width: 987.09px; */
   width: 100%;
   padding-top: 2vw;
-
+  height: 179.202vh;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
-
+  /* justify-content: ; */
   gap: 1.736vw;
   margin-inline: 15.694vw, min(10px);
   font-family: Poppins;
@@ -81,20 +83,25 @@ img {
 }
 .box-bundle {
   width: 100%;
-
+  /* position: absolute; */
   display: flex;
   flex-direction: row;
   gap: 1.736vw;
+  /* margin-left: 15.694vw; */
+  /* min-width: 615.98px; */
 }
 
 .box-bundle:nth-child(1) {
   margin-left: 15.694vw;
+  /* margin-left: 0px; */
 }
 .box-bundle:nth-child(2) {
+  /* margin-left: 37.8%; */
   margin-left: 41.458vw;
 }
 .box-bundle:nth-child(3) {
   margin-left: 67.222vw;
+  /* margin-left: 76%; */
 }
 .horizontal-container {
   display: flex;
@@ -110,6 +117,7 @@ img {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  /* justify-content: space-around; */
   position: relative;
 }
 .horizontal-box {
@@ -151,6 +159,10 @@ img {
 }
 
 @media screen and (max-width: 900px) {
+  .Track-section {
+    height: 150vh;
+  }
+
   .tracks-box::before {
     width: calc(100% + 2px * 2 - 30px);
   }
@@ -177,13 +189,15 @@ img {
     margin-left: 74.222vw;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .box-bundle,
   .horizontal-container,
   .tracks-container {
     gap: calc(1.736vw * 1.7);
   }
-
+  .Track-section {
+    height: 100vh;
+  }
   .tracks-container {
     padding-top: 10vw;
   }
@@ -197,6 +211,7 @@ img {
   }
   .box-bundle {
     justify-content: center;
+    /* align-items: center; */
   }
 
   .box-bundle:nth-child(1),
@@ -206,11 +221,5 @@ img {
   }
   .box-bundle:nth-child(3) .vertical-box {
     margin-left: 46%;
-  }
-  .vertical-box .text {
-    font-size: 2.5vw;
-  }
-  .text {
-    font-size: 2.5vw;
   }
 }

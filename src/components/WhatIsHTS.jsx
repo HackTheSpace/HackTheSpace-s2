@@ -20,26 +20,28 @@ const WhatIsHTS = () => {
             src="/s1-image.jfif"
             alt="s1-images"
             width={575}
-            height={322}
+            height={311}
+            className="first"
           />
           <Image
             src="/s1-image.jfif"
             alt="s1-images"
             width={606.17}
             height={322}
+            className="second"
           />
         </div>
       </div>
       <div className="whatIs-container">
-        {/* <div className="whatIs-image__container"> */}
-        <Image
-          src="/moon.png"
-          alt="moon"
-          width={1036}
-          height={1036}
-          className="whatIs-moon__image"
-        />
-        {/* </div> */}
+        <div className="whatIs-image__container">
+          <Image
+            src="/moon.png"
+            alt="moon"
+            width={1036}
+            height={1036}
+            className="whatIs-main__image"
+          />
+        </div>
 
         <div className="whatIs-text__container">
           <div className="whatIs-text__main">
