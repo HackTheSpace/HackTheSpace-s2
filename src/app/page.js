@@ -30,10 +30,10 @@ export default function Home() {
 
   return (
     <>
+      <AnimatePresence mode="wait">
+        {isLoading && <PreLoader />}
+      </AnimatePresence>
       <main>
-        <AnimatePresence mode="wait">
-          {isLoading && <PreLoader />}
-        </AnimatePresence>
         <Navbar />
         <HeroSection />
         <AboutUs />

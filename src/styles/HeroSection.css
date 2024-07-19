@@ -3,7 +3,8 @@
   justify-content: space-between;
   height: 100vh;
   padding-top: 200px;
-  width: 1440px;
+  width: 100vw;
+  position: relative;
 }
 
 .hero-section__content {
@@ -24,7 +25,7 @@
 }
 
 .outlined-text {
-  color: black;
+  color: transparent;
   -webkit-text-stroke: 1.5px white;
 }
 
