@@ -1,6 +1,7 @@
 .whatIs--section {
   width: 100vw;
   height: 210vh;
+  background-color: black;
 }
 .whatIs--image {
   position: relative;

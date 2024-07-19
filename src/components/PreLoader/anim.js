@@ -3,7 +3,7 @@ export const fadeOut = {
     opacity: 1,
   },
   exit: {
-    opacity: 0.5,
+    opacity: 0,
     transition: {
       duration: 1,
       ease: [0.76, 0, 0.24, 1],
@@ -62,8 +62,9 @@ export const icon3 = {
 
 export const anim = {
   initial: {
-    x: "0",
-    y: "-100vh",
+    scale: 0.65,
+    x: "-4%",
+    y: "100vh",
     opacity: 0,
   },
   animate: {
@@ -78,7 +79,7 @@ export const anim = {
   },
   exit: {
     scale: 1.65,
-    opacity: 0,
+    // opacity: 0,
     transition: {
       duration: 1.3,
       ease: "easeOut",
