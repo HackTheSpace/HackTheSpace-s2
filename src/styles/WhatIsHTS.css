@@ -1,256 +1,118 @@
 .whatIs--section {
   width: 100vw;
-  height: 210vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .whatIs--image {
-  position: relative;
+  margin-top: -8vw;
+  margin-left: 5vw;
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  top: -150px;
-  left: 72px;
-  width: 70%;
-  height: 654px;
-}
-.whatIs-image__1 {
-  object-fit: cover;
-  width: 40%;
-  height: 100%;
+  gap: 2vw;
 }
 .whatIs-image__2 {
   display: flex;
   flex-direction: column;
-  gap: 2%;
-  width: 60%;
-  height: 100%;
+  gap: 2vw;
 }
-.whatIs-image__2 .first {
-  object-fit: cover;
-  width: 95%;
-  height: 50%;
+.whatIs-image__1 {
+  width: 30vw;
+  height: 45vw;
 }
-.whatIs-image__2 .second {
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
+.whatIs-image__2 img:nth-child(1) {
+  width: 39vw;
+  height: 21vw;
+}
+.whatIs-image__2 img:nth-child(2) {
+  width: 42vw;
+  height: 22vw;
 }
 
 .whatIs-container {
-  position: relative;
-  height: 100vh;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: 10vh;
+}
+.whatIs-moon__image {
+  width: 65vw;
+  height: 65vw;
+  margin-left: -26vw;
 }
 
-.whatIs-main__image {
-  height: 900px;
-  width: 900px;
-
-  position: absolute;
-  left: -392px;
-  bottom: -10%;
-  object-fit: contain;
-}
-.whatIs-text__container {
-  position: absolute;
-  width: 846px;
-  height: 100vh;
-  right: 5%;
-}
 .whatIs-text__main {
-  height: 50%;
-  top: 20px;
+  text-align: center;
   position: relative;
+  height: 20.798vw;
 }
-
 .whatIs-text__shadow {
-  position: absolute;
-  width: 846px;
-  height: 299px;
-  right: 0%;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.16);
 
   font-family: "Anton";
   font-style: normal;
   font-weight: 400;
-  font-size: 300px;
-  line-height: 299.49px;
-
-  color: rgba(255, 255, 255, 0.16);
+  font-size: 20vw;
+  line-height: 20.798vw;
 }
 
 .whatIs-text__heading {
-  position: absolute;
-  width: 788px;
-  height: 83px;
-  top: 170px;
-  right: 2%;
-
-  font-family: "Anton";
+  width: 100%;
+  top: 11.806vw;
+  font-size: 5.556vw;
   font-weight: 400;
-  font-size: 83px;
-  line-height: 82.86px;
+  font-family: "Anton";
+  position: absolute;
+  line-height: 5.546vw;
 }
 .whatIs-text__para {
-  position: absolute;
-  height: 333px;
-  width: 686px;
-  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+.whatIs-text__para p {
+  width: 47.306vw;
+  text-align: end;
 
-  font-family: "Roboto";
-  font-size: 16px;
-  text-align: right;
-  line-height: 27.52px;
-  letter-spacing: 1.28px;
+  font-family: "roboto";
+  font-size: 1.3vw;
+  line-height: 1.911vw;
   font-weight: 400;
 }
 
-.whatIs-text__para1 {
-  padding-bottom: 20px;
-}
-
-/* Media Queries */
 @media screen and (max-width: 900px) {
-  .whatIs--image {
-    gap: 20px;
-    top: -200px;
-    left: 72px;
-  }
-  .whatIs-image__1 {
-    width: 309.4px;
-    height: 457.8px;
-  }
-  .whatIs-image__2 .second {
-    width: 424.391px;
-    height: 225.4px;
-  }
-  .whatIs-image__2 .first {
-    width: 402.5px;
-    height: 217.7px;
-  }
-  .whatIs-main__image {
-    height: 700px;
-    width: 700px;
-    left: -300px;
-  }
-  .whatIs-text__container {
-    width: 600px;
-    right: 0%;
-  }
-  .whatIs-text__main {
-    width: 600px;
-    /* right: ; */
-  }
-  .whatIs-text__shadow {
-    width: 540px;
-    height: 250px;
-    font-size: 180px;
-    right: 0%;
-  }
-  .whatIs-text__heading {
-    width: 500px;
-    height: 83px;
-    top: 160px;
-    font-size: 45px;
-    right: 0%;
-  }
-  .whatIs-text__para {
-    top: 250px;
-    right: 10%;
-    width: 500px;
-    font-size: 14px;
+  .whatIs-text__para p {
+    width: 47.306vw;
+    text-align: end;
+
+    font-family: "roboto";
+    font-size: 1.7vw;
+    line-height: 2vw;
+    font-weight: 300;
   }
 }
-
 @media screen and (max-width: 768px) {
-  .whatIs--image {
-    left: 40px;
-    gap: 8px;
-    top: -50px;
-    height: 346px;
-  }
+  .whatIs-text__para p {
+    width: 47.306vw;
+    text-align: end;
 
-  .whatIs-image__1 {
-    height: 100%;
-    width: 40%;
-  }
-  .whatIs-image__2 {
-    gap: 8px;
-  }
-  .whatIs-image__2 .second {
-    height: 50%;
-    width: 100%;
-  }
-  .whatIs-image__2 .first {
-    height: 50%;
-    width: 95%;
-  }
-
-  .whatIs-container {
-    width: 100%;
-    text-align: center;
-  }
-  .whatIs-main__image {
-    height: 100%;
-    width: 100%;
-    position: unset;
-    top: 0%;
-    mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  }
-
-  .whatIs-text__container {
-    top: 400px;
-    width: 100%;
-    text-align: center;
-  }
-  .whatIs-text__main {
-    width: 100%;
-    top: 0;
-  }
-  .whatIs-text__shadow {
-    width: 100%;
-    font-size: 150px;
-  }
-  .whatIs-text__heading {
-    width: 100%;
-    top: 140px;
-    font-size: 40px;
-  }
-  .whatIs-text__para {
-    width: 100%;
-    top: 250px;
-    right: 0%;
-
-    text-align: center;
-    font-size: 14px;
-    line-height: normal;
-    padding: 20px;
+    font-family: "roboto";
+    font-size: 2vw;
+    line-height: 2.5vw;
+    font-weight: 200;
   }
 }
-
 @media screen and (max-width: 550px) {
-  .whatIs--image {
-    left: 30px;
-    gap: 5px;
-    top: -60px;
-    height: 173px;
-  }
+  .whatIs-text__para p {
+    width: 47.306vw;
+    text-align: end;
 
-  .whatIs-text__container {
-    top: 150px;
-  }
-  .whatIs-text__shadow {
-    font-size: 120px;
-  }
-  .whatIs-text__heading {
-    top: 140px;
-    font-size: 30px;
-  }
-  .whatIs-text__para {
-    width: 100%;
-    top: 200px;
-    right: 0%;
-    text-align: center;
-    font-size: 10px;
-    line-height: normal;
-    padding: 20px;
+    font-family: "roboto";
+    font-size: 2vw;
+    line-height: 3vw;
+    font-weight: 100;
   }
 }
