@@ -18,7 +18,7 @@ export default function Index() {
   const [scope, animate] = useAnimate();
   const [scope2, animate2] = useAnimate();
   const [scope3, animate3] = useAnimate();
-  const [rocket, animate4] = useAnimate();
+  // const [rocket, animate4] = useAnimate();
 
   const myAnimation = async () => {
     animate(scope.current, special);
@@ -36,28 +36,28 @@ export default function Index() {
       }
     );
 
-    animate4(
-      rocket.current,
-      {
-        rotateY: 720,
-      },
-      {
-        ease: "easeInOut",
-        duration: 1,
-      }
-    );
-    animate4(
-      rocket.current,
-      {
-        x: "0",
-        y: "-200vh",
-      },
-      {
-        duration: 1,
-        delay: 1.2,
-        ease: "easeOut",
-      }
-    );
+    // animate4(
+    //   rocket.current,
+    //   {
+    //     rotateY: 720,
+    //   },
+    //   {
+    //     ease: "easeInOut",
+    //     duration: 1,
+    //   }
+    // );
+    // animate4(
+    //   rocket.current,
+    //   {
+    //     x: "0",
+    //     y: "-200vh",
+    //   },
+    //   {
+    //     duration: 1,
+    //     delay: 1.2,
+    //     ease: "easeOut",
+    //   }
+    // );
   };
 
   const myAnimation2 = async () => {
@@ -96,9 +96,9 @@ export default function Index() {
 
   useEffect(() => {
     const timeouts = [
-      setTimeout(() => myAnimation(), 4700),
-      setTimeout(() => myAnimation2(), 5100),
-      setTimeout(() => myAnimation3(), 5500),
+      setTimeout(() => myAnimation(), 3000),
+      setTimeout(() => myAnimation2(), 3400),
+      setTimeout(() => myAnimation3(), 3800),
     ];
 
     return () => timeouts.forEach((timeout) => clearTimeout(timeout));
@@ -194,7 +194,7 @@ export default function Index() {
             </motion.svg>
             <p className="animated__text">LAUNCH</p>
           </div>
-          <Image
+          {/* <Image
             src="/rocket.png"
             alt="rocket"
             width={100}
@@ -203,7 +203,7 @@ export default function Index() {
             ref={rocket}
             initial="initial"
             animate="animate"
-          />
+          /> */}
         </div>
       </motion.div>
     </motion.section>

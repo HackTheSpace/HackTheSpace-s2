@@ -24,7 +24,7 @@ export default function Home() {
     const timeout = setTimeout(() => {
       setIsLoading(false);
       window.scrollTo(0, 0);
-    }, 5700);
+    }, 4000);
     return () => {
       clearTimeout(timeout);
     };

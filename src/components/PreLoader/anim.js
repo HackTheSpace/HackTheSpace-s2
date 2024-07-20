@@ -21,10 +21,10 @@ export const icon = {
   visible: {
     opacity: 1,
     pathLength: 0.3,
-    transition: {
-      pathLength: { delay: 2, type: "spring", duration: 6.5, bounce: 0 },
-      opacity: { delay: 2, duration: 1 },
-    },
+    // transition: {
+    //   pathLength: { delay: 2, type: "spring", duration: 6.5, bounce: 0 },
+    //   opacity: { delay: 2, duration: 1 },
+    // },
   },
 };
 
@@ -37,10 +37,10 @@ export const icon2 = {
   visible: {
     opacity: 1,
     pathLength: 0.5,
-    transition: {
-      pathLength: { delay: 2, type: "spring", duration: 6.5, bounce: 0 },
-      opacity: { delay: 2, duration: 1 },
-    },
+    // transition: {
+    //   pathLength: { delay: 2, type: "spring", duration: 6.5, bounce: 0 },
+    //   opacity: { delay: 2, duration: 1 },
+    // },
   },
 };
 
@@ -53,24 +53,21 @@ export const icon3 = {
   visible: {
     opacity: 1,
     pathLength: 0.22,
-    transition: {
-      pathLength: { delay: 2, type: "spring", duration: 6.5, bounce: 0 },
-      opacity: { delay: 2, duration: 1 },
-    },
+    // transition: {
+    //   pathLength: { delay: 2, type: "spring", duration: 6.5, bounce: 0 },
+    //   opacity: { delay: 2, duration: 1 },
+    // },
   },
 };
 
 export const anim = {
   initial: {
-    scale: 0.65,
-    x: "-4%",
-    y: "100vh",
+    scale: 6,
     opacity: 0,
   },
   animate: {
     scale: 0.65,
     x: "-4%",
-    y: "0",
     opacity: 1,
     transition: {
       duration: 1,
@@ -79,7 +76,7 @@ export const anim = {
   },
   exit: {
     scale: 1.65,
-    // opacity: 0,
+    opacity: 0,
     transition: {
       duration: 1.3,
       ease: "easeOut",
