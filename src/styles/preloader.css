@@ -1,0 +1,88 @@
+.preloader {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+  background-color: black;
+}
+
+.preloader__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+}
+
+.preloader__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.special {
+  position: relative;
+  transform-style: preserve-3d;
+  /* transition: transform 0.4s; */
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+}
+
+.animated__text {
+  font-family: "Anton";
+  font-size: 8rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  transform: rotateX(-90deg) translateY(4vw);
+  transform-origin: bottom center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.special svg {
+  transition: all 0.4s;
+  margin: 0px;
+  opacity: 1;
+}
+
+.item {
+  width: fit-content;
+  overflow: visible;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  z-index: 1;
+}
+
+.rocket {
+  position: absolute;
+  right: -170px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .animated__text {
+    transform: rotateX(-90deg) translateY(6.5vw);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .rocket {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .animated__text {
+    transform: rotateX(-90deg) translateY(10.5vw);
+  }
+}

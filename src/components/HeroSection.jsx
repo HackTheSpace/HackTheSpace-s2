@@ -1,22 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import dynamic from "next/dynamic";
+
+const ThreeScene = dynamic(() => import("@/components/ThreeScene"), {
+  ssr: false,
+});
 
 const HeroSection = () => {
   return (
     <section className="hero-section">
+      <ThreeScene />
       <div className="hero-section__content">
         <h1>HACK THE</h1>
         <div>
           <h1>SPACE</h1>
           <h1 className="outlined-text">2.0</h1>
         </div>
-        <div className="hero-section__buttons" >
+        <div className="hero-section__buttons">
           <button>
-            <Link href="/register">Devfolio</Link>
+            <Link href="/register">DEVFOLIO</Link>
           </button>
           <button>
-            <Link href="/register">Discord</Link>
+            <Link href="/register">DISCORD</Link>
           </button>
         </div>
       </div>
