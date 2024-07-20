@@ -15,6 +15,7 @@
   font-family: "anton", sans-serif;
   letter-spacing: 0.5vw;
   width: 100%;
+  display: flex;
 }
 
 .heading2 {
@@ -23,6 +24,7 @@
   margin-top: -11vw;
   position: absolute;
   margin-left: 4.5%;
+  display: flex;
 }
 
 .heading3 {
@@ -31,6 +33,7 @@
   margin-left: 4.5%;
   font-size: 2vw;
   font-family: "anton", sans-serif;
+  display: flex;
 }
 
 .ParaDiv1,
@@ -41,6 +44,23 @@
   font-size: 1.3vw;
   text-align: justify;
   font-family: "roboto";
+}
+
+.ParaDiv1 > p,
+.ParaDiv2 > p {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ParaDiv1 .word,
+.ParaDiv2 .word {
+  position: relative;
+  margin-right: 12px;
+}
+
+.word .shadow {
+  position: absolute;
+  opacity: 20%;
 }
 
 .ParaDiv1 {

@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
-// import WhatIsImage from './WhatIsImage'
 import "../styles/WhatIsHTS.css";
+import Heading from "./Heading";
+import Paragraph from "./Paragraph";
 
 const WhatIsHTS = () => {
   return (
@@ -44,16 +45,18 @@ const WhatIsHTS = () => {
         <div className="whatIs-text__container">
           <div className="whatIs-text__main">
             <h1 className="whatIs-text__shadow">WHAT ?</h1>
-            <h3 className="whatIs-text__heading">WHAT IS HACKTHESPACE ?</h3>
+            <Heading className="whatIs-text__heading">
+              {["WHAT", " ", "IS", " ", "HACKTHESPACE", " ", "?"]}
+            </Heading>
           </div>
           <div className="whatIs-text__para">
-            <p className="whatIs-text__para1">
+            <Paragraph className="whatIs-text__para1">
               Inspired by the famous painting, HackTheSpace 2023: A Starry Night
               will enable you to channel your creative persona, pushing the
               bounds of imagination and possibility to ideate, innovate, and
               develop something truly out of the world.
-            </p>
-            <p className="whatIs-text__para2">
+            </Paragraph>
+            <Paragraph className="whatIs-text__para2">
               Inspired by the famous painting, HackTheSpace 2023: A Starry Night
               will enable you to channel your creative persona, pushing the
               bounds of imagination and possibility to ideate, innovate, and
@@ -62,7 +65,7 @@ const WhatIsHTS = () => {
               channel your creative persona, pushing the bounds of imagination
               and possibility to ideate, innovate, and develop something truly
               out of the world.
-            </p>
+            </Paragraph>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 import FAQsQuesComp from './faqsQuestions';
 import { faqsQuestions } from "../../config/questions"
+import Heading from '../Heading';
 
 const FAQsColComponent = ({ children }) => {
     return <div className="faqs--col">
@@ -19,7 +20,7 @@ const FAQsSection = () => {
         <div className='faqs--text'>
           <div className='faqs--text__container'>
             <h1 className='faqs--text__shadow'>FAQs</h1>
-            <h3 className='faqs--text__heading'>FAQs</h3>
+            <Heading className='faqs--text__heading'>FAQs</Heading>
           </div>
         </div>
         <div className='faqs--questions'>

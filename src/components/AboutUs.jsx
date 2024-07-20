@@ -1,4 +1,7 @@
 import React from "react";
+import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import Heading from "./Heading";
+import Paragraph from "./Paragraph";
 
 const AboutUs = () => {
   return (
@@ -9,19 +12,18 @@ const AboutUs = () => {
     >
       <div className="AboutUsDiv">
         <h1 className="heading1">ABOUT</h1>
-        <h2 className="heading2">ABOUT US</h2>
-        <h3 className="heading3">WHO ARE WE?</h3>
+        <Heading className="heading2">{["ABOUT", " ", "US"]}</Heading>
+
+        <Heading className="heading3">{["WHO", " ", "WE", " ", "ARE"]}</Heading>
 
         <div className="ParaDiv1">
-          <p>
+          <Paragraph>
             Inspired by the famous painting, HackTheSpace 2023: A Starry Night
             will enable you to channel your creative persona, pushing the bounds
-            of imagination and possibility to ideate, innovate, and develop
-            something truly out of the world.
-          </p>
+          </Paragraph>
         </div>
         <div className="ParaDiv2">
-          <p>
+          <Paragraph>
             Inspired by the famous painting, HackTheSpace 2023: A Starry Night
             will enable you to channel your creative persona, pushing the bounds
             of imagination and possibility to ideate, innovate, and develop
@@ -29,7 +31,7 @@ const AboutUs = () => {
             HackTheSpace 2023: A Starry Night will enable you to channel your
             creative persona, pushing the bounds of imagination and possibility
             to ideate, innovate, and develop something truly out of the world.
-          </p>
+          </Paragraph>
         </div>
       </div>
     </section>

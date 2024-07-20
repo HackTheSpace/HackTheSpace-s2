@@ -4,10 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useEffect, useRef, useState } from "react";
+import { delay, motion } from "framer-motion";
 
 const Navbar = () => {
   const navRef = useRef(null);
   const [HamBurger, setHamBurger] = useState(false);
+
+  const navAnimation = {
+    initial: { y: "-100%" },
+    animate: {
+      y: 0,
+      transition: {
+        duration: 0.75,
+        ease: [0.33, 1, 0.68, 1],
+        delay: 6.5,
+      },
+    },
+  };
 
   useEffect(() => {
     const nav = navRef.current;
@@ -29,9 +42,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav ref={navRef}>
+    <motion.nav
+      ref={navRef}
+      initial="initial"
+      animate="animate"
+      variants={navAnimation}
+    >
       <Link href="/">
-        <Image src="/logo-main.webp" alt="logo" width={170} height={70} />
+        <Image id="logo" src="/logo-main.webp" alt="logo" width={170} height={70} />
       </Link>
 
       <button className="nav__toggle" onClick={toggleBurger}>
@@ -40,6 +58,7 @@ const Navbar = () => {
           width={40}
           height={40}
           alt="toggle"
+          id="hamburger"
         />
       </button>
 
@@ -100,7 +119,7 @@ const Navbar = () => {
           />
         </Link>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
