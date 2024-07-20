@@ -8,6 +8,7 @@ import { delay, motion } from "framer-motion";
 
 const Navbar = () => {
   const navRef = useRef(null);
+  const nanLinksRef = useRef(null);
   const [HamBurger, setHamBurger] = useState(false);
 
   const navAnimation = {
@@ -17,18 +18,23 @@ const Navbar = () => {
       transition: {
         duration: 0.75,
         ease: [0.33, 1, 0.68, 1],
-        delay: 6.5,
+        delay: 5.5,
       },
     },
   };
 
   useEffect(() => {
     const nav = navRef.current;
+    const navLinks = nanLinksRef.current;
     const handleScroll = () => {
       if (window.scrollY > 100) {
         nav.classList.add("nav--scrolled");
+        navLinks.classList.add("nav__links--scrolled");
+        document.getElementById("logo").style.display = "none";
       } else {
         nav.classList.remove("nav--scrolled");
+        navLinks.classList.remove("nav__links--scrolled");
+        document.getElementById("logo").style.display = "block";
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -49,7 +55,13 @@ const Navbar = () => {
       variants={navAnimation}
     >
       <Link href="/">
-        <Image id="logo" src="/logo-main.webp" alt="logo" width={170} height={70} />
+        <Image
+          id="logo"
+          src="/logo-main.webp"
+          alt="logo"
+          width={130}
+          height={55}
+        />
       </Link>
 
       <button className="nav__toggle" onClick={toggleBurger}>
@@ -62,7 +74,10 @@ const Navbar = () => {
         />
       </button>
 
-      <ul className={`nav__links ${HamBurger ? "nav__links--open" : ""}`}>
+      <ul
+        ref={nanLinksRef}
+        className={`nav__links ${HamBurger ? "nav__links--open" : ""}`}
+      >
         <li>
           <Link href="/" onClick={toggleBurger}>
             Home
@@ -75,12 +90,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link href="/" onClick={toggleBurger}>
-            History
-          </Link>
-        </li>
-        <li>
-          <Link href="/" onClick={toggleBurger}>
-            Sponsors
+            Events
           </Link>
         </li>
         <li>
@@ -90,12 +100,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link href="/" onClick={toggleBurger}>
-            Prizes
-          </Link>
-        </li>
-        <li>
-          <Link href="/" onClick={toggleBurger}>
-            Team
+            Faqs
           </Link>
         </li>
         <li>
