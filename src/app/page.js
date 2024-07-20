@@ -9,6 +9,7 @@ import PreLoader from "@/components/PreLoader";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import FAQsSection from "@/components/FAQs";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +41,7 @@ export default function Home() {
         <WhatIsHTS />
         <Tracks />
         <FAQsSection />
+        <Footer />
       </main>
     </>
   );
