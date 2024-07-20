@@ -43,10 +43,9 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="hero-section" >
+    <section className="hero-section">
+      <ThreeScene />
       <motion.div style={{ y }}>
-        <ThreeScene />
-
         <div className="hero-section__content">
           <div
             style={{
