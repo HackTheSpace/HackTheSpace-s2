@@ -136,6 +136,9 @@
   transition: max-height 1000ms ease-out, margin-top 400ms ease-out,
     opacity 800ms ease-out;
 }
+.question p {
+  width: 90%;
+}
 @media screen and (max-width: 900px) {
   .question--box .answer,
   .question {
