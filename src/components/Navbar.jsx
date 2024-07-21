@@ -127,7 +127,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="mlh-flag">
+      {/* <div className="mlh-flag">
         <Link
           id="mlh-trust-badge"
           href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
@@ -140,7 +140,7 @@ const Navbar = () => {
             height={170}
           />
         </Link>
-      </div>
+      </div> */}
     </motion.nav>
   );
 };
