@@ -1,25 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
-import { motion, useAnimation } from "framer-motion";
-const VerticalBox = ({ title, img }) => {
-  // const [isVisible, setIsVisible] = useState(true);
-  const controls = useAnimation();
+import { motion, useInView } from "framer-motion";
 
-  useEffect(() => {
-    controls.start({
+const VerticalBox = ({ title, img }) => {
+  const ref = useRef(null);
+  const inView = useInView(ref);
+
+  const animation = {
+    visible: {
       height: "100%",
       opacity: 1,
-      transition: { duration: 0.25 },
-    });
-  }, [controls]);
+      transition: { duration: 0.5, delay: 0.25 },
+    },
+  };
 
   return (
     <motion.div
+      variants={animation}
+      ref={ref}
       initial={{ height: "0%", opacity: 0 }}
-      // animate={{ height: "100%", controls }}
-      animate={controls}
-      // transition={{ duration: 0.25 }}
-
+      animate={inView ? "visible" : ""}
       className="vertical-box tracks-box"
     >
       <Image src={img} width={110} height={110} alt="open" />

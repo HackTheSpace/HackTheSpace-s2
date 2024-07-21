@@ -6,6 +6,7 @@ import Paragraph from "./Paragraph";
 const AboutUs = () => {
   return (
     <section
+      id="aboutUS"
       style={{
         backgroundColor: "black",
       }}

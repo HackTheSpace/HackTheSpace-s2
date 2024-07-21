@@ -161,8 +161,6 @@ img {
   }
 }
 @media screen and (max-width: 500px) {
-  .box-bundle,
-  .horizontal-container,
   .tracks-container {
     gap: calc(1.736vw * 1.7);
   }
@@ -172,22 +170,18 @@ img {
     align-items: center;
   }
 
-  .box-bundle {
-    justify-content: center;
-  }
-
   .box-bundle:nth-child(1),
   .box-bundle:nth-child(2),
   .box-bundle:nth-child(3) {
     margin-left: unset;
   }
   .box-bundle:nth-child(3) .vertical-box {
-    margin-left: 30vw;
+    margin-left: 25vw;
   }
   .vertical-box .text {
-    font-size: 2vw;
+    /* font-size: 2vw; */
   }
   .text {
-    font-size: 2vw;
+    /* font-size: 2vw; */
   }
 }
