@@ -164,7 +164,10 @@ img {
   .tracks-container {
     gap: calc(1.736vw * 1.7);
   }
-
+  .box-bundle {
+    width: 60vw;
+    height: 30vw;
+  }
   .tracks-container {
     padding-top: 10vw;
     align-items: center;
@@ -175,13 +178,13 @@ img {
   .box-bundle:nth-child(3) {
     margin-left: unset;
   }
-  .box-bundle:nth-child(3) .vertical-box {
-    margin-left: 25vw;
-  }
   .vertical-box .text {
-    /* font-size: 2vw; */
+    padding-bottom: 25%;
   }
   .text {
-    /* font-size: 2vw; */
+    font-size: 1.8vw;
+  }
+  .box-bundle:nth-child(3) .vertical-box {
+    margin-left: 40vw;
   }
 }

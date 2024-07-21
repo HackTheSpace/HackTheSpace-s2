@@ -15,7 +15,7 @@ const Tracks = () => {
         <Heading className="heading-small">TRACKS</Heading>
       </div>
       <div className="tracks-container">
-        <div className="box-bundle" ref={ref}>
+        <div className="box-bundle">
           <VerticalBox title={"Open Innovation"} img={"open.svg"} />
 
           <HorizontalBox
@@ -27,7 +27,7 @@ const Tracks = () => {
           />
         </div>
 
-        <div className="box-bundle">
+        <div className="box-bundle" ref={ref}>
           <VerticalBox title={"Security & Audits"} img={"security.svg"} />
 
           <HorizontalBox
