@@ -3,6 +3,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { MdArrowOutward } from "react-icons/md"
 
 const ThreeScene = dynamic(() => import("@/components/ThreeScene"), {
   ssr: false,
@@ -17,7 +18,7 @@ const HeroSection = () => {
     offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "150vh"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "300vh"]);
 
   const headingAnimation = {
     initial: { y: "100%" },
@@ -43,7 +44,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="hero-section">
+    <section id="home" className="hero-section">
       <ThreeScene />
       <motion.div style={{ y }}>
         <div className="hero-section__content">
@@ -83,6 +84,26 @@ const HeroSection = () => {
             >
               2.0
             </motion.h1>
+          </div>
+          <div className="Date-Venue">
+            <motion.h6
+              custom={4}
+              variants={buttonAnimation}
+              initial="initial"
+              animate="enter"
+            >
+              27th - 28th September 2024
+            </motion.h6>
+            <motion.h6
+              custom={5}
+              variants={buttonAnimation}
+              initial="initial"
+              animate="enter"
+              onClick={() => window.open("https://maps.app.goo.gl/4mAvhnY6f3gbt6ns7", "_blank")}
+            >
+              Shri Shankaracharya Technical Campus, Bhilai, IN
+              <MdArrowOutward />
+            </motion.h6>
           </div>
           <motion.div className="hero-section__buttons">
             <motion.button

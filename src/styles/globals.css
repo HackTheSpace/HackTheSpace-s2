@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@import url("./index.css");
 @import url("./Navbar.css");
 @import url("./HeroSection.css");
 @import url("./AboutUs.css");
+@import url("./glimpse.css");
 @import url("./Tracks.css");
 @import url("./FAQsSection.css");
 @import url("./preloader.css");
@@ -24,25 +26,41 @@ body {
   color: white;
 }
 
+main {
+ background-color: black;
+}
+
 /* scrollbar styling */
 ::-webkit-scrollbar:horizontal {
+  display: none;
+}
+
+::-webkit-scrollbar:vertical {
   display: none;
 }
 ::-webkit-scrollbar {
   width: 10px;
   background-color: black;
 }
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#572fde, #9435d9);
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.16),
+    #ffffff,
+    rgba(255, 255, 255, 0.16)
+  );
   border-radius: 5px;
-  border: 2px solid transparent;
+  border: 0;
   background-clip: padding-box;
   width: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  border: 0;
-  background: linear-gradient(#9435d9, #572fde);
+  border: 5px white;
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 255, 255, 0.16);
+  border: #ffffff;
 }
 
 @media screen and (max-width: 900px) {

@@ -6,6 +6,23 @@ import React from "react";
 import { useEffect, useRef, useState } from "react";
 import { delay, motion } from "framer-motion";
 
+const useSmoothScroll = () => {
+  useEffect(() => {
+    const handleWheel = (event) => {
+      event.preventDefault();
+      window.scrollBy({
+        top: event.deltaY,
+        behavior: "smooth",
+      });
+    };
+
+    window.addEventListener("wheel", handleWheel, { passive: false });
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+    };
+  }, []);
+};
+
 const Navbar = () => {
   const navRef = useRef(null);
   const nanLinksRef = useRef(null);
@@ -79,12 +96,12 @@ const Navbar = () => {
         className={`nav__links ${HamBurger ? "nav__links--open" : ""}`}
       >
         <li>
-          <Link href="/" onClick={toggleBurger}>
+          <Link href="#home" onClick={toggleBurger}>
             Home
           </Link>
         </li>
         <li>
-          <Link href="/" onClick={toggleBurger}>
+          <Link href="#aboutUS" onClick={toggleBurger}>
             About Us
           </Link>
         </li>
@@ -94,23 +111,23 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/" onClick={toggleBurger}>
+          <Link href="#tracks" onClick={toggleBurger}>
             Tracks
           </Link>
         </li>
         <li>
-          <Link href="/" onClick={toggleBurger}>
+          <Link href="#faqs" onClick={toggleBurger}>
             Faqs
           </Link>
         </li>
         <li>
-          <Link href="/" onClick={toggleBurger}>
+          <Link href="#footer" onClick={toggleBurger}>
             Contact
           </Link>
         </li>
       </ul>
 
-      <div className="mlh-flag">
+      {/* <div className="mlh-flag">
         <Link
           id="mlh-trust-badge"
           href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
@@ -123,7 +140,7 @@ const Navbar = () => {
             height={170}
           />
         </Link>
-      </div>
+      </div> */}
     </motion.nav>
   );
 };
