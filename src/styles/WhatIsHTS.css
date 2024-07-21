@@ -88,20 +88,28 @@
   justify-content: end;
 }
 
+.whatIs-text__para p > span {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  margin-right: 4px;
+}
+
 .whatIs-text__para1 > .word,
 .whatIs-text__para2 > .word {
   position: relative;
   margin-right: 12px;
 }
 
+
 @media screen and (max-width: 550px) {
   .whatIs-text__para p {
-    font-size: 1.5vw;
-    line-height: 2.2vw;
+    font-size: 2vw;
+    line-height: 3vw;
   }
 
   .whatIs-text__para1 > .word,
-.whatIs-text__para2 > .word {
-  margin-right: 6px;
-}
+  .whatIs-text__para2 > .word {
+    margin-right: 6px;
+  }
 }

@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  padding-top: 200px;
+  padding-top: 170px;
   height: 100%;
   position: relative;
 }
@@ -25,7 +25,7 @@
   font-weight: 400;
 }
 
-.hero-section__content > div {
+.hero-section__content > div:nth-child(2) {
   display: flex;
   gap: 1rem;
 }
@@ -35,20 +35,45 @@
   -webkit-text-stroke: 1.5px white;
 }
 
+.Date-Venue {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.Date-Venue > h6:nth-child(1) {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.Date-Venue > h6:nth-child(2) {
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Date-Venue > h6:nth-child(2):hover {
+  text-decoration: underline;
+}
+
 .hero-section__buttons {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   padding-right: 40px;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .hero-section__buttons button {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
   width: 11.60194rem;
-  height: 4.02519rem;
+  height: 4rem;
   flex-shrink: 0;
   border: none;
   position: relative;
@@ -135,6 +160,14 @@
   .hero-section__image {
     width: 70%;
   }
+
+  .Date-Venue > h6:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .Date-Venue > h6:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -145,6 +178,18 @@
 
   .hero-section__content {
     font-size: 4.5rem;
+  }
+
+  .Date-Venue > h6:nth-child(1) {
+    font-size: 1.2rem;
+  }
+
+  .Date-Venue > h6:nth-child(2) {
+    font-size: 0.9rem;
+  }
+
+  .hero-section__buttons {
+    margin-top: 20px;
   }
 
   .hero-section__buttons button {
@@ -161,6 +206,14 @@
 @media screen and (max-width: 450px) {
   .hero-section__content {
     font-size: 3.5rem;
+  }
+
+  .Date-Venue > h6:nth-child(1) {
+    font-size: 1rem;
+  }
+
+  .Date-Venue > h6:nth-child(2) {
+    font-size: 0.8rem;
   }
 
   .hero-section__buttons button {

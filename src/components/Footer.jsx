@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
         </footer>
         <div className='footer--team__HTS'>
-            <p>Made with ❤️ by the Team HackTheSpace2.0</p>
+            <p>Made with ❤️ by the Team HackTheSpace</p>
         </div>
     </>
   )

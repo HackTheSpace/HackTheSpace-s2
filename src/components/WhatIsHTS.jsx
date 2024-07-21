@@ -46,7 +46,7 @@ const WhatIsHTS = () => {
           <div className="whatIs-text__main">
             <h1 className="whatIs-text__shadow">WHAT ?</h1>
             <Heading className="whatIs-text__heading">
-              {["WHAT", " ", "IS", " ", "HACKTHESPACE", " ", "?"]}
+              WHAT IS HACKTHESPACE ?
             </Heading>
           </div>
           <div className="whatIs-text__para">

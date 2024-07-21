@@ -1,43 +1,42 @@
-import React from "react";
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
+export default function Paragrapgh({ children }) {
+  const description = useRef(null);
 
-const Paragraph = ({ children, className }) => {
-  const container = useRef(null);
+  const isInView = useInView(description);
 
-  const { scrollYProgress } = useScroll({
-    target: container,
+  const slideUp = {
+    initial: {
+      y: "100%",
+    },
 
-    offset: ["start 0.9", "start 0.25"],
-  });
+    open: (i) => ({
+      y: "0%",
+      transition: { duration: 0.5, delay: 0.01 * i },
+    }),
 
-  const words = children.split(" ");
+    closed: {
+      y: "100%",
+      transition: { duration: 0.5 },
+    },
+  };
+
   return (
-    <p ref={container} className={className}>
-      {words.map((word, i) => {
-        const start = i / words.length;
-
-        const end = start + 1 / words.length;
+    <p ref={description}>
+      {children.split(" ").map((word, index) => {
 
         return (
-          <Word key={i} progress={scrollYProgress} range={[start, end]}>
-            {word}
-          </Word>
+          <span key={index}>
+            <motion.span
+              variants={slideUp}
+              custom={index}
+              animate={isInView ? "open" : "closed"}
+            >
+              {word}
+            </motion.span>
+          </span>
         );
       })}
     </p>
   );
-};
-
-const Word = ({ children, progress, range }) => {
-  const opacity = useTransform(progress, range, [0, 1]);
-
-  return (
-    <span className="word">
-      <span className="shadow">{children}</span>
-      <motion.span style={{ opacity: opacity }}>{children}</motion.span>
-    </span>
-  );
-};
-
-export default Paragraph;
+}
