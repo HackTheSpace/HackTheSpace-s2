@@ -47,6 +47,7 @@ export default function Home() {
         <HeroSection />
         <AboutUs />
         <WhatIsHTS />
+        <Glimpse/>
         <Tracks />
         <FAQsSection />
         <Footer />
