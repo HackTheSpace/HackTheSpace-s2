@@ -124,7 +124,7 @@
 .question--box .answer {
   width: 95%;
   font-size: 1vw;
-  font-weight: 300;
+  font-weight: 400;
   font-family: roboto;
   text-align: justify;
   max-height: 0px;
@@ -215,7 +215,7 @@
   .question--box .answer {
     font-size: 2.8vw;
     width: 100%;
-    font-weight: 300;
+    font-weight: 400;
     text-align: justify;
   }
   .question {
