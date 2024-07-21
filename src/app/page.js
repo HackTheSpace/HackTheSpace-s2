@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import FAQsSection from "@/components/FAQs";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import Glimpse from "@/components/Glimpse";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
