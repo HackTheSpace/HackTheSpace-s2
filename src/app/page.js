@@ -3,7 +3,7 @@
 import AboutUs from "@/components/AboutUs";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
-import Tracks from "@/components/Tracks";
+import Tracks from "@/components/tracks/Tracks";
 import WhatIsHTS from "@/components/WhatIsHTS";
 import PreLoader from "@/components/PreLoader";
 import { AnimatePresence } from "framer-motion";
@@ -37,7 +37,7 @@ export default function Home() {
         {isLoading && <PreLoader />}
       </AnimatePresence>
       <main>
-      <Image
+        <Image
           src="/astronaut.svg"
           alt="Astronaut"
           width={500}

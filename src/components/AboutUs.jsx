@@ -4,7 +4,7 @@ import Paragraph from "./Paragraph";
 
 const AboutUs = () => {
   return (
-    <section className="AboutUsDiv">
+    <section className="AboutUsDiv" id="aboutUS">
       <h1 className="heading1">ABOUT</h1>
       <Heading className="heading2">ABOUT US</Heading>
 

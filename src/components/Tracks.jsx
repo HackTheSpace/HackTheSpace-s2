@@ -31,6 +31,7 @@ const Tracks = () => {
                 src="VR.svg"
                 alt="VR"
                 width={80}
+                y
                 height={80}
                 className="icon"
               />

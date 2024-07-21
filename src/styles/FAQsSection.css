@@ -35,6 +35,7 @@
 .faqs--questions {
   display: flex;
   justify-content: center;
+  gap: 0px;
   margin-top: 4vw;
 }
 .faqs--col {
@@ -94,30 +95,36 @@
 
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.3vw;
   line-height: 23px;
   text-align: justify;
   color: #ffffff;
 }
-.question--box .question.active::after {
-  transform: rotate(180deg);
-}
-.question--box .question::after {
-  content: "";
+.arow {
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 0;
   display: block;
   width: 2rem;
   height: 2rem;
-  background-image: url("../../public/down.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: white;
   transition: transform 500ms ease-in-out;
 }
+.arowUp {
+  transform: rotate(180deg);
+}
+.question.active {
+  /* color: rgba(255, 255, 255, 0.16); */
+  font-weight: 600;
+  text-shadow: 2px 2px 2px 2px 2px rgba(255, 255, 255, 0.16);
+}
 
 .question--box .answer {
-  font-size: 1.3vw;
+  width: 95%;
+  font-size: 1vw;
+  font-weight: 400;
   font-family: roboto;
   text-align: justify;
   max-height: 0px;
@@ -133,8 +140,11 @@
   max-height: 300px;
   margin-top: 0.5rem;
   opacity: 1;
-  transition: max-height 1000ms ease-out, margin-top 400ms ease-out,
+  transition: max-height 1000ms ease-out, margin 400ms ease-out,
     opacity 800ms ease-out;
+}
+.question p {
+  width: 95%;
 }
 @media screen and (max-width: 900px) {
   .question--box .answer,
@@ -153,6 +163,7 @@
   .question--box .answer,
   .question {
     font-size: 2vw;
+    width: 95%;
   }
 }
 
@@ -160,9 +171,7 @@
   .faqs--section .faqs--questions {
     flex-direction: column;
     align-items: center;
-    padding: 0 1rem;
-  }
-  .faqs-section .faqs--questions {
+    padding: 1rem;
     width: 100%;
     padding: 0;
   }
@@ -182,7 +191,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .faqs--text__shadow {
     font-size: 22vw;
   }
@@ -195,16 +204,23 @@
     align-items: center;
     padding: 0 1rem;
   }
-  .faqs-section .faqs--questions {
+  .faqs--questions {
     width: 100%;
-    padding: 0;
+    gap: 10px;
   }
   .faqs--col {
-    width: 100%;
+    width: 95%;
+    gap: 10px;
   }
-  .question--box .answer,
+  .question--box .answer {
+    font-size: 2.8vw;
+    width: 100%;
+    font-weight: 400;
+    text-align: justify;
+  }
   .question {
-    font-size: 3vw;
+    width: 95%;
+    font-size: 3.5vw;
     text-align: justify;
   }
 }
