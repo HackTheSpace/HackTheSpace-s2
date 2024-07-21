@@ -1,9 +1,15 @@
 .hero-section {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-section > div {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
-  padding-top: 200px;
   width: 100vw;
+  padding-top: 200px;
+  height: 100%;
   position: relative;
 }
 
@@ -148,7 +154,7 @@
   }
 
   .hero-section__image {
-    display: none;
+    width: 90%;
   }
 }
 
@@ -161,5 +167,21 @@
     width: 6.60194rem;
     height: 1.52519rem;
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .hero-section__image {
+    display: none;
+  }
+
+  .hero-section__content {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-height: 800px) and (max-width: 450px) {
+  .hero-section__content {
+    margin-top: 100px;
   }
 }

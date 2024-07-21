@@ -28,9 +28,9 @@
   margin-top: -6vw;
   line-height: 99.83%;
   margin-left: 10.5%;
-  /* identical to box height, or 80px */
-
   color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 .faqs--questions {
   display: flex;
