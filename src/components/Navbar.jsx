@@ -6,27 +6,21 @@ import React from "react";
 import { useEffect, useRef, useState } from "react";
 import { delay, motion } from "framer-motion";
 
-const useSmoothScroll = () => {
-  useEffect(() => {
-    const handleWheel = (event) => {
-      event.preventDefault();
-      window.scrollBy({
-        top: event.deltaY,
-        behavior: "smooth",
-      });
-    };
-
-    window.addEventListener("wheel", handleWheel, { passive: false });
-    return () => {
-      window.removeEventListener("wheel", handleWheel);
-    };
-  }, []);
-};
-
 const Navbar = () => {
   const navRef = useRef(null);
   const nanLinksRef = useRef(null);
   const [HamBurger, setHamBurger] = useState(false);
+
+  const handleScroll = (e) => {
+    e.preventDefault();
+    setHamBurger(false);
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
 
   const navAnimation = {
     initial: { y: "-100%" },
@@ -60,10 +54,6 @@ const Navbar = () => {
     };
   }, []);
 
-  const toggleBurger = () => {
-    setHamBurger(!HamBurger);
-  };
-
   return (
     <motion.nav
       ref={navRef}
@@ -81,13 +71,14 @@ const Navbar = () => {
         />
       </Link>
 
-      <button className="nav__toggle" onClick={toggleBurger}>
+      <button className="nav__toggle" onClick={() => setHamBurger(true)}>
         <Image
           src={HamBurger ? "/close-64.png" : "/hamburger-48.png"}
           width={40}
           height={40}
           alt="toggle"
           id="hamburger"
+          onClick={() => setHamBurger(false)}
         />
       </button>
 
@@ -96,32 +87,32 @@ const Navbar = () => {
         className={`nav__links ${HamBurger ? "nav__links--open" : ""}`}
       >
         <li>
-          <Link href="#home" onClick={toggleBurger}>
+          <Link href="#home" onClick={handleScroll}>
             Home
           </Link>
         </li>
         <li>
-          <Link href="#aboutUS" onClick={toggleBurger}>
+          <Link href="#aboutUS" onClick={handleScroll}>
             About Us
           </Link>
         </li>
         <li>
-          <Link href="/" onClick={toggleBurger}>
-            Events
-          </Link>
-        </li>
-        <li>
-          <Link href="#tracks" onClick={toggleBurger}>
+          <Link href="#tracks" onClick={handleScroll}>
             Tracks
           </Link>
         </li>
         <li>
-          <Link href="#faqs" onClick={toggleBurger}>
+          <Link href="#events" onClick={handleScroll}>
+            Events
+          </Link>
+        </li>
+        <li>
+          <Link href="#faqs" onClick={handleScroll}>
             Faqs
           </Link>
         </li>
         <li>
-          <Link href="#footer" onClick={toggleBurger}>
+          <Link href="#footer" onClick={handleScroll}>
             Contact
           </Link>
         </li>

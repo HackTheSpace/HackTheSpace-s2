@@ -65,7 +65,7 @@ const Glimpse = () => {
   return (
     <section
       className="section wow animate__animated animate__fadeInUp"
-      id="Glimpse"
+      id="events"
     >
       <Image
         src="/images/backgrounds/bg_2.jpg"

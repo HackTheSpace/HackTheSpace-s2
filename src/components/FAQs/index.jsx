@@ -27,7 +27,7 @@ const FAQsSection = () => {
   const height = useTransform(scrollYProgress, [0, 0.9], [40, 0]);
 
   return (
-    <section ref={container} className="faqs--section">
+    <section ref={container} className="faqs--section" id="faqs">
       <Image
         src="/images/backgrounds/bg_3.jpg"
         alt="Background"
