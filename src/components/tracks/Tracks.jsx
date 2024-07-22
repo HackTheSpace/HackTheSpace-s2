@@ -22,7 +22,7 @@ const Tracks = () => {
       </div>
       <div className="tracks-para">
         <Paragraph>
-          tracks HackTheSpace features a variety of tracks, each designed to
+          HackTheSpace features a variety of tracks, each designed to
           guide hackers to tackle specific challenges. By offering diverse
           tracks, we cater to a wide range of interests and expertise, fostering
           creativity, collaboration, and meaningful innovation among hackers.
