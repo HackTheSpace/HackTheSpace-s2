@@ -67,6 +67,14 @@ const Glimpse = () => {
       className="section wow animate__animated animate__fadeInUp"
       id="Glimpse"
     >
+      <Image
+        src="/images/backgrounds/bg_2.jpg"
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        className="glimpse-section__background"
+      />
       <div className="heading-container">
         <h1 className="title-shadow">GALLERY</h1>
         <Heading className="section-title">Previous Events</Heading>

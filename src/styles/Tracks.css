@@ -4,7 +4,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  position: relative;
+}
+
+.Track-section__background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.23;
+}
+
+.Track-section__background2{
+  position: absolute;
+  bottom: -90%;
+  right: -35%;
+  width: 100%;
+  height: 150%;
+  z-index: 1;
+  opacity: 0.9;
 }
 
 .heading {
@@ -75,7 +95,7 @@ img {
   padding-top: 2vw;
   display: flex;
   flex-direction: row;
-
+  z-index: 2;
   /* gap: 1.736vw; */
   padding-inline: 5%;
   font-family: Poppins;
@@ -194,6 +214,12 @@ img {
   }
 }
 @media screen and (max-width: 500px) {
+
+  .Track-section__background2{
+    bottom: -50%;
+    height: 100%;
+  }
+  
   .tracks-container {
     flex-direction: column;
     gap: 2vw;

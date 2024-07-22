@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import VerticalBox from "./VerticalBox";
 import HorizontalBox from "./HorizontalBox";
 import Heading from "../Heading";
+import Image from "next/image";
 import Paragraph from "../Paragraph";
 import { useInView } from "framer-motion";
 
@@ -11,6 +12,13 @@ const Tracks = () => {
   // console.log(inView);
   return (
     <section id="tracks" className="Track-section">
+      <Image
+        src="/images/backgrounds/bg_1.jpg"
+        alt="Background"
+        layout="fill"
+        quality={100}
+        className="Track-section__background"
+      />
       <div className="heading">
         <h1 className="heading-shadow">TRACKS</h1>
         <Heading className="heading-small">TRACKS</Heading>
@@ -58,6 +66,14 @@ const Tracks = () => {
           <VerticalBox title={"Open Innovation"} img={"idea.svg"} />
         </div>
       </div>
+      <Image
+        src="/images/backgrounds/bg_4.png"
+        alt="Background"
+        width={2000}
+        height={2000}
+        quality={100}
+        className="Track-section__background2"
+      />
     </section>
   );
 };

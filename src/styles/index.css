@@ -1,18 +1,19 @@
 .section {
   height: 100%;
-  margin: 9rem auto;
   color: var(--white);
   scroll-margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .heading-container {
   text-align: center;
   position: relative;
   height: 20.798vw;
+  z-index: 2;
 }
 
 .section-title {

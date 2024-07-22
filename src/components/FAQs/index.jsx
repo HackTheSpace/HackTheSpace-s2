@@ -6,6 +6,7 @@ import { faqsQuestions } from "../../config/questions";
 import Heading from "../Heading";
 import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
+import Image from "next/image";
 
 const FAQsColComponent = ({ children }) => {
   return <div className="faqs--col">{children}</div>;
@@ -27,6 +28,15 @@ const FAQsSection = () => {
 
   return (
     <section ref={container} className="faqs--section">
+      <Image
+        src="/images/backgrounds/bg_3.jpg"
+        alt="Background"
+        width={4751}
+        height={2952}
+        objectFit="cover"
+        quality={100}
+        className="faqs--section__background"
+      />
       <div className="faqs--text">
         <div className="faqs--text__container">
           <h1 className="faqs--text__shadow">FAQs</h1>
