@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <>
       <div className="border--container"></div>
-      <motion.footer style={{y}} ref={container} className="footer--section">
+      <motion.footer style={{ y }} ref={container} className="footer--section">
         <div className="footer--docs">
           <h3 className="footer--title"> Explore </h3>
           <ul className="footer--docs__list">
@@ -41,23 +41,23 @@ const Footer = () => {
         <div className="footer--logo">
           <Image src="/logo-main.webp" alt="HTS-logo" width={170} height={70} />
           <p>THINK. BUILD. LAUNCH</p>
-            <div className="social--links">
-              <Link href="https://instagram.com/hack.the.space" target="_blank">
-                <GrInstagram />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/company/hackthespace/"
-                target="_blank"
-              >
-                <GrLinkedin />
-              </Link>
-              <Link href="https://twitter.com/HackTheSpace_" target="_blank">
-                <BsTwitterX />
-              </Link>
-              <Link href="https://discord.gg/FJKTSgdxPX" target="_blank">
-                <IoLogoDiscord />
-              </Link>
-            </div>
+          <div className="social--links">
+            <Link href="https://instagram.com/hack.the.space" target="_blank">
+              <GrInstagram />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/hackthespace/"
+              target="_blank"
+            >
+              <GrLinkedin />
+            </Link>
+            <Link href="https://twitter.com/HackTheSpace_" target="_blank">
+              <BsTwitterX />
+            </Link>
+            <Link href="https://discord.gg/FJKTSgdxPX" target="_blank">
+              <IoLogoDiscord />
+            </Link>
+          </div>
         </div>
         <div className="footer--contact">
           <h3 className="footer--title">Contact Us</h3>
