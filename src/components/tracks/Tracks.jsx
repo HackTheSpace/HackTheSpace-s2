@@ -23,10 +23,10 @@ const Tracks = () => {
           creativity, collaboration, and meaningful innovation among hackers.
         </Paragraph>
         <Paragraph>
-          HackTheSpace isn't just an event; it's a chance to Think, Build and
-          Launch. With diverse tracks covering cutting-edge tech, there's
+          HackTheSpace is not just an event; it is a chance to Think, Build and
+          Launch. With diverse tracks covering cutting-edge tech, there is
           something for everyone, from experts to newcomers. Join us on this
-          journey of discovery and problem-solving. Let's unleash tech's full
+          journey of discovery and problem-solving. Lets unleash tech full
           potential and make a lasting impact.
         </Paragraph>
       </div>
