@@ -26,7 +26,7 @@
 
 .hero-section__content {
   font-family: "Anton";
-  font-size: 8rem;
+  font-size: 7rem;
   line-height: 1;
   letter-spacing: 0.01em;
   padding-left: 40px;
@@ -47,24 +47,27 @@
 }
 
 .Date-Venue {
-  font-family: "Roboto", sans-serif;
   color: white;
   overflow: hidden;
   position: relative;
+  margin-top: 20px;
 }
 
 .Date-Venue > h6:nth-child(1) {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 2rem;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .Date-Venue > h6:nth-child(2) {
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   gap: 0.5rem;
   align-items: center;
   cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .Date-Venue > h6:nth-child(2):hover {
@@ -75,7 +78,7 @@
   display: flex;
   gap: 2rem;
   padding-right: 40px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .hero-section__buttons button {
@@ -167,6 +170,14 @@
     top: 90px;
     width: 65%;
   }
+
+  .Date-Venue > h6:nth-child(1) {
+    font-size: 1.8rem;
+  }
+  
+  .Date-Venue > h6:nth-child(2) {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -182,6 +193,14 @@
     font-size: 1.5rem;
   }
 
+  .Date-Venue > h6:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .Date-Venue > h6:nth-child(1) {
+    font-size: 1.5rem;
+  }
+  
   .Date-Venue > h6:nth-child(2) {
     font-size: 1rem;
   }
