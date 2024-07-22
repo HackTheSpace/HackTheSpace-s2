@@ -3,13 +3,15 @@
 import AboutUs from "@/components/AboutUs";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
-import Tracks from "@/components/Tracks";
+import Tracks from "@/components/tracks/Tracks";
 import WhatIsHTS from "@/components/WhatIsHTS";
 import PreLoader from "@/components/PreLoader";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import FAQsSection from "@/components/FAQs";
 import Footer from "@/components/Footer";
+import Image from "next/image";
+import Glimpse from "@/components/Glimpse";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +25,7 @@ export default function Home() {
     const timeout = setTimeout(() => {
       setIsLoading(false);
       window.scrollTo(0, 0);
-    }, 5700);
+    }, 3300);
     return () => {
       clearTimeout(timeout);
     };
@@ -35,11 +37,19 @@ export default function Home() {
         {isLoading && <PreLoader />}
       </AnimatePresence>
       <main>
+        <Image
+          src="/astronaut.svg"
+          alt="Astronaut"
+          width={500}
+          height={500}
+          className="hero-section__image"
+        />
         <Navbar />
         <HeroSection />
         <AboutUs />
         <WhatIsHTS />
         <Tracks />
+        <Glimpse/>
         <FAQsSection />
         <Footer />
       </main>

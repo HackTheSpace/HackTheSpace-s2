@@ -4,8 +4,19 @@
   display: flex;
   flex-direction: column;
   /* box-sizing: border-box; */
-  background-color: black;
+  position: relative;
 }
+
+.whatIs--section__background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.23;
+}
+
 .whatIs--image {
   margin-top: -8vw;
   margin-left: 5vw;
@@ -67,6 +78,8 @@
   font-family: "Anton";
   position: absolute;
   line-height: 5.546vw;
+  display: flex;
+  justify-content: center;
 }
 .whatIs-text__para {
   display: flex;
@@ -76,44 +89,37 @@
 }
 .whatIs-text__para p {
   width: 47.306vw;
-  text-align: end;
-
   font-family: "roboto";
   font-size: 1.3vw;
   line-height: 1.911vw;
   font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
 }
 
-@media screen and (max-width: 900px) {
-  .whatIs-text__para p {
-    width: 47.306vw;
-    text-align: end;
-
-    font-family: "roboto";
-    font-size: 1.7vw;
-    line-height: 2vw;
-    font-weight: 300;
-  }
+.whatIs-text__para p > span {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  margin-right: 4px;
 }
-@media screen and (max-width: 768px) {
-  .whatIs-text__para p {
-    width: 47.306vw;
-    text-align: end;
 
-    font-family: "roboto";
-    font-size: 2vw;
-    line-height: 2.5vw;
-    font-weight: 200;
-  }
+.whatIs-text__para1 > .word,
+.whatIs-text__para2 > .word {
+  position: relative;
+  margin-right: 12px;
 }
+
+
 @media screen and (max-width: 550px) {
   .whatIs-text__para p {
-    width: 47.306vw;
-    text-align: end;
-
-    font-family: "roboto";
     font-size: 2vw;
     line-height: 3vw;
-    font-weight: 100;
+  }
+
+  .whatIs-text__para1 > .word,
+  .whatIs-text__para2 > .word {
+    margin-right: 6px;
   }
 }

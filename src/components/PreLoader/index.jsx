@@ -18,87 +18,87 @@ export default function Index() {
   const [scope, animate] = useAnimate();
   const [scope2, animate2] = useAnimate();
   const [scope3, animate3] = useAnimate();
-  const [rocket, animate4] = useAnimate();
+  // const [rocket, animate4] = useAnimate();
 
   const myAnimation = async () => {
     animate(scope.current, special);
     animate("svg", svgAnimate);
     animate("p", animatedText);
-    animate(
-      scope.current,
-      {
-        x: "200vw",
-      },
-      {
-        duration: 0.8,
-        delay: 1.4,
-        ease: "easeOut",
-      }
-    );
+    // animate(
+    //   scope.current,
+    //   {
+    //     x: "200vw",
+    //   },
+    //   {
+    //     duration: 0.8,
+    //     delay: 1.4,
+    //     ease: "easeOut",
+    //   }
+    // );
 
-    animate4(
-      rocket.current,
-      {
-        rotateY: 720,
-      },
-      {
-        ease: "easeInOut",
-        duration: 1,
-      }
-    );
-    animate4(
-      rocket.current,
-      {
-        x: "0",
-        y: "-200vh",
-      },
-      {
-        duration: 1,
-        delay: 1.2,
-        ease: "easeOut",
-      }
-    );
+    // animate4(
+    //   rocket.current,
+    //   {
+    //     rotateY: 720,
+    //   },
+    //   {
+    //     ease: "easeInOut",
+    //     duration: 1,
+    //   }
+    // );
+    // animate4(
+    //   rocket.current,
+    //   {
+    //     x: "0",
+    //     y: "-200vh",
+    //   },
+    //   {
+    //     duration: 1,
+    //     delay: 1.2,
+    //     ease: "easeOut",
+    //   }
+    // );
   };
 
   const myAnimation2 = async () => {
     animate2(scope2.current, special);
     animate2("svg", svgAnimate);
     animate2("p", animatedText);
-    animate2(
-      scope2.current,
-      {
-        x: "200vw",
-      },
-      {
-        duration: 0.8,
-        delay: 1,
-        ease: "easeOut",
-      }
-    );
+    // animate2(
+    //   scope2.current,
+    //   {
+    //     x: "200vw",
+    //   },
+    //   {
+    //     duration: 0.8,
+    //     delay: 1,
+    //     ease: "easeOut",
+    //   }
+    // );
   };
 
   const myAnimation3 = async () => {
     animate3(scope3.current, special);
     animate3("svg", svgAnimate);
     animate3("p", animatedText);
-    animate3(
-      scope3.current,
-      {
-        x: "-200vw",
-      },
-      {
-        duration: 0.8,
-        delay: 0.6,
-        ease: "easeOut",
-      }
-    );
+    // animate3(
+    //   scope3.current,
+    //   {
+    //     x: "-200vw",
+    //   },
+    //   {
+    //     duration: 0.8,
+    //     delay: 0.6,
+    //     ease: "easeOut",
+    //   }
+    // );
   };
 
   useEffect(() => {
     const timeouts = [
-      setTimeout(() => myAnimation(), 4700),
-      setTimeout(() => myAnimation2(), 5100),
-      setTimeout(() => myAnimation3(), 5500),
+      setTimeout(() => myAnimation(), 2600),
+      setTimeout(() => myAnimation2(), 2900),
+      setTimeout(() => myAnimation3(), 3100),
     ];
 
     return () => timeouts.forEach((timeout) => clearTimeout(timeout));
@@ -122,8 +122,6 @@ export default function Index() {
           {/* HACK */}
           <div className="special" ref={scope}>
             <motion.svg
-              width="281"
-              height="130"
               viewBox="0 0 281 130"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -147,9 +145,7 @@ export default function Index() {
           {/* THE */}
           <div className="special" ref={scope2}>
             <motion.svg
-              width="189"
-              height="127"
-              viewBox="0 0 189 127"
+              viewBox="0 0 281 130"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="item"
@@ -168,14 +164,10 @@ export default function Index() {
             </motion.svg>
             <p className="animated__text">BUILD</p>
           </div>
-        </div>
-        {/* SPACE */}
-        <div className="preloader__text">
+          {/* SPACE */}
           <div className="special" ref={scope3}>
             <motion.svg
-              width="332"
-              height="130"
-              viewBox="0 0 332 130"
+              viewBox="0 0 281 130"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="item"
@@ -194,7 +186,10 @@ export default function Index() {
             </motion.svg>
             <p className="animated__text">LAUNCH</p>
           </div>
-          <Image
+        </div>
+
+        {/* <div className="preloader__text">
+           <Image
             src="/rocket.png"
             alt="rocket"
             width={100}
@@ -203,8 +198,8 @@ export default function Index() {
             ref={rocket}
             initial="initial"
             animate="animate"
-          />
-        </div>
+          /> 
+        </div> */}
       </motion.div>
     </motion.section>
   );

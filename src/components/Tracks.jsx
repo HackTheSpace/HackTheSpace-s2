@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import Heading from "./Heading";
 
 const Tracks = () => {
   return (
     <div className="Track-section">
       <div className="heading">
         <h1 className="heading-shadow">TRACKS</h1>
-        <h2 className="heading-small ">TRACKS</h2>
+        <Heading className="heading-small">TRACKS</Heading>
       </div>
       <div className="tracks-container">
         <div className="box-bundle">
@@ -30,6 +31,7 @@ const Tracks = () => {
                 src="VR.svg"
                 alt="VR"
                 width={80}
+                y
                 height={80}
                 className="icon"
               />

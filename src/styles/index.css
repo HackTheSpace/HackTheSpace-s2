@@ -1,0 +1,40 @@
+.section {
+  height: 100%;
+  color: var(--white);
+  scroll-margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.heading-container {
+  text-align: center;
+  position: relative;
+  height: 20.798vw;
+  z-index: 2;
+}
+
+.section-title {
+  width: 100%;
+  top: 11.806vw;
+  font-size: 5.556vw;
+  font-weight: 400;
+  font-family: "Anton";
+  position: absolute;
+  line-height: 5.546vw;
+  display: flex;
+  justify-content: center;
+}
+
+.title-shadow {
+  font-family: "Anton";
+  width: 100%;
+  color: rgba(255, 255, 255, 0.16);
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.833vw;
+  line-height: 20.798vw;
+}

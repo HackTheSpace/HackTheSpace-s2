@@ -1,9 +1,26 @@
 .hero-section {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-section__background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+  transform: scaleY(-1);
+}
+
+.hero-section > div {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
-  padding-top: 200px;
   width: 100vw;
+  padding-top: 170px;
+  height: 100%;
   position: relative;
 }
 
@@ -19,7 +36,7 @@
   font-weight: 400;
 }
 
-.hero-section__content > div {
+.hero-section__content > div:nth-child(2) {
   display: flex;
   gap: 1rem;
 }
@@ -29,20 +46,45 @@
   -webkit-text-stroke: 1.5px white;
 }
 
+.Date-Venue {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.Date-Venue > h6:nth-child(1) {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.Date-Venue > h6:nth-child(2) {
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Date-Venue > h6:nth-child(2):hover {
+  text-decoration: underline;
+}
+
 .hero-section__buttons {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   padding-right: 40px;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .hero-section__buttons button {
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
   width: 11.60194rem;
-  height: 4.02519rem;
+  height: 4rem;
   flex-shrink: 0;
   border: none;
   position: relative;
@@ -53,7 +95,13 @@
 
 .hero-section__buttons button a {
   text-decoration: none;
+  width: 100%;
+  height: 100%;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
 }
 
 .hero-section__buttons button:nth-child(1) {
@@ -112,7 +160,7 @@
   .hero-section__buttons button {
     width: 9.60194rem;
     height: 3.02519rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .hero-section__image {
@@ -129,6 +177,14 @@
   .hero-section__image {
     width: 70%;
   }
+
+  .Date-Venue > h6:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .Date-Venue > h6:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -141,14 +197,26 @@
     font-size: 4.5rem;
   }
 
+  .Date-Venue > h6:nth-child(1) {
+    font-size: 1.2rem;
+  }
+
+  .Date-Venue > h6:nth-child(2) {
+    font-size: 0.9rem;
+  }
+
+  .hero-section__buttons {
+    margin-top: 30px;
+  }
+
   .hero-section__buttons button {
     width: 7.60194rem;
-    height: 2.02519rem;
-    font-size: 1rem;
+    height: 2.3rem;
+    font-size: 0.8rem;
   }
 
   .hero-section__image {
-    display: none;
+    width: 90%;
   }
 }
 
@@ -157,9 +225,39 @@
     font-size: 3.5rem;
   }
 
+  .Date-Venue > h6:nth-child(1) {
+    font-size: 1rem;
+  }
+
+  .Date-Venue > h6:nth-child(2) {
+    font-size: 0.8rem;
+  }
+
   .hero-section__buttons button {
     width: 6.60194rem;
-    height: 1.52519rem;
-    font-size: 0.8rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .hero-section__image {
+    display: none;
+  }
+
+  .hero-section__content {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (min-height: 800px) and (max-width: 450px) {
+  .hero-section__content {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-height: 550px) and (min-width: 500px) {
+  .hero-section__image {
+    display: block;
   }
 }

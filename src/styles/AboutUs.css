@@ -4,7 +4,6 @@
   height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-  margin: 0 20px;
 }
 
 .heading1 {
@@ -15,6 +14,7 @@
   font-family: "anton", sans-serif;
   letter-spacing: 0.5vw;
   width: 100%;
+  display: flex;
 }
 
 .heading2 {
@@ -23,6 +23,7 @@
   margin-top: -11vw;
   position: absolute;
   margin-left: 4.5%;
+  display: flex;
 }
 
 .heading3 {
@@ -31,6 +32,7 @@
   margin-left: 4.5%;
   font-size: 2vw;
   font-family: "anton", sans-serif;
+  display: flex;
 }
 
 .ParaDiv1,
@@ -38,22 +40,46 @@
   margin-bottom: 20px;
   margin-left: 5%;
   line-height: 1.5;
-  font-size: 1.3vw;
+  font-size: 1.2rem;
   text-align: justify;
   font-family: "roboto";
+  position: relative;
 }
 
-.ParaDiv1 {
-  width: 40%;
-  font-size: 16px;
+.ParaDiv1 > p,
+.ParaDiv2 > p {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ParaDiv1 > p > span,
+.ParaDiv2 > p > span {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  margin-right: 4px;
+}
+
+.ParaDiv1 .word,
+.ParaDiv2 .word {
+  position: relative;
+  margin-right: 12px;
+}
+
+.word .shadow {
+  position: absolute;
+  opacity: 20%;
 }
 
 .ParaDiv2 {
   width: 80%;
-  font-size: 16px;
 }
 
 @media (max-width: 768px) {
+  .AboutUsDiv {
+    height: 70vh;
+  }
+
   .heading1 {
     font-size: 20vw;
     margin-left: 1%;
@@ -73,7 +99,7 @@
 
   .ParaDiv1,
   .ParaDiv2 {
-    font-size: 2vw;
+    font-size: 0.9rem;
     margin-left: 5%;
   }
   .ParaDiv1 {
@@ -104,8 +130,14 @@
 
   .ParaDiv1,
   .ParaDiv2 {
-    font-size: 3vw;
+    font-size: 0.7rem;
     margin-left: 5%;
-    width: 80%;
+    width: 90%;
+  }
+}
+
+@media (min-height: 780px) and (max-width: 500px) {
+  .AboutUsDiv {
+    height: 55vh;
   }
 }
