@@ -43,7 +43,6 @@ export default function Home() {
       window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
-  console.log("framer ")
   const handleMouseEnter = () => setIsHovering(true);
   const handleMouseLeave = () => setIsHovering(false);
 
@@ -65,7 +64,6 @@ export default function Home() {
           },
         }
       : { x: 0, y: 0 },
-
   };
 
   return (
