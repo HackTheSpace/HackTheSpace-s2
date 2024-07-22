@@ -35,7 +35,7 @@ const Navbar = () => {
       transition: {
         duration: 0.75,
         ease: [0.33, 1, 0.68, 1],
-        delay: 5.5,
+        delay: 5,
       },
     },
   };
