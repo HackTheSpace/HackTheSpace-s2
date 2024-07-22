@@ -28,15 +28,35 @@ nav {
   transform: translateX(-50%);
 }
 
-.nav__links--scrolled{
+.nav__links--scrolled {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 50px;
-  padding: 15px 40px;
+  padding: 7px 40px;
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.8));
   transition: all 1s;
+  top: 30px;
+  padding-right: 7px;
 }
 
-.nav__links li{
+.sponsor-us {
+  background: #592ee1;
+  border-radius: 50px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.sponsor-us a {
+  color: white;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  text-decoration: none;
+}
+
+.sponsor-us:hover {
+  background: #4c26b8;
+}
+
+.nav__links li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +65,7 @@ nav {
 .nav__links a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  color: white; 
+  color: white;
   width: max-content;
 }
 .mlh-flag {
@@ -86,7 +106,7 @@ nav {
     margin-right: 0px;
   }
 
-  .nav__links--scrolled{
+  .nav__links--scrolled {
     border-radius: 0;
     filter: none;
   }
@@ -122,5 +142,9 @@ nav {
   #hamburger {
     width: 30px;
     height: 30px;
+  }
+
+  .sponsor-us {
+    padding: 12px 10px;
   }
 }

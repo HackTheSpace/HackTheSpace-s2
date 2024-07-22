@@ -71,14 +71,14 @@ const Navbar = () => {
         />
       </Link>
 
-      <button className="nav__toggle" onClick={() => setHamBurger(true)}>
+      <button className="nav__toggle" onClick={() => setHamBurger(!HamBurger)}>
         <Image
           src={HamBurger ? "/close-64.png" : "/hamburger-48.png"}
           width={40}
           height={40}
           alt="toggle"
           id="hamburger"
-          onClick={() => setHamBurger(false)}
+          // onClick={() => setHamBurger(true)}
         />
       </button>
 
@@ -114,6 +114,11 @@ const Navbar = () => {
         <li>
           <Link href="#footer" onClick={handleScroll}>
             Contact
+          </Link>
+        </li>
+        <li className="sponsor-us">
+          <Link href="https://bit.ly/HTS-SU" target="https://bit.ly/HTS-SU">
+            Sponsor Us
           </Link>
         </li>
       </ul>
