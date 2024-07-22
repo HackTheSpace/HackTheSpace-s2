@@ -6,7 +6,7 @@ export const faqsQuestions = {
         {
           id: "1",
           Q: 'When and where will "HackTheSpace" take place?',
-          A: "Hackathon begins on 27th September 2023 at 10:00 AM to 28th September 2024 at Shri Shankaracharya Technical Campus, Bhilai, Chhattisgarh, 490020",
+          A: "Hackathon begins on 27th September 2024 at 10:30 AM to 28th September 2024 at Shri Shankaracharya Technical Campus, Bhilai, Chhattisgarh, 490020",
         },
         {
           id: "2",
@@ -46,7 +46,7 @@ export const faqsQuestions = {
         {
           id: "8",
           Q: "Number of hours hackathon is going to last?",
-          A: "The hackathon will last for 24 hours from 11:00 AM on 8th September to 11:00 AM on 9th September",
+          A: "The hackathon will last for 24 hours from 10:30 AM on 27th September to 11:30 AM on 28th September",
         },
         {
           id: "9",

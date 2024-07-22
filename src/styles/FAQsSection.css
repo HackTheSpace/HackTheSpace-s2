@@ -64,9 +64,10 @@
   height: auto;
   margin: 1vw 0;
   padding: 10px;
-  background: rgba(28, 46, 70, 0.5);
+  background: #0e1723b0;
   border: 1px solid #666666;
   position: relative;
+  opacity: 80%;
 }
 
 .question--box::before,
@@ -75,6 +76,7 @@
   position: absolute;
   background-color: #0e1723b0;
   z-index: 0;
+  opacity: 90%;
 }
 
 .question--box::before {
