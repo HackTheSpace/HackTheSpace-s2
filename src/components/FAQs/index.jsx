@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import FAQsQuesComp from "./faqsQuestions";
 import { faqsQuestions } from "../../config/questions";
 import Heading from "../Heading";
+import { useRef } from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 const FAQsColComponent = ({ children }) => {
   return <div className="faqs--col">{children}</div>;
@@ -13,8 +15,18 @@ const FAQsSection = () => {
   const { data } = faqsQuestions;
   const [toggle, setToggle] = useState(null);
 
+  const container = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: container,
+
+    offset: ["start end", "end start"],
+  });
+
+  const height = useTransform(scrollYProgress, [0, 0.9], [40, 0]);
+
   return (
-    <section id="faqs" className="faqs--section">
+    <section ref={container} className="faqs--section">
       <div className="faqs--text">
         <div className="faqs--text__container">
           <h1 className="faqs--text__shadow">FAQs</h1>
@@ -38,6 +50,9 @@ const FAQsSection = () => {
           </FAQsColComponent>
         ))}
       </div>
+      <motion.div style={{ height }} className="circleContainer">
+        <div className="circle"></div>
+      </motion.div>
     </section>
   );
 };

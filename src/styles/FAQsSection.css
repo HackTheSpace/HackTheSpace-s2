@@ -1,6 +1,8 @@
 .faqs--section {
   box-sizing: border-box;
   background-color: black;
+  position: relative;
+  z-index: 1;
 }
 .faqs--text {
   display: flex;
@@ -143,6 +145,23 @@
   transition: max-height 1000ms ease-out, margin 400ms ease-out,
     opacity 800ms ease-out;
 }
+
+.circleContainer {
+  position: relative;
+  margin-top: 100px;
+}
+
+.circle {
+  height: 500%;
+  width: 120%;
+  left: -10%;
+  border-radius: 0 0 50% 50%;
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0px 60px 50px rgba(29, 29, 29, 0.397);
+}
+
 .question p {
   width: 95%;
 }
