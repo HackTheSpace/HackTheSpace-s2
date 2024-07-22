@@ -8,7 +8,7 @@
   margin-bottom: 30vw;
 }
 
-.Track-section__background{
+.Track-section__background {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@
   opacity: 0.23;
 }
 
-.Track-section__background2{
+.Track-section__background2 {
   position: absolute;
   bottom: -130%;
   right: -35%;
@@ -26,6 +26,12 @@
   height: 150%;
   z-index: 1;
   opacity: 0.9;
+}
+.spaceship {
+  position: absolute;
+  left: 30%;
+  top: 125%;
+  rotate: -20deg;
 }
 
 .heading {
@@ -93,7 +99,7 @@ img {
 
 .tracks-container {
   width: 100%;
-  padding-top: 2vw;
+  /* padding-top: 2vw; */
   display: flex;
   flex-direction: row;
   z-index: 2;
@@ -109,7 +115,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* padding-inline: 5%; */
+  /* padding-inline:  */
 }
 
 /* .box-bundle:nth-child(1) {
@@ -129,17 +135,19 @@ img {
   height: 100%;
   overflow: hidden;
   margin-inline: 2%;
+  opacity: 80%;
 }
 
 .vertical-box {
-  height: 100%;
-  width: 40%;
+  height: 1vw;
+  width: 16vw;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: space-around;
   z-index: 4;
+  opacity: 80%;
 }
 .horizontal-box {
   display: flex;
@@ -147,8 +155,8 @@ img {
   align-items: center;
   justify-content: space-between;
 
-  width: 100%;
-  height: 46%;
+  width: 25vw;
+  height: 10vw;
 }
 .vertical-box:hover {
   rotate: 2deg;
@@ -214,31 +222,49 @@ img {
     height: calc(100% + 2px * 2 - 30px);
   }
 }
-@media screen and (max-width: 500px) {
-
-  .Track-section__background2{
-    bottom: -80%;
-    height: 100%;
+@media screen and (max-width: 650px) {
+  .spaceship {
+    left: 20%;
+    top: 110%;
   }
-  
+}
+@media screen and (max-width: 500px) {
+  .spaceship {
+    position: absolute;
+    left: 10%;
+    top: 110%;
+    rotate: -20deg;
+    height: 15%;
+    width: 15%;
+  }
+  .Track-section__background2 {
+    bottom: -80%;
+    right: -40%;
+    height: 100%;
+    width: 112%;
+  }
+
   .tracks-container {
     flex-direction: column;
+    padding-top: 2vw;
     gap: 2vw;
+    /* justify-content: center;
+    align-items: center; */
   }
   .box-bundle {
-    width: 80%;
-    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    width: 100%;
   }
-  .tracks-container {
-    padding-top: 10vw;
-    /* align-items: center; */
-  }
+
   /* .box-bundle:nth-child(2) {
     width: 60%;
     margin-inline: 10.5%;
   } */
   .horizontal-container {
-    width: 50%;
+    width: 40vw;
+    /* background-color: red; */
   }
 
   /* .box-bundle:nth-child(1),
@@ -252,12 +278,15 @@ img {
   .text {
     font-size: 1.8vw;
   }
+  .horizontal-box {
+    width: 40vw;
+    height: 15vw;
+  }
   .vertical-box {
-    width: 30%;
-    margin-left: 2%;
-    margin-right: 20%;
+    width: 21vw;
   }
   .tracks-para p {
+    /* font-size: ; */
     width: 70%;
   }
 }

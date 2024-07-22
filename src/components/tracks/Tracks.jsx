@@ -7,9 +7,6 @@ import Paragraph from "../Paragraph";
 import { useInView } from "framer-motion";
 
 const Tracks = () => {
-  const ref = useRef(null);
-  const inView = useInView(ref);
-  // console.log(inView);
   return (
     <section id="tracks" className="Track-section">
       <Image
@@ -39,23 +36,8 @@ const Tracks = () => {
         </Paragraph>
       </div>
       <div className="tracks-container">
-        <div className="box-bundle" ref={ref}>
-          <HorizontalBox
-            title1={"Open Innovation"}
-            title2={"Security & Audits"}
-            inView={true}
-            img1={"open.svg"}
-            img2={"security.svg"}
-          />
-          <HorizontalBox
-            title1={"Generative AI & Machine Learning"}
-            title2={"Augumented & Vertual Reality "}
-            inView={true}
-            img1={"AI - ML.svg"}
-            img2={"VR.svg"}
-          />
-        </div>
-        <div className="box-bundle" ref={ref}>
+        <div className="box-bundle">
+          <VerticalBox title={"Open Innovation"} img={"idea.svg"} />
           <HorizontalBox
             title1={"Internet Of Things"}
             title2={"Cloud & Devops"}
@@ -63,9 +45,25 @@ const Tracks = () => {
             img1={"IOT.svg"}
             img2={"Cloud.svg"}
           />
+        </div>
+        <div className="box-bundle">
           <VerticalBox title={"Open Innovation"} img={"idea.svg"} />
+          <HorizontalBox
+            title1={"Internet Of Things"}
+            title2={"Cloud & Devops"}
+            inView={true}
+            img1={"IOT.svg"}
+            img2={"Cloud.svg"}
+          />
         </div>
       </div>
+      <Image
+        src="/images/backgrounds/bg_5.png"
+        alt="spaceship"
+        width={120}
+        height={120}
+        className="spaceship"
+      />
       <Image
         src="/images/backgrounds/bg_4.png"
         alt="Background"
