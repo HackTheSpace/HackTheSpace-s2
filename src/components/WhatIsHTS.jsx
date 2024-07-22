@@ -7,7 +7,7 @@ import Paragraph from "./Paragraph";
 const WhatIsHTS = () => {
   return (
     <section className="whatIs--section">
-      <div className="whatIs--image">
+      {/* <div className="whatIs--image">
         <Image
           src="/s1-image.jfif"
           alt="s1-images"
@@ -30,7 +30,7 @@ const WhatIsHTS = () => {
             height={322}
           />
         </div>
-      </div>
+      </div> */}
       <div className="whatIs-container">
         {/* <div className="whatIs-image__container"> */}
         <Image

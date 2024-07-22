@@ -11,9 +11,10 @@
 
 .preloader__content {
   display: flex;
-  flex-direction: column;
   gap: 1rem;
   align-items: start;
+  justify-content: center;
+  width: 100vw;
 }
 
 .preloader__text {
@@ -22,6 +23,8 @@
   align-items: center;
   gap: 1rem;
   position: relative;
+  width: 50%;
+  height: 100%;
 }
 
 .special {
@@ -31,11 +34,13 @@
   z-index: 1;
   cursor: pointer;
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .animated__text {
   font-family: "Anton";
-  font-size: 8rem;
+  font-size: 7rem;
   line-height: 1;
   letter-spacing: 0.01em;
   font-weight: 400;
@@ -43,8 +48,12 @@
   transform-origin: bottom center;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 7%;
   opacity: 0;
+}
+
+.launch-text {
+  margin-left: 90px;
 }
 
 .special svg {
@@ -68,21 +77,55 @@
   right: -170px;
   z-index: 1;
 }
+@media screen and (max-width: 1500px) {
+  .animated__text {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .animated__text {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .animated__text {
+    font-size: 4rem;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .animated__text {
     transform: rotateX(-90deg) translateY(6.5vw);
+    font-size: 3.5rem;
   }
 }
 
 @media screen and (max-width: 750px) {
+  .animated__text {
+    font-size: 3rem;
+  }
+
   .rocket {
     margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   .animated__text {
-    transform: rotateX(-90deg) translateY(10.5vw);
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .preloader__text {
+    width: 100%;
+  }
+
+  .animated__text {
+    transform: rotateX(-90deg) translateY(6.5vw);
+    font-size: 3rem;
+    left: 0;
   }
 }
