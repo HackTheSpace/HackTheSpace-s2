@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <>
       <div className="border--container"></div>
-      <motion.footer style={{ y }} ref={container} className="footer--section">
+      <motion.footer style={{ y }} ref={container} className="footer--section" id="footer">
         <div className="footer--docs">
           <h3 className="footer--title"> Explore </h3>
           <ul className="footer--docs__list">

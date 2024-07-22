@@ -3,7 +3,8 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { MdArrowOutward } from "react-icons/md"
+import { MdArrowOutward } from "react-icons/md";
+import Image from "next/image";
 
 const ThreeScene = dynamic(() => import("@/components/ThreeScene"), {
   ssr: false,
@@ -46,6 +47,15 @@ const HeroSection = () => {
   return (
     <section id="home" className="hero-section">
       <ThreeScene />
+      <Image
+        src="/images/backgrounds/bg_2.jpg"
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        priority
+        className="hero-section__background"
+      />
       <motion.div style={{ y }}>
         <div className="hero-section__content">
           <div
@@ -99,7 +109,12 @@ const HeroSection = () => {
               variants={buttonAnimation}
               initial="initial"
               animate="enter"
-              onClick={() => window.open("https://maps.app.goo.gl/4mAvhnY6f3gbt6ns7", "_blank")}
+              onClick={() =>
+                window.open(
+                  "https://maps.app.goo.gl/4mAvhnY6f3gbt6ns7",
+                  "_blank"
+                )
+              }
             >
               Shri Shankaracharya Technical Campus, Bhilai, IN
               <MdArrowOutward />
@@ -111,7 +126,9 @@ const HeroSection = () => {
               initial="initial"
               animate="enter"
             >
-              <Link href="/register">DEVFOLIO</Link>
+              <Link href="https://www.hackquest.io/en/hackathon/explore/HackTheSpace-Season-2">
+                REGISTER NOW
+              </Link>
             </motion.button>
             <motion.button
               variants={buttonAnimation}

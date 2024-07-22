@@ -48,8 +48,8 @@ export default function Home() {
         <HeroSection />
         <AboutUs />
         <WhatIsHTS />
-        <Glimpse/>
         <Tracks />
+        <Glimpse/>
         <FAQsSection />
         <Footer />
       </main>

@@ -30,8 +30,8 @@ canvas {
   height: 100%;
   z-index: -99;
   background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(119, 119, 119, 0.582) 0%,
+    50% 100% at 100% 100%,
+    rgba(233, 114, 16, 0.363) 0%,
     rgba(0, 0, 0, 0.2) 100%
   );
 }

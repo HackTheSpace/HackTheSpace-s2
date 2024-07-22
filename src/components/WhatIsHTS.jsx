@@ -7,6 +7,13 @@ import Paragraph from "./Paragraph";
 const WhatIsHTS = () => {
   return (
     <section className="whatIs--section">
+    <Image
+        src="/images/backgrounds/bg_1.jpg"
+        alt="Background"
+        layout="fill"
+        quality={100}
+        className="whatIs--section__background"
+      />
       {/* <div className="whatIs--image">
         <Image
           src="/s1-image.jfif"
