@@ -48,11 +48,22 @@
   align-items: center;
   margin-block: 10vh;
 }
-.whatIs-moon__image {
-  width: 65vw;
+.whatIs-moon__container {
+  position: relative; 
+  width: 65vw; 
   height: 65vw;
   margin-left: -26vw;
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
 }
+
+.whatIs-moon__image {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+}
+
+
 
 .whatIs-text__main {
   text-align: center;

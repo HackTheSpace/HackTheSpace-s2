@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import "../styles/WhatIsHTS.css";
 import Heading from "./Heading";
 import Paragraph from "./Paragraph";
@@ -7,47 +8,34 @@ import Paragraph from "./Paragraph";
 const WhatIsHTS = () => {
   return (
     <section className="whatIs--section">
-    <Image
+      <Image
         src="/images/backgrounds/bg_1.jpg"
         alt="Background"
         layout="fill"
         quality={100}
         className="whatIs--section__background"
       />
-      {/* <div className="whatIs--image">
-        <Image
-          src="/s1-image.jfif"
-          alt="s1-images"
-          width={442}
-          height={654}
-          className="whatIs-image__1"
-        />
-
-        <div className="whatIs-image__2">
-          <Image
-            src="/s1-image.jfif"
-            alt="s1-images"
-            width={575}
-            height={322}
-          />
-          <Image
-            src="/s1-image.jfif"
-            alt="s1-images"
-            width={606.17}
-            height={322}
-          />
-        </div>
-      </div> */}
       <div className="whatIs-container">
-        {/* <div className="whatIs-image__container"> */}
-        <Image
-          src="/moon.png"
-          alt="moon"
-          width={1036}
-          height={1036}
-          className="whatIs-moon__image"
-        />
-        {/* </div> */}
+        <motion.div
+          className="whatIs-moon__container"
+          animate={{
+            rotate: [0, 360], 
+          }}
+          transition={{
+            duration: 80, 
+            ease: "linear", 
+            repeat: Infinity,
+          }}
+          style={{ originX: 0.5, originY: 0.5 }} 
+        >
+          <Image
+            src="/moon.png"
+            alt="moon"
+            className="whatIs-moon__image"
+            width={1036}
+            height={1036}
+          />
+        </motion.div>
 
         <div className="whatIs-text__container">
           <div className="whatIs-text__main">

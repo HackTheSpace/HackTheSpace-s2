@@ -145,10 +145,11 @@
 
 .hero-section__image {
   position: absolute;
-  right: 0;
+  right: -50px;
   top: 50px;
   width: 60%;
   height: 160%;
+  z-index: 1;
 }
 
 @media screen and (max-width: 900px) {
