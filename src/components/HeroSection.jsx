@@ -95,25 +95,28 @@ const HeroSection = () => {
               2.0
             </motion.h1>
           </div>
-         
+
           <motion.div className="hero-section__buttons">
             <motion.button
               variants={buttonAnimation}
               initial="initial"
               animate="enter"
-              disabled
             >
-{/*               <Link href="https://www.hackquest.io/en/hackathon/explore/HackTheSpace-Season-2" target="_blank">
+              <Link
+                href="https://www.hackquest.io/en/hackathon/explore/HackTheSpace-Season-2"
+                target="_blank"
+              >
                 REGISTER NOW
-              </Link> */}
-              Opening Soon
+              </Link>
             </motion.button>
             <motion.button
               variants={buttonAnimation}
               initial="initial"
               animate="enter"
             >
-              <Link href="https://discord.gg/FJKTSgdxPX" target="_blank">DISCORD</Link>
+              <Link href="https://discord.gg/FJKTSgdxPX" target="_blank">
+                DISCORD
+              </Link>
             </motion.button>
           </motion.div>
           <div className="Date-Venue">
@@ -137,7 +140,7 @@ const HeroSection = () => {
                 )
               }
             >
-             SHRI SHANKARACHARYA TECHNICAL CAMPUS, BHILAI, CHHATTISGARH, INDIA
+              SHRI SHANKARACHARYA TECHNICAL CAMPUS, BHILAI, CHHATTISGARH, INDIA
               {/* <MdArrowOutward /> */}
             </motion.h6>
           </div>
