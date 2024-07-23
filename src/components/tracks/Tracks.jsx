@@ -31,8 +31,8 @@ const Tracks = () => {
           HackTheSpace is not just an event; it is a chance to Think, Build and
           Launch. With diverse tracks covering cutting-edge tech, there is
           something for everyone, from experts to newcomers. Join us on this
-          journey of discovery and problem-solving. Lets unleash tech full
-          potential and make a lasting impact.
+          journey of discovery and problem-solving. Let&apos;s unleash
+          tech&apos;s full potential and make a lasting impact.
         </Paragraph>
       </div>
       <div className="tracks-container">

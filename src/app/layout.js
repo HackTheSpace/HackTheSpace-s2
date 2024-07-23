@@ -1,8 +1,36 @@
 import "@/styles/globals.css";
 
 export const metadata = {
-  title: "Hack The Space",
-  description: "Think Build Launch",
+  title: "Hack The Space 2.0",
+  description:
+    "Hack The Space is an exciting 24-hour offline hackathon for all the nerds out there✨. Empowering young minds😇. Turn Ideas into Impact!🚀 that takes place in Bhilai, Chhattisgarh",
+  openGraph: {
+    title: "Hack The Space 2.0",
+    description:
+      "Hack The Space is an exciting 24-hour offline hackathon for all the nerds out there✨. Empowering young minds😇. Turn Ideas into Impact!🚀 that takes place in Bhilai, Chhattisgarh",
+    siteName: "Hack The Space 2.0",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dmwxnrn8o/image/upload/b_rgb:000000/v1686922356/hackthespace/logo-main_lrdsjp.webp,",
+        width: 2000,
+        height: 1000,
+        alt: "Hack The Space 2.0",
+      },
+    ],
+  },
+  twitter: {
+    title: "Hack The Space 2.0",
+    description:
+      "Hack The Space is an exciting 24-hour offline hackathon for all the nerds out there✨. Empowering young minds😇. Turn Ideas into Impact!🚀 that takes place in Bhilai, Chhattisgarh",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dmwxnrn8o/image/upload/b_rgb:000000/v1686922356/hackthespace/logo-main_lrdsjp.webp,",
+        width: 2000,
+        height: 1000,
+        alt: "Hack The Space 2.0",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
