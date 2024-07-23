@@ -25,7 +25,7 @@ const AboutUs = () => {
           tech enthusiasts and career aspirants equal opportunities and exposure
           as people in metro cities or all around the world get! We are
           determined to cultivate an ambiance where individuals can coact to
-          creat an inclusive environment to devise, grasp and develop solutions.
+          create an inclusive environment to devise, grasp and develop solutions.
           Our motive is not only concerned with technical but also cultural
           development. As a team of aspirants we welcome growth as a part of our
           journey.

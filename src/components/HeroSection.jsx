@@ -102,7 +102,7 @@ const HeroSection = () => {
               initial="initial"
               animate="enter"
             >
-              <Link href="https://www.hackquest.io/en/hackathon/explore/HackTheSpace-Season-2">
+              <Link href="https://www.hackquest.io/en/hackathon/explore/HackTheSpace-Season-2" target="_blank">
                 REGISTER NOW
               </Link>
             </motion.button>
@@ -111,7 +111,7 @@ const HeroSection = () => {
               initial="initial"
               animate="enter"
             >
-              <Link href="/register">DISCORD</Link>
+              <Link href="https://discord.gg/FJKTSgdxPX" target="_blank">DISCORD</Link>
             </motion.button>
           </motion.div>
           <div className="Date-Venue">
