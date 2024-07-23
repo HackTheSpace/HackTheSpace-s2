@@ -101,10 +101,11 @@ const HeroSection = () => {
               variants={buttonAnimation}
               initial="initial"
               animate="enter"
+              disabled
             >
-              <Link href="https://www.hackquest.io/en/hackathon/explore/HackTheSpace-Season-2" target="_blank">
+{/*               <Link href="https://www.hackquest.io/en/hackathon/explore/HackTheSpace-Season-2" target="_blank">
                 REGISTER NOW
-              </Link>
+              </Link> */}
             </motion.button>
             <motion.button
               variants={buttonAnimation}
