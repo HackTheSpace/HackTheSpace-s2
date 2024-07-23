@@ -106,6 +106,7 @@ const HeroSection = () => {
 {/*               <Link href="https://www.hackquest.io/en/hackathon/explore/HackTheSpace-Season-2" target="_blank">
                 REGISTER NOW
               </Link> */}
+              Opening Soon
             </motion.button>
             <motion.button
               variants={buttonAnimation}
