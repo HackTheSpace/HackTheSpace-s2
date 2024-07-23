@@ -5,11 +5,12 @@ import Image from "next/image";
 const HorizontalBox = ({ title1, title2, img1, img2 }) => {
   const ref = useRef(null);
   const inView = useInView(ref);
+  // const inView = true;
   const animation = {
     visible: {
       rotate: 0,
       x: 0,
-      transition: { duration: 0.5, delay: 0.25 },
+      transition: { duration: 0.5, delay: 1 },
     },
     rotate: {
       y: "0%",
@@ -17,7 +18,7 @@ const HorizontalBox = ({ title1, title2, img1, img2 }) => {
 
       transition: {
         duration: 0.3,
-        delay: 0.725,
+        delay: 1.5,
         type: "spring",
         stiffness: 500,
         damping: 30,
@@ -42,10 +43,10 @@ const HorizontalBox = ({ title1, title2, img1, img2 }) => {
       <motion.div
         key="2"
         variants={animation}
-        initial={{ y: "-220%", rotate: -10 }}
+        initial={{ y: "-222%", rotate: -10 }}
         animate={inView ? "rotate" : ""}
         className="horizontal-box tracks-box"
-        style={{ zIndex: 1, transformOrigin: "bottom left" }}
+        style={{ zIndex: 2, transformOrigin: "bottom left" }}
       >
         <Image src={img2} alt="IOT" width={80} height={80} className="icon" />
         <h3 className="text">{title2}</h3>
