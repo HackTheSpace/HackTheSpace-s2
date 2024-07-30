@@ -22,22 +22,32 @@ const Tracks = () => {
       </div>
       <div className="tracks-para">
         <Paragraph>
-          HackTheSpace features a variety of tracks, each designed to
-          guide hackers to tackle specific challenges. By offering diverse
-          tracks, we cater to a wide range of interests and expertise, fostering
+          HackTheSpace features a variety of tracks, each designed to guide
+          hackers to tackle specific challenges. By offering diverse tracks, we
+          cater to a wide range of interests and expertise, fostering
           creativity, collaboration, and meaningful innovation among hackers.
         </Paragraph>
         <Paragraph>
           HackTheSpace is not just an event; it is a chance to Think, Build and
           Launch. With diverse tracks covering cutting-edge tech, there is
           something for everyone, from experts to newcomers. Join us on this
-          journey of discovery and problem-solving. Lets unleash tech full
-          potential and make a lasting impact.
+          journey of discovery and problem-solving. Let&apos;s unleash
+          tech&apos;s full potential and make a lasting impact.
         </Paragraph>
       </div>
       <div className="tracks-container">
         <div className="box-bundle">
-          <VerticalBox title={"Open Innovation"} img={"idea.svg"} />
+          <VerticalBox title={"Blockchain & Crypto"} img={"open.svg"} />
+          <HorizontalBox
+            title1={"Generative AI & machine Learning"}
+            title2={"Augmented & virtual Reality"}
+            inView={true}
+            img1={"AI - ML.svg"}
+            img2={"VR.svg"}
+          />
+        </div>
+        <div className="box-bundle">
+          <VerticalBox title={"Security & Audits"} img={"security.svg"} />
           <HorizontalBox
             title1={"Internet Of Things"}
             title2={"Cloud & Devops"}
@@ -48,13 +58,6 @@ const Tracks = () => {
         </div>
         <div className="box-bundle">
           <VerticalBox title={"Open Innovation"} img={"idea.svg"} />
-          <HorizontalBox
-            title1={"Internet Of Things"}
-            title2={"Cloud & Devops"}
-            inView={true}
-            img1={"IOT.svg"}
-            img2={"Cloud.svg"}
-          />
         </div>
       </div>
       <Image

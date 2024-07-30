@@ -31,15 +31,16 @@ const Footer = () => {
           <h3 className="footer--title"> Explore </h3>
           <ul className="footer--docs__list">
             <li>
-              <Link href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">
+              <Link href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">
                 MLH code of conduct
               </Link>
             </li>
             <li>
-              <Link href="https://s1.hackthespace.co/">Season 1.0</Link>
+              <Link href="https://s1.hackthespace.co/" target="_blank">Season 1.0</Link>
             </li>
             <li>
               <Link href="/code-of-conduct-HTS.pdf">HTS - Rule Book</Link>
+              <Link href="/Code of Conduct - HTS.pdf" target="_blank">HTS - Rule Book</Link>
             </li>
           </ul>
         </div>

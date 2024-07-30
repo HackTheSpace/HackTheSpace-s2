@@ -3,11 +3,13 @@ import Image from "next/image";
 import "../styles/WhatIsHTS.css";
 import Heading from "./Heading";
 import Paragraph from "./Paragraph";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const WhatIsHTS = () => {
   return (
     <section className="whatIs--section">
-    <Image
+      <Image
         src="/images/backgrounds/bg_1.jpg"
         alt="Background"
         layout="fill"
@@ -39,15 +41,26 @@ const WhatIsHTS = () => {
         </div>
       </div> */}
       <div className="whatIs-container">
-        {/* <div className="whatIs-image__container"> */}
-        <Image
-          src="/moon.png"
-          alt="moon"
-          width={1036}
-          height={1036}
-          className="whatIs-moon__image"
-        />
-        {/* </div> */}
+        <motion.div
+          className="whatIs-moon__container"
+          animate={{
+            rotate: [0, 360],
+          }}
+          transition={{
+            duration: 80,
+            ease: "linear",
+            repeat: Infinity,
+          }}
+          style={{ originX: 0.5, originY: 0.5 }}
+        >
+          <Image
+            src="/moon.png"
+            alt="moon"
+            className="whatIs-moon__image"
+            width={1036}
+            height={1036}
+          />
+        </motion.div>
 
         <div className="whatIs-text__container">
           <div className="whatIs-text__main">
@@ -58,13 +71,21 @@ const WhatIsHTS = () => {
           </div>
           <div className="whatIs-text__para">
             <Paragraph className="whatIs-text__para1">
-              Inspired by the famous painting, HackTheSpace 2023: A Starry Night
-              will enable you to channel your creative persona, pushing the
-              bounds of imagination and possibility to ideate, innovate, and
-              develop something truly out of the world.
+              HackTheSpace is an exciting 24-hour event that takes place in
+              Bhilai, India. It is a time-limited event that encourages
+              participants to brainstorm, develop, and present their ideas to a
+              panel of judges. This event is designed to foster creativity,
+              collaboration, and innovation among participants. It offers an
+              excellent opportunity for participants to showcase their skills,
+              network with peers, and potentially win prizes and recognition for
+              their work.
             </Paragraph>
             <Paragraph className="whatIs-text__para2">
-            During the event, participants will work in teams to develop innovative ideas that can solve real-world problems. They will be encouraged to use their creativity, technical skills, and critical thinking abilities to develop solutions that are both practical and effective.
+              During the event, participants will work in teams to develop
+              innovative ideas that can solve real-world problems. They will be
+              encouraged to use their creativity, technical skills, and critical
+              thinking abilities to develop solutions that are both practical
+              and effective.
             </Paragraph>
           </div>
         </div>

@@ -5,11 +5,12 @@ import { motion, useInView } from "framer-motion";
 const VerticalBox = ({ title, img }) => {
   const ref = useRef(null);
   const inView = useInView(ref);
+  // const inView = true;
 
   const animation = {
     visible: {
       height: "100%",
-      opacity: 1,
+      opacity: "80%",
       transition: { duration: 0.5, delay: 0.25 },
     },
   };
@@ -18,7 +19,7 @@ const VerticalBox = ({ title, img }) => {
     <motion.div
       variants={animation}
       ref={ref}
-      initial={{ height: "0%", opacity: 0 }}
+      initial={{ height: "0%", opacity: "0%" }}
       animate={inView ? "visible" : ""}
       className="vertical-box tracks-box"
     >

@@ -37,13 +37,6 @@ export default function Home() {
         {isLoading && <PreLoader />}
       </AnimatePresence>
       <main>
-        <Image
-          src="/astronaut.svg"
-          alt="Astronaut"
-          width={500}
-          height={500}
-          className="hero-section__image"
-        />
         <Navbar />
         <HeroSection />
         <AboutUs />

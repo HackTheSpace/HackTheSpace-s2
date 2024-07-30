@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.hero-section__background{
+.hero-section__background {
   position: absolute;
   top: 0;
   left: 0;
@@ -30,6 +30,7 @@
   line-height: 1;
   letter-spacing: 0.01em;
   padding-left: 40px;
+  z-index: 1;
 }
 
 .hero-section__content h1 {
@@ -148,10 +149,10 @@
 
 .hero-section__image {
   position: absolute;
-  right: 0;
-  top: 50px;
-  width: 60%;
-  height: 160%;
+  right: -7%;
+  top: -67%;
+  width: 59%;
+  height: 115%;
 }
 
 @media screen and (max-width: 900px) {
@@ -166,17 +167,17 @@
     font-size: 1rem;
   }
 
-  .hero-section__image {
-    top: 90px;
-    width: 65%;
-  }
-
   .Date-Venue > h6:nth-child(1) {
     font-size: 1.8rem;
   }
-  
+
   .Date-Venue > h6:nth-child(2) {
     font-size: 1.1rem;
+  }
+
+  .hero-section__image {
+    height: 58%;
+    top: -36%;
   }
 }
 
@@ -185,24 +186,25 @@
     font-size: 5.5rem;
   }
 
+  .Date-Venue > h6:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .Date-Venue > h6:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .Date-Venue > h6:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .Date-Venue > h6:nth-child(2) {
+    font-size: 1rem;
+  }
+
   .hero-section__image {
-    width: 70%;
-  }
-
-  .Date-Venue > h6:nth-child(1) {
-    font-size: 1.5rem;
-  }
-
-  .Date-Venue > h6:nth-child(2) {
-    font-size: 1rem;
-  }
-
-  .Date-Venue > h6:nth-child(1) {
-    font-size: 1.5rem;
-  }
-  
-  .Date-Venue > h6:nth-child(2) {
-    font-size: 1rem;
+    height: 72%;
+    top: -43%;
   }
 }
 
@@ -235,7 +237,9 @@
   }
 
   .hero-section__image {
-    width: 90%;
+    width: auto;
+    height: 65%;
+    top: -39%;
   }
 }
 
@@ -256,6 +260,12 @@
     width: 6.60194rem;
     height: 2rem;
     font-size: 0.7rem;
+  }
+
+  .hero-section__image {
+    height: 50%;
+    top: -30%;
+    right: -6%;
   }
 }
 
