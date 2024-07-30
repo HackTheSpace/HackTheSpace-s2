@@ -11,15 +11,15 @@ const ThreeScene = dynamic(() => import("@/components/ThreeScene"), {
 });
 
 const HeroSection = () => {
-  const container = useRef();
+  // const container = useRef();
 
-  const { scrollYProgress } = useScroll({
-    target: container,
+  // const { scrollYProgress } = useScroll({
+  //   target: container,
 
-    offset: ["start start", "end start"],
-  });
+  //   offset: ["start start", "end start"],
+  // });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "300vh"]);
+  // const y = useTransform(scrollYProgress, [0, 1], ["0vh", "300vh"]);
 
   const headingAnimation = {
     initial: { y: "100%" },
@@ -56,7 +56,7 @@ const HeroSection = () => {
         priority
         className="hero-section__background"
       />
-      <motion.div style={{ y }}>
+      <div>
         <div className="hero-section__content">
           <div
             style={{
@@ -145,7 +145,7 @@ const HeroSection = () => {
             </motion.h6>
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
