@@ -1,9 +1,9 @@
 import React from "react";
 import { useRef } from "react";
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 const Heading = ({ children, className }) => {
   const body = useRef(null);
-  const isInView = useInView(body, { once: false });
+  const isInView = useInView(body, { once: true });
 
   return (
     <h2 className={className} ref={body}>

@@ -33,7 +33,6 @@ const FAQsSection = () => {
         alt="Background"
         width={4751}
         height={2952}
-        objectFit="cover"
         quality={100}
         className="faqs--section__background"
       />
@@ -66,7 +65,6 @@ const FAQsSection = () => {
           alt="Background"
           width={1540}
           height={649}
-          objectFit="cover"
           quality={100}
           priority
           className="faq__background"

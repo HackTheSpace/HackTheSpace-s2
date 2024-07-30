@@ -15,6 +15,7 @@ const FAQsQuesComp = ({ Question, Answer, isOpen, handleToggle }) => {
       <p className={`answer ${isOpen ? "active" : ""}`}>{Answer}</p>
       <Image
         src={"/down.png"}
+        alt="down"
         width={100}
         height={100}
         className={`arow ${isOpen ? "arowUp" : ""}`}

@@ -22,10 +22,9 @@ nav {
   font-size: 0.9375rem;
   font-weight: 400;
   list-style: none;
-  margin-right: 50px;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 55%;
+  transform: translateX(-55%);
 }
 
 .nav__links--scrolled {
