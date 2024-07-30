@@ -60,9 +60,31 @@ const FAQsSection = () => {
           </FAQsColComponent>
         ))}
       </div>
-      <motion.div style={{ height }} className="circleContainer">
+      <div className="end-background">
+        <Image
+          src="/images/footer/fbg.png"
+          alt="Background"
+          width={1540}
+          height={649}
+          objectFit="cover"
+          quality={100}
+          priority
+          className="faq__background"
+        />
+        {/* <Image
+          src="/images/footer/astro.png"
+          alt="Background"
+          width={540}
+          height={549}
+          objectFit="cover"
+          quality={100}
+          priority
+          className="faq__background2"
+        /> */}
+      </div>
+      {/* <motion.div style={{ height }} className="circleContainer">
         <div className="circle"></div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };

@@ -21,7 +21,12 @@ const Footer = () => {
   return (
     <>
       <div className="border--container"></div>
-      <motion.footer style={{ y }} ref={container} className="footer--section" id="footer">
+      <motion.footer
+        style={{ y }}
+        ref={container}
+        className="footer--section"
+        id="footer"
+      >
         <div className="footer--docs">
           <h3 className="footer--title"> Explore </h3>
           <ul className="footer--docs__list">
@@ -34,7 +39,7 @@ const Footer = () => {
               <Link href="https://s1.hackthespace.co/">Season 1.0</Link>
             </li>
             <li>
-              <Link href="/Code of Conduct HTS.pdf">HTS - Rule Book</Link>
+              <Link href="/code-of-conduct-HTS.pdf">HTS - Rule Book</Link>
             </li>
           </ul>
         </div>

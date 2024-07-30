@@ -5,10 +5,10 @@ import Image from "next/image";
 const HorizontalBox = ({ title1, title2, img1, img2 }) => {
   const ref = useRef(null);
   const inView = useInView(ref);
-  console.log(inView);
   const animation = {
     visible: {
-      height: "46%",
+      rotate: 0,
+      x: 0,
       transition: { duration: 0.5, delay: 0.25 },
     },
     rotate: {
@@ -26,12 +26,12 @@ const HorizontalBox = ({ title1, title2, img1, img2 }) => {
     },
   };
   return (
-    <div className="horizontal-container">
+    <div className="horizontal-container" ref={ref}>
       <motion.div
         key="1"
         variants={animation}
         ref={ref}
-        initial={{ height: "0%" }}
+        initial={{ rotate: 90, x: 1 }}
         animate={inView ? "visible" : ""}
         className="horizontal-box tracks-box "
         style={{ transformOrigin: " top left", zIndex: 3 }}

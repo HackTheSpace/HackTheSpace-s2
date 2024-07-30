@@ -95,31 +95,7 @@ const HeroSection = () => {
               2.0
             </motion.h1>
           </div>
-          <div className="Date-Venue">
-            <motion.h6
-              custom={4}
-              variants={buttonAnimation}
-              initial="initial"
-              animate="enter"
-            >
-              27th - 28th September 2024
-            </motion.h6>
-            <motion.h6
-              custom={5}
-              variants={buttonAnimation}
-              initial="initial"
-              animate="enter"
-              onClick={() =>
-                window.open(
-                  "https://maps.app.goo.gl/4mAvhnY6f3gbt6ns7",
-                  "_blank"
-                )
-              }
-            >
-              Shri Shankaracharya Technical Campus, Bhilai, IN
-              <MdArrowOutward />
-            </motion.h6>
-          </div>
+         
           <motion.div className="hero-section__buttons">
             <motion.button
               variants={buttonAnimation}
@@ -138,6 +114,31 @@ const HeroSection = () => {
               <Link href="/register">DISCORD</Link>
             </motion.button>
           </motion.div>
+          <div className="Date-Venue">
+            <motion.h6
+              custom={4}
+              variants={buttonAnimation}
+              initial="initial"
+              animate="enter"
+            >
+              27 & 28 September 2024
+            </motion.h6>
+            <motion.h6
+              custom={5}
+              variants={buttonAnimation}
+              initial="initial"
+              animate="enter"
+              onClick={() =>
+                window.open(
+                  "https://maps.app.goo.gl/4mAvhnY6f3gbt6ns7",
+                  "_blank"
+                )
+              }
+            >
+             SHRI SHANKARACHARYA TECHNICAL CAMPUS, BHILAI, CHHATTISGARH, INDIA
+              {/* <MdArrowOutward /> */}
+            </motion.h6>
+          </div>
         </div>
       </motion.div>
     </section>
