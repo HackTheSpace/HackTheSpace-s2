@@ -13,7 +13,7 @@ const HorizontalBox = ({ title1, title2, img1, img2 }) => {
       transition: { duration: 0.5, delay: 1 },
     },
     rotate: {
-      y: "0%",
+      y: 0,
       rotate: 0,
 
       transition: {
@@ -37,18 +37,18 @@ const HorizontalBox = ({ title1, title2, img1, img2 }) => {
         className="horizontal-box tracks-box "
         style={{ transformOrigin: " top left", zIndex: 3 }}
       >
-        <Image src={img1} alt="IOT" width={80} height={80} className="icon" />
+        <Image src={img1} alt="img" width={80} height={80} className="icon" />
         <h3 className="text">{title1}</h3>
       </motion.div>
       <motion.div
         key="2"
         variants={animation}
-        initial={{ y: "-222%", rotate: -10 }}
+        initial={{ y: -310, rotate: -10 }}
         animate={inView ? "rotate" : ""}
         className="horizontal-box tracks-box"
         style={{ zIndex: 2, transformOrigin: "bottom left" }}
       >
-        <Image src={img2} alt="IOT" width={80} height={80} className="icon" />
+        <Image src={img2} alt="img" width={80} height={80} className="icon" />
         <h3 className="text">{title2}</h3>
       </motion.div>
     </div>

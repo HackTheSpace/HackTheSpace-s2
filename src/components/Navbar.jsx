@@ -48,7 +48,15 @@ const Navbar = () => {
         document.getElementById("logo").style.display = "block";
       }
     };
+
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setHamBurger(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -78,7 +86,6 @@ const Navbar = () => {
           height={40}
           alt="toggle"
           id="hamburger"
-          // onClick={() => setHamBurger(true)}
         />
       </button>
 
