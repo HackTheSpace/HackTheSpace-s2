@@ -146,9 +146,8 @@
     height: 1.5px;
   }
 
-  .footer--docs__list li a,
-  .contact--list a {
-    font-size: 1.2rem;
+  .footer--docs__list li a, .contact--list a {
+    font-size: 95%;
   }
   .social--links {
     left: 35%;
@@ -166,7 +165,7 @@
 
   .footer--contact {
     padding-top: 1rem;
-    align-items: center;
+    align-self: center;
   }
 
   .footer--section .footer--docs hr {

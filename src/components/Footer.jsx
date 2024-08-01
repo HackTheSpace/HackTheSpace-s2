@@ -40,7 +40,6 @@ const Footer = () => {
             </li>
             <li>
               <Link href="/code-of-conduct-HTS.pdf">HTS - Rule Book</Link>
-              <Link href="/Code of Conduct - HTS.pdf" target="_blank">HTS - Rule Book</Link>
             </li>
           </ul>
         </div>
