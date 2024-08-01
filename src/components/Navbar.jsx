@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   const navAnimation = {
-    initial: { y: "-100%" },
+    initial: { y: "-200%" },
     animate: {
       y: 0,
       transition: {
@@ -130,20 +130,18 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* <div className="mlh-flag">
-        <Link
-          id="mlh-trust-badge"
-          href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
-          target="_blank"
-        >
-          <Image
-            src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
-            alt="Major League Hacking 2025 Hackathon Season"
-            width={100}
-            height={170}
-          />
-        </Link>
-      </div> */}
+      <Link
+        id="mlh-trust-badge"
+        href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
+        target="_blank"
+      >
+        <Image
+          src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
+          alt="Major League Hacking 2025 Hackathon Season"
+          width={100}
+          height={170}
+        />
+      </Link>
     </motion.nav>
   );
 };
