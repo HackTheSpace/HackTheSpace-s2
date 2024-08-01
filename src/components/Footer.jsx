@@ -39,7 +39,7 @@ const Footer = () => {
               <Link href="https://s1.hackthespace.co/" target="_blank">Season 1.0</Link>
             </li>
             <li>
-              <Link href="/code-of-conduct-HTS.pdf">HTS - Rule Book</Link>
+              <Link href="/code-of-conduct-HTS.pdf" target="_blank">HTS - Rule Book</Link>
             </li>
           </ul>
         </div>
