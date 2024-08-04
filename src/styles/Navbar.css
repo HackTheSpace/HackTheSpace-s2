@@ -67,7 +67,7 @@ nav {
   color: white;
   width: max-content;
 }
-.mlh-flag {
+#mlh-trust-badge {
   display: block;
   max-width: 100px;
   min-width: 55px;
@@ -77,7 +77,7 @@ nav {
   width: 10%;
   /* z-index: 10000; */
 }
-.mlh-flag image {
+#mlh-trust-badge image {
   max-width: 100px;
   width: 100%;
   height: auto;
@@ -123,12 +123,12 @@ nav {
     width: 2rem;
     right: 1rem;
   }
-  .mlh-flag {
+  #mlh-trust-badge {
     top: -30px;
     right: 60px;
   }
-  .mlh-flag img {
-    max-width: 60px; /* Smaller size for mobile */
+  #mlh-trust-badge img {
+    max-width: 60px;
   }
 }
 

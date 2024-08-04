@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   const navAnimation = {
-    initial: { y: "-100%" },
+    initial: { y: "-200%" },
     animate: {
       y: 0,
       transition: {
@@ -48,7 +48,15 @@ const Navbar = () => {
         document.getElementById("logo").style.display = "block";
       }
     };
+
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setHamBurger(false);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -78,7 +86,6 @@ const Navbar = () => {
           height={40}
           alt="toggle"
           id="hamburger"
-          // onClick={() => setHamBurger(true)}
         />
       </button>
 
@@ -123,20 +130,18 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* <div className="mlh-flag">
-        <Link
-          id="mlh-trust-badge"
-          href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
-          target="_blank"
-        >
-          <Image
-            src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
-            alt="Major League Hacking 2025 Hackathon Season"
-            width={100}
-            height={170}
-          />
-        </Link>
-      </div> */}
+      <Link
+        id="mlh-trust-badge"
+        href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
+        target="_blank"
+      >
+        <Image
+          src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
+          alt="Major League Hacking 2025 Hackathon Season"
+          width={100}
+          height={170}
+        />
+      </Link>
     </motion.nav>
   );
 };

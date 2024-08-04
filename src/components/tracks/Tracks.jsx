@@ -58,6 +58,7 @@ const Tracks = () => {
         </div>
         <div className="box-bundle">
           <VerticalBox title={"Open Innovation"} img={"idea.svg"} />
+          {/* <div className="horizontal-container"></div> */}
         </div>
       </div>
       <Image
