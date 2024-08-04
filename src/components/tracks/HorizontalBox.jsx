@@ -4,7 +4,9 @@ import Image from "next/image";
 
 const HorizontalBox = ({ title1, title2, img1, img2 }) => {
   const ref = useRef(null);
-  const inView = useInView(ref);
+  const inView = useInView(ref, {
+    once: true,
+  });
   // const inView = true;
   const animation = {
     visible: {

@@ -104,7 +104,7 @@
   font-weight: 400;
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .whatIs-text__para p > span {
