@@ -141,11 +141,11 @@
   position: absolute;
   right: 5px;
   top: 15px;
-  z-index: 0;
   display: block;
   width: 2rem;
   height: 2rem;
   color: white;
+  cursor: pointer;
   transition: transform 500ms ease-in-out;
 }
 .arowUp {
@@ -169,7 +169,7 @@
   position: relative;
   opacity: 0;
   transition: max-height 500ms ease-out, margin-top 400ms ease-out,
-    opacity 500ms ease-out;
+  opacity 500ms ease-out;
 }
 
 .question--box .answer.active {
@@ -177,7 +177,7 @@
   margin-top: 0.5rem;
   opacity: 1;
   transition: max-height 1000ms ease-out, margin 400ms ease-out,
-    opacity 800ms ease-out;
+  opacity 800ms ease-out;
 }
 
 .circleContainer {
