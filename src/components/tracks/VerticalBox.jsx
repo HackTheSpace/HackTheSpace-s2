@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 
 const VerticalBox = ({ title, img }) => {
   const ref = useRef(null);
-  const inView = useInView(ref);
+  const inView = useInView(ref, { once: true });
   // const inView = true;
 
   const animation = {

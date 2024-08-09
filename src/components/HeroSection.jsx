@@ -50,8 +50,7 @@ const HeroSection = () => {
       <Image
         src="/images/backgrounds/bg_2.jpg"
         alt="Background"
-        layout="fill"
-        objectFit="cover"
+        fill
         quality={100}
         priority
         className="hero-section__background"

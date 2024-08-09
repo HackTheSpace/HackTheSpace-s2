@@ -12,7 +12,7 @@ const Tracks = () => {
       <Image
         src="/images/backgrounds/bg_1.jpg"
         alt="Background"
-        layout="fill"
+        fill
         quality={100}
         className="Track-section__background"
       />
