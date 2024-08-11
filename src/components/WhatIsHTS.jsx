@@ -12,7 +12,7 @@ const WhatIsHTS = () => {
       <Image
         src="/images/backgrounds/bg_1.jpg"
         alt="Background"
-        layout="fill"
+        fill
         quality={100}
         className="whatIs--section__background"
       />

@@ -12,7 +12,7 @@
 .preloader__content {
   display: flex;
   gap: 1rem;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   width: 100vw;
 }
