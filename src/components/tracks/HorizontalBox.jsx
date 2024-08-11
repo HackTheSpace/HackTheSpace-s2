@@ -43,7 +43,7 @@ const HorizontalBox = ({ title1, title2, img1, img2 }) => {
       <motion.div
         key="2"
         variants={animation}
-        initial={{ y: -200, rotate: -10 }}
+        initial={{ y: -310, rotate: -10 }}
         animate={inView ? "rotate" : ""}
         className="horizontal-box tracks-box"
         style={{ zIndex: 2, transformOrigin: "bottom left" }}
