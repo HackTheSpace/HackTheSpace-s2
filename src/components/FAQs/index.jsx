@@ -28,14 +28,14 @@ const FAQsSection = () => {
 
   return (
     <section ref={container} className="faqs--section" id="faqs">
-      {/* <Image
+      <Image
         src="/images/backgrounds/bg_3.jpg"
         alt="Background"
         width={4751}
         height={2952}
         quality={100}
         className="faqs--section__background"
-      /> */}
+      />
       <div className="faqs--text">
         <div className="faqs--text__container">
           <h1 className="faqs--text__shadow">FAQs</h1>
