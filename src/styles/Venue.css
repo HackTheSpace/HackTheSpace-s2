@@ -1,0 +1,99 @@
+.venueSection {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* margin-bottom: 30vw; */
+  /* background-color: aqua; */
+}
+.heading {
+  text-align: center;
+  position: relative;
+  height: 20.798vw;
+}
+.heading-shadow {
+  font-family: "Anton";
+  width: 100%;
+  color: rgba(255, 255, 255, 0.16);
+
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.833vw;
+  line-height: 20.798vw;
+}
+.heading-small {
+  width: 100%;
+  top: 11.806vw;
+  font-size: 5.556vw;
+  font-weight: 400;
+  font-family: "Anton";
+  position: absolute;
+  line-height: 5.546vw;
+  display: flex;
+  justify-content: center;
+}
+.mapSvg {
+  width: 80%;
+  /* display: none; */
+  position: relative;
+  z-index: 9;
+  padding-block: 10vw;
+}
+svg {
+  width: 100%;
+  height: 42%;
+}
+/* .container {
+  width: 833px;
+  height: 446px;
+  overflow: hidden;
+} */
+iframe {
+  position: absolute;
+  top: 3vw;
+
+  width: 100%;
+  height: 100%;
+  /* 
+  frameborder: "0";
+  allowfullscreen: "";
+  aria-hidden: "false";
+  tabindex: "0"; */
+}
+.map {
+  position: absolute;
+  top: 10vw;
+  left: 0vw;
+  width: 55vw;
+  height: 39vw;
+  /* width: 971px;
+  height: 591px; */
+  z-index: 9;
+  mask: url(#shap1);
+  overflow: hidden;
+}
+
+/* .svg-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  } */
+#shap1 path {
+  transform-origin: top left;
+}
+.venue-section__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.23;
+}
