@@ -3,7 +3,7 @@ import { useRef } from "react";
 export default function Paragrapgh({ children }) {
   const description = useRef(null);
 
-  const isInView = useInView(description);
+  const isInView = useInView(description, { once: true });
 
   const slideUp = {
     initial: {
@@ -24,7 +24,6 @@ export default function Paragrapgh({ children }) {
   return (
     <p ref={description}>
       {children.split(" ").map((word, index) => {
-
         return (
           <span key={index}>
             <motion.span

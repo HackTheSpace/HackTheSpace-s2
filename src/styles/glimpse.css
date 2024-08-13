@@ -16,7 +16,7 @@
   z-index: 2;
 }
 
-.glimpse-section__background{
+.glimpse-section__background {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +24,6 @@
   height: 100%;
   z-index: 0;
   opacity: 0.23;
-
 }
 
 .image-card {
@@ -102,7 +101,7 @@
 }
 
 .glimpse-container .image-card:first-child .content:last-child {
-  color: #B741DD;
+  color: #b741dd;
 }
 
 .glimpse-container .image-card:first-child .content:first-child {
@@ -110,11 +109,11 @@
 }
 
 .glimpse-container .image-card:nth-child(2) .content:first-child {
-  color: #B263FD;
+  color: #b263fd;
 }
 
 .glimpse-container .image-card:nth-child(2) .content:last-child {
-  color:#B741DD;
+  color: #b741dd;
 }
 
 .content h2 {
@@ -160,8 +159,8 @@
   align-items: center;
 }
 
-.bottom-container .content{
-  color: #C281FF;
+.bottom-container .content {
+  color: #c281ff;
 }
 
 .bottom-container .container-border {

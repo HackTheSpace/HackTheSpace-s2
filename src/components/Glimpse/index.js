@@ -70,8 +70,7 @@ const Glimpse = () => {
       <Image
         src="/images/backgrounds/bg_2.jpg"
         alt="Background"
-        layout="fill"
-        objectFit="cover"
+        fill
         quality={100}
         className="glimpse-section__background"
       />
