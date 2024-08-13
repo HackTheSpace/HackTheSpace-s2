@@ -1,9 +1,28 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Heading from "./Heading";
 const Venue = () => {
-  const scale = (window.innerWidth / 1440) * (1 - 0.064);
+  const [scale, setScale] = useState(1);
+  useEffect(() => {
+    // Calculate scale based on the window size
+    const calculateScale = () => {
+      const newScale = (window.innerWidth / 1440) * (1 - 0.064);
+      setScale(newScale);
+      console.log(newScale);
+    };
+
+    // Calculate scale when the component mounts
+    calculateScale();
+    // Optionally, add a resize listener if you want the scale to adjust on window resize
+    window.addEventListener("resize", calculateScale);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", calculateScale);
+    };
+  }, []);
+  // const scale = (window.innerWidth / 1440) * (1 - 0.064);
   return (
     <div className="venueSection">
       <Image
