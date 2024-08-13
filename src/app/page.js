@@ -12,7 +12,7 @@ import FAQsSection from "@/components/FAQs";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Glimpse from "@/components/Glimpse";
-import Venue from "@/components/venue";
+import Venue from "@/components/Venue";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
