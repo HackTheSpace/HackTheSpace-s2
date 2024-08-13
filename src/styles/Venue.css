@@ -40,6 +40,7 @@
   /* display: none; */
   position: relative;
   z-index: 9;
+  padding-block: 10vw;
 }
 svg {
   width: 100%;
@@ -51,6 +52,9 @@ svg {
   overflow: hidden;
 } */
 iframe {
+  position: absolute;
+  top: 3vw;
+
   width: 100%;
   height: 100%;
   /* 
@@ -61,7 +65,7 @@ iframe {
 }
 .map {
   position: absolute;
-  top: 0vw;
+  top: 10vw;
   left: 0vw;
   width: 55vw;
   height: 39vw;
@@ -69,6 +73,7 @@ iframe {
   height: 591px; */
   z-index: 9;
   mask: url(#shap1);
+  overflow: hidden;
 }
 
 /* .svg-mask {
