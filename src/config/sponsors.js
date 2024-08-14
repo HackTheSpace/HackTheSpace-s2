@@ -63,17 +63,17 @@ export const sponsorConfig = {
       id: "5",
       Name: "Comet",
       Sponsor: [
+          {
+            id: "1",
+            Name: "HackQuest",
+            Img: "/images/sponsors/hackquestLogo-.png",
+            Link: "https://www.hackquest.io/en/",
+          },
         {
-          id: "1",
+          id: "2",
           Name: "BizThon",
           Img: "/images/sponsors/Bizthon.png",
           Link: "https://bizthon.com/",
-        },
-        {
-          id: "2",
-          Name: "HackQuest",
-          Img: "/images/sponsors/hackquestLogo-.png",
-          Link: "https://www.hackquest.io/en/",
         },
         // {
         //   id: "3",

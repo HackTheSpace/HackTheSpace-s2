@@ -10,6 +10,14 @@ const Sponsors = () => {
   return (
     <>
     <section className='sponsors--section'>
+      <Image
+          src="/images/backgrounds/bg_1.jpg"
+          alt="Background"
+          width={4751}
+          height={2952}
+          quality={100}
+          className="sponsors--section__background"
+        />
         <div className='sponsors--heading'>
           <div className='sponsors--heading__container'>
               <h2 className='sponsors--heading__shadow'>SPONSORS</h2>
