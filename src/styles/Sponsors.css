@@ -4,7 +4,9 @@
   width: 100vw;
   height: fit-content;
   position: relative;
+  margin-bottom: 10vw;
 }
+
 .sponsors--section__background {
   position: absolute;
   top: 0;
@@ -30,8 +32,6 @@
   line-height: 99.83%;
   width: 100%;
   position: relative;
-  /* or 299px */
-
   color: rgba(255, 255, 255, 0.16);
 }
 .sponsors--heading__main {
@@ -399,6 +399,6 @@
   }
   .sponsors--cards img {
     width: 150px;
-    height: 90px;
+    height: 70px;
   }
 }

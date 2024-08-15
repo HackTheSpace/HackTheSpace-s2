@@ -9,7 +9,7 @@ const SponsorsContainer = ({ Name, Img, linkS }) => {
     <>
       <Link href={linkS} target="_blank">
         <div className="sponsors--cards">
-          <Image alt={Name} src={Img} width={205} height={100} />
+          <Image alt={Name} src={Img} width={170} height={80} />
         </div>
       </Link>
     </>

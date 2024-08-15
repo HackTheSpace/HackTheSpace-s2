@@ -8,7 +8,7 @@ export const sponsorConfig = {
         Name: "Diamante Blockchain",
         Img: "/images/sponsors/diamante.png",
         Link: "https://diamanteblockchain.com/",
-        para: "Orkes, the enterprise-grade Conductor platform, simplifies developing and scaling distributed workflows, microservices and events. Organizations can now accelerate delivering applications and eliminate the complexity of building and managing orchestration infrastructure.",
+        para: "Diamante Blockchain is a global, decentralized finance platform successfully ​​implementing and developing a competitive blockchain-enabled ecosystem for trade, payments, and financing.",
       },
     ],
   },
@@ -43,12 +43,12 @@ export const sponsorConfig = {
     Name: "Planet",
     id: "4",
     Sponsor: [
-      // {
-      //   id: "1",
-      //   Name: "Github",
-      //   Img: "/images/sponsors/SSTCLogo4.svg",
-      //   Link: "https://github.com/",
-      // },
+      {
+        id: "1",
+        Name: "Github",
+        Img: "/images/sponsors/GitHub_Logo_White.png",
+        Link: "https://github.com/",
+      },
       {
         id: "2",
         Name: "Orkes",
