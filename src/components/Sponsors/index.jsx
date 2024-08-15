@@ -3,6 +3,7 @@ import { sponsorConfig } from "../../config/sponsors";
 import Link from "next/link";
 import Image from "next/image";
 import SponsorsCards from "./SponsorsCards";
+import Heading from "../Heading";
 
 const Sponsors = () => {
   const { poweredBy } = sponsorConfig;
@@ -18,10 +19,9 @@ const Sponsors = () => {
           className="sponsors--section__background"
         />
         <div className="sponsors--heading">
-          <div className="sponsors--heading__container">
-            <h2 className="sponsors--heading__shadow">SPONSORS</h2>
-            <h4 className="sponsors--heading__main">SPONSORS</h4>
-          </div>
+          <h2 className="title-shadow">SPONSORS</h2>
+          <Heading className="section-title">SPONSORS</Heading>
+
           {/* <div className='sponsors--heading__waiting'>
             <h2 className='sponsors--heading__shadow2'>Coming Soon..</h2>
           </div> */}

@@ -23,6 +23,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 .sponsors--heading__shadow {
   font-family: "Anton";

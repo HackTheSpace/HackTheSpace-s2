@@ -34,17 +34,11 @@
   z-index: 1;
 }
 
-.faqs--text {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-
 .faqs--text__shadow {
   font-family: "Anton";
   font-style: normal;
   font-weight: 400;
-  font-size: 15vw;
+  font-size: 20vw;
   line-height: 99.83%;
   width: 100%;
   position: relative;

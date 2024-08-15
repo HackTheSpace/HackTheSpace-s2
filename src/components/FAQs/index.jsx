@@ -36,12 +36,12 @@ const FAQsSection = () => {
         quality={100}
         className="faqs--section__background"
       />
-      <div className="faqs--text">
-        <div className="faqs--text__container">
-          <h1 className="faqs--text__shadow">FAQs</h1>
-          <Heading className="faqs--text__heading">FAQs</Heading>
-        </div>
+
+      <div className="sponsors--heading">
+        <h1 className="title-shadow">FAQs</h1>
+        <Heading className="section-title">FAQs</Heading>
       </div>
+
       <div className="faqs--questions">
         {data.map((q) => (
           <FAQsColComponent key={q.id}>
