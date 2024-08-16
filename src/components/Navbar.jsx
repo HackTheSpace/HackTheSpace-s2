@@ -124,6 +124,9 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="sponsor-us">
+          <div className="line-wrapper">
+            <div className="card-line"></div>
+          </div>
           <Link href="https://bit.ly/HTS-SU" target="https://bit.ly/HTS-SU">
             Sponsor Us
           </Link>

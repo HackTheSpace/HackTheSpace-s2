@@ -2,14 +2,15 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { sponsorConfig } from "../../config/sponsors";
-import "../../styles/Sponsors.css";
 
 const SponsorsContainer = ({ Name, Img, linkS }) => {
   return (
     <>
       <Link href={linkS} target="_blank">
         <div className="sponsors--cards">
-          <Image alt={Name} src={Img} width={170} height={80} />
+          <div className="glass-effect">
+            <Image alt={Name} src={Img} width={170} height={80} />
+          </div>
         </div>
       </Link>
     </>

@@ -88,7 +88,7 @@
   padding: 30px;
   background-color: #0e1723;
   margin: 20px;
-  border: 1px solid #666666;
+  border: 1px solid #a3a3a3;
 }
 .sponsors--poweredBy {
   display: flex;
@@ -121,6 +121,7 @@
   text-align: justified;
   z-index: 1;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .sponsors--powered__text {
   font-family: Roboto Condensed;
@@ -147,11 +148,12 @@
   font-family: "Anton";
   font-style: normal;
   font-weight: 400;
-  font-size: 6vw;
+  font-size: 5.556vw;
   line-height: 99.83%;
   color: #f0eef0;
   text-shadow: 0px 0px 11px #7d00f2;
   position: relative;
+  text-transform: uppercase;
   z-index: 2;
 }
 
@@ -174,7 +176,7 @@
   align-items: center;
   margin: 20px;
   background-color: #0e1723;
-  border: 1px solid #666666;
+  border: 1px solid #a3a3a3;
   position: relative;
   opacity: 97%;
 }
@@ -207,6 +209,39 @@
   left: -1px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: -1;
+}
+
+.glass-effect {
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.glass-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -350px;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-30deg);
+  transition: 0.4s;
+}
+
+.glass-effect:hover::before {
+  left: 320px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.glass-effect img {
+  z-index: 1;
 }
 
 @media screen and (max-width: 1080px) {

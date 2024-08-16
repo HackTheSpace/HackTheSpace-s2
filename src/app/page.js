@@ -46,7 +46,7 @@ export default function Home() {
         <Venue />
         <Tracks />
         <Glimpse />
-        <Sponsors/>
+        <Sponsors />
         <FAQsSection />
         <Footer />
       </main>
