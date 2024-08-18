@@ -14,6 +14,7 @@ import Image from "next/image";
 import Glimpse from "@/components/Glimpse";
 import Venue from "@/components/Venue";
 import Sponsors from "@/components/Sponsors";
+import Team from "./team/page";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -46,6 +47,7 @@ export default function Home() {
         <Venue />
         <Tracks />
         <Glimpse />
+        <Team />
         <Sponsors />
         <FAQsSection />
         <Footer />
