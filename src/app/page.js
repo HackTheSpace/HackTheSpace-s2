@@ -12,6 +12,7 @@ import FAQsSection from "@/components/FAQs";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Glimpse from "@/components/Glimpse";
+import Team from "@/components/Team";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -43,6 +44,7 @@ export default function Home() {
         <WhatIsHTS />
         <Tracks />
         <Glimpse/>
+        <Team />
         <FAQsSection />
         <Footer />
       </main>
