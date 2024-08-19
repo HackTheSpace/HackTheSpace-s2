@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaBehance, FaTwitter } from 'react-icons/fa';
-import '../styles/TeamMember.css';
+import './TeamMember.css';
 
 const TeamMember = ({ name, role, role2, imageSrc, socials }) => {
   return (

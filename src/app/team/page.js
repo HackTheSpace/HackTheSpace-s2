@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import TeamMember from '@/components/TeamMember';
+import TeamMember from './TeamMember';
 
 
 const Team = () => {
