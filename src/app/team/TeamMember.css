@@ -4,6 +4,8 @@
     color: #fff;
     background: black;
     width: 100%;
+    /* font-family:'Courier New', Courier, monospace; */
+
     /* max-width: 1200px; */
   }
   
@@ -11,40 +13,47 @@
     font-size: 3rem;
     margin-bottom: 50px;
     letter-spacing: 5px;
+    
   }
 
 .team-member {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    justify-content: flex-start;
+    justify-content: space-between;
     width:fit-content;
-    max-width: 600px;
-    margin: 0 auto;
-    flex-wrap: wrap;
+    /* max-width: 550px; */
+    margin: 0;
+    flex: 1 1 400px; /* Adjust the width of each member card */
+    max-width: 550px; /* Optional max width for individual items */
+    margin: 10px; 
+    gap: 2rem;
   }
 
 .team-member-image {
     flex: 1;
     overflow: hidden;
-    height: 200px;
+    max-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin-top: 0; */
   }
 
 .bw-image img {
     width: 100%;
-    max-width:160px;
+    /* max-width:160px; */
     filter: grayscale(100%);
     transition: filter 0.3s ease;
     margin-top: 50px;
+    object-fit: cover;
+    height: auto;
   }
   
 .team-member-details {
     flex: 2;
     text-align: left;
-    margin-left: 20px;
+    margin-left:-10px;
   }
 
 .team-member-details h3 {
@@ -54,7 +63,7 @@
   }
 
 .team-member-details p {
-    margin: 5px 0;
+    /* margin: 5px 0; */
   }
 
 .team-member-details .role {
@@ -64,6 +73,10 @@
 .team-member-details .role2 {
     color: #8e44ad;
     font-weight: bold;
+  }
+
+  .team-member-socials{
+    margin-top: 15px;
   }
 
 .team-member-socials a {

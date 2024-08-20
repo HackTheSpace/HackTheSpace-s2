@@ -10,8 +10,8 @@ const TeamMember = ({ name, role, role2, imageSrc, socials }) => {
       </div>
       <div className="team-member-details">
         <h3>{name}</h3>
-        <p className="role">{role}</p>
-        <p className="role2">{role2}</p>
+        <h3 className="role">{role}</h3>
+        {/* <p className="role2">{role2}</p> */}
         <div className="team-member-socials" style={{ marginTop: "30px" }}>
           {socials.linkedin && (
             <a href={socials.linkedin} target="_blank" rel="noopener noreferrer">
