@@ -14,14 +14,6 @@ export const metadata = {
       "Hack The Space is an exciting 24-hour offline hackathon for all the nerds out there✨. Empowering young minds😇. Turn Ideas into Impact!🚀 that takes place in Bhilai, Chhattisgarh",
     url: "https://hackthespace.co",
     siteName: "Hack The Space 2.0",
-    images: [
-      {
-        url: "https://res.cloudinary.com/dmwxnrn8o/image/upload/b_rgb:000000/v1686922356/hackthespace/logo-main_lrdsjp.webp,",
-        width: 1200,
-        height: 630,
-        alt: "Hack The Space 2.0",
-      },
-    ],
     type: "website",
   },
   twitter: {
@@ -29,14 +21,6 @@ export const metadata = {
     description:
       "Hack The Space is an exciting 24-hour offline hackathon for all the nerds out there✨. Empowering young minds😇. Turn Ideas into Impact!🚀 that takes place in Bhilai, Chhattisgarh",
     url: "https://x.com/HackTheSpace_",
-    images: [
-      {
-        url: "https://res.cloudinary.com/dmwxnrn8o/image/upload/b_rgb:000000/v1686922356/hackthespace/logo-main_lrdsjp.webp,",
-        width: 1200,
-        height: 630,
-        alt: "Hack The Space 2.0",
-      },
-    ],
   },
 };
 
