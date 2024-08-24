@@ -25,9 +25,11 @@ nav {
   position: absolute;
   left: 55%;
   transform: translateX(-55%);
+  cursor: pointer;
 }
 
-.nav__links a {
+.nav__links span,
+a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   position: relative;
@@ -36,10 +38,12 @@ nav {
   width: max-content;
 }
 
+.nav__links span:hover,
 .nav__links a:hover {
   color: #ffffff;
 }
 
+.nav__links span::after,
 .nav__links a::after {
   content: "";
   position: absolute;
@@ -53,6 +57,7 @@ nav {
   transition: transform 0.25s ease-out;
 }
 
+.nav__links span:hover::after,
 .nav__links a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom;
@@ -76,7 +81,6 @@ nav {
 
 .sponsor-us {
   border-radius: 50px;
-  cursor: pointer;
   position: relative;
   overflow: hidden;
   padding: 1px;
@@ -205,7 +209,8 @@ nav {
     animation: rotate 10s ease infinite;
   }
 
-  .sponsor-us a {
+  .sponsor-us span,
+  a {
     width: 100%;
   }
 
