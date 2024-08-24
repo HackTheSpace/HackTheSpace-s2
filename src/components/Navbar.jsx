@@ -5,21 +5,30 @@ import Link from "next/link";
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import { delay, motion } from "framer-motion";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
   const navRef = useRef(null);
   const nanLinksRef = useRef(null);
   const [HamBurger, setHamBurger] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
-  const handleScroll = (e) => {
-    e.preventDefault();
+  const handleScroll = (location) => {
     setHamBurger(false);
-    const href = e.currentTarget.href;
-    const targetId = href.replace(/.*\#/, "");
-    const elem = document.getElementById(targetId);
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    });
+
+    if (pathname === "/") {
+      const element = document.querySelector(location);
+      if (element) {
+        // Scroll to the element
+        element.scrollIntoView({
+          behavior: "smooth",
+        });
+        history.pushState(null, "", location);
+      }
+    } else {
+      router.push(`/${location}`);
+    }
   };
 
   const navAnimation = {
@@ -59,6 +68,7 @@ const Navbar = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -94,34 +104,25 @@ const Navbar = () => {
         className={`nav__links ${HamBurger ? "nav__links--open" : ""}`}
       >
         <li>
-          <Link href="#home" onClick={handleScroll}>
-            Home
-          </Link>
+          <span onClick={() => handleScroll("#home")}>Home</span>
         </li>
         <li>
-          <Link href="#aboutUS" onClick={handleScroll}>
-            About Us
-          </Link>
+          <span onClick={() => handleScroll("#aboutUS")}>About Us</span>
         </li>
         <li>
-          <Link href="#tracks" onClick={handleScroll}>
-            Tracks
-          </Link>
+          <span onClick={() => handleScroll("#tracks")}>Tracks</span>
         </li>
         <li>
-          <Link href="#events" onClick={handleScroll}>
-            Events
-          </Link>
+          <span onClick={() => handleScroll("#events")}>Events</span>
         </li>
         <li>
-          <Link href="#faqs" onClick={handleScroll}>
-            Faqs
-          </Link>
+          <Link href="/partners">Partners</Link>
         </li>
         <li>
-          <Link href="#footer" onClick={handleScroll}>
-            Contact
-          </Link>
+          <span onClick={() => handleScroll("#faqs")}>Faqs</span>
+        </li>
+        <li>
+          <span onClick={() => handleScroll("#footer")}>Contact</span>
         </li>
         <li className="sponsor-us">
           <div className="line-wrapper">

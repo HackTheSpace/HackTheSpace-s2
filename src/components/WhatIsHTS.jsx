@@ -1,9 +1,10 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import "../styles/WhatIsHTS.css";
 import Heading from "./Heading";
 import Paragraph from "./Paragraph";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 const WhatIsHTS = () => {
@@ -16,30 +17,6 @@ const WhatIsHTS = () => {
         quality={100}
         className="whatIs--section__background"
       />
-      {/* <div className="whatIs--image">
-        <Image
-          src="/s1-image.jfif"
-          alt="s1-images"
-          width={442}
-          height={654}
-          className="whatIs-image__1"
-        />
-
-        <div className="whatIs-image__2">
-          <Image
-            src="/s1-image.jfif"
-            alt="s1-images"
-            width={575}
-            height={322}
-          />
-          <Image
-            src="/s1-image.jfif"
-            alt="s1-images"
-            width={606.17}
-            height={322}
-          />
-        </div>
-      </div> */}
       <div className="whatIs-container">
         <motion.div
           className="whatIs-moon__container"
