@@ -17,8 +17,8 @@ export const metadata = {
     images: [
       {
         url: "https://res.cloudinary.com/dmwxnrn8o/image/upload/b_rgb:000000/v1686922356/hackthespace/logo-main_lrdsjp.webp,",
-        width: 2000,
-        height: 1000,
+        width: 1200,
+        height: 630,
         alt: "Hack The Space 2.0",
       },
     ],
@@ -32,8 +32,8 @@ export const metadata = {
     images: [
       {
         url: "https://res.cloudinary.com/dmwxnrn8o/image/upload/b_rgb:000000/v1686922356/hackthespace/logo-main_lrdsjp.webp,",
-        width: 2000,
-        height: 1000,
+        width: 1200,
+        height: 630,
         alt: "Hack The Space 2.0",
       },
     ],

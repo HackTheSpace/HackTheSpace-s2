@@ -20,7 +20,6 @@ const Navbar = () => {
     if (pathname === "/") {
       const element = document.querySelector(location);
       if (element) {
-        // Scroll to the element
         element.scrollIntoView({
           behavior: "smooth",
         });
@@ -116,7 +115,9 @@ const Navbar = () => {
           <span onClick={() => handleScroll("#events")}>Events</span>
         </li>
         <li>
-          <Link href="/partners">Partners</Link>
+          <Link href="/partners" onClick={() => setHamBurger(false)}>
+            Partners
+          </Link>
         </li>
         <li>
           <span onClick={() => handleScroll("#faqs")}>Faqs</span>
