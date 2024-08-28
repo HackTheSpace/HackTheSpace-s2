@@ -1,10 +1,8 @@
-import React, { useRef } from "react";
 import VerticalBox from "./VerticalBox";
 import HorizontalBox from "./HorizontalBox";
 import Heading from "../Heading";
 import Image from "next/image";
 import Paragraph from "../Paragraph";
-import { useInView } from "framer-motion";
 
 const Tracks = () => {
   return (
