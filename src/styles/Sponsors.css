@@ -166,6 +166,8 @@
   flex-direction: row;
   gap: 10px;
   margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .sponsors--div__2 {
   margin-top: 40px;
@@ -251,6 +253,22 @@
   .sponsors--div__1 {
     height: 33vh;
   }
+  .sponsors--div__1 {
+    width: 90%;
+    padding: 20px;
+    height: 70%;
+  }
+  .image {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 767px) {
+  .sponsors--cards__container {
+    flex-direction: column; /* Change to column layout for better responsiveness */
+    gap: 20px; /* Increase gap for spacing */
+    align-items: center; /* Center align items */
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -259,7 +277,6 @@
     padding: 20px;
     height: 70%;
   }
-
   .image {
     margin-top: 35px;
   }
@@ -383,6 +400,9 @@
   }
   .sponsors--head__title {
     font-size: 11vw;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
   .sponsors--section {
     flex-direction: column;
@@ -393,6 +413,12 @@
   .sponsors--div__1 {
     width: 80%;
     padding: 15px;
+  }
+  .ruby__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .sponsors--poweredBy .text {

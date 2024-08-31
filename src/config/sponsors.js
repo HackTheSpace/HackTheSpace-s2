@@ -65,21 +65,77 @@ export const sponsorConfig = {
       {
         id: "1",
         Name: "HackQuest",
-        Img: "/images/sponsors/hackquestLogo-.png",
+        Img: "/images/sponsors/hackquest.png",
         Link: "https://www.hackquest.io/en/",
       },
-      {
-        id: "2",
-        Name: "BizThon",
-        Img: "/images/sponsors/Bizthon.png",
-        Link: "https://bizthon.com/",
-      },
+      // {
+      //   id: "2",
+      //   Name: "BizThon",
+      //   Img: "/images/sponsors/Bizthon.png",
+      //   Link: "https://bizthon.com/",
+      // },
       // {
       //   id: "3",
       //   Name: "Postman",
       //   Img: "/images/sponsors/SSTCLogo4.svg",
       //   Link: "https://www.postman.com/",
       // },
+    ],
+  },
+
+  inkind: {
+    Name: "INkind Partner",
+    id: "6",
+    Sponsor: [
+      {
+        id: "1",
+        Name: "MongoDB",
+        Img: "/images/sponsors/mongoDB.svg",
+        Link: "https://www.mongodb.com/",
+      },
+      // {
+      //   id: "2",
+      //   Name: "GoDaddy",
+      //   Img: "/images/sponsors/goDaddy.svg",
+      //   Link: "https://www.godaddy.com/en-in",
+      // },
+      {
+        id: "3",
+        Name: "Registry",
+        Img: "/images/sponsors/godaddyregistry1460334.svg",
+        Link: "https://registry.godaddy/",
+      },
+      {
+        id: "4",
+        Name: "Streamlit",
+        Img: "/images/sponsors/streamlit-logo.svg",
+        Link: "https://streamlit.io/",
+      },
+      {
+        id: "5",
+        Name: "TinyMCE",
+        Img: "/images/sponsors/tinymce.svg",
+        Link: "https://www.tiny.cloud/tinymce/",
+      },
+      {
+        id: "6",
+        Name: "Axure",
+        Img: "/images/sponsors/Axure_logo_.svg",
+        Link: "https://www.geeksforgeeks.org/",
+      },
+    ],
+  },
+
+  mainPartner: {
+    Name: "Hackathon Partner",
+    id: "7",
+    Sponsor: [
+      {
+        id: "1",
+        Name: "MLS",
+        Img: "/images/sponsors/mlh-logo-white.png",
+        Link: "https://mlh.io/",
+      },
     ],
   },
 
