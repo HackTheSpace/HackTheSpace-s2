@@ -93,16 +93,16 @@ export const sponsorConfig = {
         Img: "/images/sponsors/mongoDB.svg",
         Link: "https://www.mongodb.com/",
       },
-      {
-        id: "2",
-        Name: "GoDaddy",
-        Img: "/images/sponsors/goDaddy.svg",
-        Link: "https://www.godaddy.com/en-in",
-      },
+      // {
+      //   id: "2",
+      //   Name: "GoDaddy",
+      //   Img: "/images/sponsors/goDaddy.svg",
+      //   Link: "https://www.godaddy.com/en-in",
+      // },
       {
         id: "3",
         Name: "Registry",
-        Img: "/images/sponsors/godaddyregistry.svg",
+        Img: "/images/sponsors/godaddyregistry1460334.svg",
         Link: "https://registry.godaddy/",
       },
       {
