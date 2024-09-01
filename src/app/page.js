@@ -17,7 +17,7 @@ export default function Home() {
         <Venue />
         <Tracks />
         <Glimpse />
-        <Team />
+        {/* <Team /> */}
         <FAQsSection />
       </main>
     </>
