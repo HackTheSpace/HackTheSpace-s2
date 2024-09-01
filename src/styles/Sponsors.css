@@ -4,7 +4,9 @@
   width: 100vw;
   height: fit-content;
   position: relative;
-  margin-bottom: 10vw;
+  padding-bottom: 10vw;
+  position: relative;
+  z-index: 1;
 }
 
 .sponsors--section__background {
@@ -24,6 +26,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  position: relative;
 }
 .sponsors--heading__shadow {
   font-family: "Anton";
