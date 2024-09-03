@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Image from "next/image";
-import { useInView, motion, delay } from "framer-motion";
+import { useInView, motion } from "framer-motion";
 
 const PrizeBox = ({ prize }) => {
   const ref = useRef(null);
@@ -23,7 +23,7 @@ const PrizeBox = ({ prize }) => {
       ref={ref}
     >
       <div className="prizeBox-img">
-        <Image src={prize.img} width={247} height={60} />
+        <Image src={prize.img} alt="Logo" width={247} height={60} />
       </div>
       {/* <Image src={prize.img} width={247} height={60} /> */}
       <h2>{prize.title}</h2>

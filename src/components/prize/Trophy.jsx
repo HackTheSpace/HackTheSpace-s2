@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Heading from "../Heading";
 import { useInView, motion, delay } from "framer-motion";
 
 const Trophy = ({ rank, ranksub, amount, title }) => {

@@ -37,12 +37,12 @@ const Prize = () => {
       </div>
       <div className="spetial-prize">
         <div className="spetial-prize-container">
-          <Image src="/girls.svg" height={228} width={169} />
+          <Image src="/girls.svg" alt="svg" height={228} width={169} />
           <h1 className="spetial-amount">₹2500/-</h1>
           <p className="tag">Best All Girls Team</p>
         </div>
         <div className="spetial-prize-container">
-          <Image src="/beginner.svg" height={228} width={122} />
+          <Image src="/beginner.svg" alt="svg" height={228} width={122} />
           <h1 className="spetial-amount">₹2500/-</h1>
           <p className="tag">Best Beginner Team</p>
         </div>
