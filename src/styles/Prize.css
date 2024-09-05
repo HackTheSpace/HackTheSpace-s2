@@ -145,6 +145,7 @@
   min-width: 260px;
   min-height: 360px;
   opacity: 75%;
+  transform-origin: top left;
 }
 .prize-box::before,
 .prize-box::after {
@@ -248,4 +249,17 @@
   .trophy-container {
     margin-top: 10vw;
   }
+}
+.link {
+  font-family: Poppins;
+  /* color: #4c2bd9; */
+  color: white;
+  font-weight: 400;
+  z-index: 10;
+  text-align: center;
+  opacity: 70%;
+}
+.link:hover {
+  text-decoration: underline;
+  font-style: italic;
 }

@@ -47,7 +47,7 @@ const Prize = () => {
           <p className="tag">Best Beginner Team</p>
         </div>
       </div>
-      <h2 className="sponsors--head__title">TRACK PRIZES</h2>
+      <h2 className="sponsors--head__title">PARTNER PRIZES</h2>
       <div className="track-prize">
         {prizeData.prizes.map((e, i) => (
           <Prizebox prize={e} key={i} />

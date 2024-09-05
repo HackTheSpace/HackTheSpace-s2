@@ -11,13 +11,14 @@ const PrizeBox = ({ prize }) => {
     visible: {
       y: 0,
       opacity: 0.75,
+      rotate: 0,
       transition: { duration: 0.5, delay: 0.5 },
     },
   };
   return (
     <motion.div
       variants={animation}
-      initial={{ y: 200, opacity: 0 }}
+      initial={{ y: 100, opacity: 0, rotate: 10 }}
       animate={inView ? "visible" : ""}
       className="prize-box"
       ref={ref}
@@ -28,6 +29,9 @@ const PrizeBox = ({ prize }) => {
       {/* <Image src={prize.img} width={247} height={60} /> */}
       <h2>{prize.title}</h2>
       <p>{prize.para}</p>
+      <a className="link" target="blank" href={prize.link}>
+        view more
+      </a>
     </motion.div>
   );
 };
