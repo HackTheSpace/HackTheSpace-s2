@@ -8,7 +8,7 @@ import { prizeData } from "../../config/trackPrize";
 
 const Prize = () => {
   return (
-    <section className="Prize-section">
+    <section id="prizes" className="Prize-section">
       <Image
         src="/images/backgrounds/bg_1.jpg"
         alt="Background"

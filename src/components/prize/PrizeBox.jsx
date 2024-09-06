@@ -12,7 +12,7 @@ const PrizeBox = ({ prize }) => {
       y: 0,
       opacity: 0.75,
       rotate: 0,
-      transition: { duration: 0.5, delay: 0.5 },
+      transition: { duration: 0.5 },
     },
   };
   return (

@@ -74,7 +74,7 @@ const Venue = () => {
   };
 
   return (
-    <div className="venueSection">
+    <div id="venue" className="venueSection">
       <Image
         src="/images/backgrounds/bg_2.jpg"
         alt="Background"
