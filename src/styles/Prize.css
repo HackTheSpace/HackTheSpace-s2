@@ -19,9 +19,9 @@
   z-index: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: baseline;
-  margin-top: 5vw;
+  justify-content: space-evenly;
+  /* align-items: baseline; */
+  margin-top: 15vw;
   width: 100vw;
 }
 .trophy {
@@ -30,75 +30,56 @@
   flex-direction: column;
   align-items: center;
 }
+.trophy:nth-child(2) {
+  margin-top: -6vw;
+}
 .cup {
   width: 17.028vw;
   height: 21.403vw;
 }
+.trophy:nth-child(2) .cup {
+  width: 18.028vw;
+  height: 22.403vw;
+}
+.trophy:nth-child(2) .amount-container {
+  top: 13.5vw;
+}
 .cup path {
   stroke-width: 1;
 }
-.trophy:nth-child(2) .cup {
-  width: 25.028vw;
-  height: 28.403vw;
-}
-.trophy:nth-child(2) .amount-container {
-  top: 20vw;
-}
-.trophy:nth-child(2) .amount {
-  font-size: 7.556vw;
-  font-weight: 400;
-  font-family: "Anton";
-}
-.trophy:nth-child(2) .rank {
-  width: 100%;
-  top: 8vw;
-}
-.trophy:nth-child(2) .rank h2 {
-  font-size: 8vw;
-}
-.trophy:nth-child(2) .sub {
-  font-size: 3vw;
-}
-.trophy:nth-child(2) .tag {
-  font-size: 3rem;
-}
+
 .amount-container {
   width: 100%;
-  top: 14.5vw;
-  /* font-size: 5.556vw;
-  font-weight: 400; */
-  /* font-family: "Anton"; */
+  top: 12.5vw;
   position: absolute;
-  /* line-height: 5.546vw; */
   display: flex;
   justify-content: center;
 }
 .amount {
-  /* top: 14.5vw; */
   font-size: 5.556vw;
   font-weight: 400;
   font-family: "Anton";
-  /* position: absolute; */
-  line-height: 5.546vw;
 }
 .rank {
   width: 100%;
-  top: 6vw;
-
+  top: 5vw;
+  color: #000;
   position: absolute;
   line-height: 5.546vw;
   display: flex;
   justify-content: center;
+  text-align: center;
+  /* background-color: aliceblue; */
 }
 .rank h2 {
-  font-size: 5.556vw;
+  font-size: 5vw;
   font-weight: 400;
   font-family: "Anton";
   line-height: 5.546vw;
 }
 .sub {
   font-size: 2vw;
-  vertical-align: baseline;
+  vertical-align: super;
 }
 .tag {
   font-family: "roboto";
@@ -112,7 +93,7 @@
   width: 80vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .spetial-prize-container {
   /* background-color: aliceblue; */
@@ -213,13 +194,13 @@
     gap: 1.5rem;
     grid-template-columns: auto auto;
   }
+  .tag {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 768px) {
-  .trophy:nth-child(2) .tag {
-    font-size: 2rem;
-  }
   .tag {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .track-prize {
     grid-template-columns: auto auto;
@@ -229,9 +210,6 @@
   }
 }
 @media (max-width: 600px) {
-  .trophy:nth-child(2) .tag {
-    font-size: 1rem;
-  }
   .tag {
     font-size: 0.7rem;
   }
@@ -247,7 +225,7 @@
     font-size: 76%;
   }
   .trophy-container {
-    margin-top: 10vw;
+    margin-top: 20vw;
   }
 }
 .link {

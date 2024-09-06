@@ -22,15 +22,15 @@ const Prize = () => {
       </div>
       <div className="trophy-container">
         <Trophy
-          amount={"10k"}
-          title={"First Runner-Up"}
+          amount={"INR 10K"}
+          title={"FIRST RUNNER-UP"}
           rank={"2"}
           ranksub={"nd"}
         />
-        <Trophy amount={"20k"} title={"Winner"} rank={"1"} ranksub={"st"} />
+        <Trophy amount={"INR 20K"} title={"WINNER"} rank={"1"} ranksub={"st"} />
         <Trophy
-          amount={"5k"}
-          title={"Second Runner-Up"}
+          amount={"INR 5K"}
+          title={"SECOND RUNNER-UP"}
           rank={"3"}
           ranksub={"rd"}
         />
@@ -38,12 +38,12 @@ const Prize = () => {
       <div className="spetial-prize">
         <div className="spetial-prize-container">
           <Image src="/girls.svg" alt="svg" height={228} width={169} />
-          <h1 className="spetial-amount">₹2500/-</h1>
+          <h1 className="spetial-amount">INR 2500/-</h1>
           <p className="tag">Best All Girls Team</p>
         </div>
         <div className="spetial-prize-container">
           <Image src="/beginner.svg" alt="svg" height={228} width={122} />
-          <h1 className="spetial-amount">₹2500/-</h1>
+          <h1 className="spetial-amount">INR 2500/-</h1>
           <p className="tag">Best Beginner Team</p>
         </div>
       </div>
