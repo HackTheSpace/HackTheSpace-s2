@@ -21,7 +21,7 @@
   font-family: "Anton";
   font-style: normal;
   font-weight: 400;
-  font-size: 20vw;
+  font-size: 20.833vw;
   line-height: 20.798vw;
 }
 .heading-small {
@@ -96,4 +96,7 @@ iframe {
   height: 100%;
   z-index: 0;
   opacity: 0.23;
+}
+.place-card {
+  display: none;
 }

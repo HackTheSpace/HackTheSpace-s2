@@ -105,15 +105,21 @@ const Navbar = () => {
         <li>
           <span onClick={() => handleScroll("#home")}>Home</span>
         </li>
-        <li>
+        {/* <li>
           <span onClick={() => handleScroll("#aboutUS")}>About Us</span>
+        </li> */}
+        <li>
+          <span onClick={() => handleScroll("#venue")}>Venue</span>
+        </li>
+        <li>
+          <span onClick={() => handleScroll("#prizes")}>Prizes</span>
         </li>
         <li>
           <span onClick={() => handleScroll("#tracks")}>Tracks</span>
         </li>
-        <li>
+        {/* <li>
           <span onClick={() => handleScroll("#events")}>Events</span>
-        </li>
+        </li> */}
         <li>
           <Link href="/partners" onClick={() => setHamBurger(false)}>
             Partners
