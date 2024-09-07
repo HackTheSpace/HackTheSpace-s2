@@ -1,0 +1,65 @@
+.slider-container {
+    width: 20%;
+    /* max-width: 600px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    padding: 16px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+    z-index: 1000;
+    position: relative;
+    pointer-events: auto;
+    
+    
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    gap: 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+  }
+  
+  .tabs button {
+    background: transparent; /* Default transparent background */
+    border: 2px solid transparent; /* Border for alignment */
+    padding: 8px 24px; /* Adjust padding to control size */
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px; /* Makes the button oval-shaped */
+    /* transition: background 0.3s ease, border-color 0.3s ease; Smooth transition */
+  }
+  
+  .tabs button.active {
+    background-color: #777777; /* Background color when active */
+    color: white; /* Text color when active */
+    border-color: #777777; /* Border color when active */
+  }
+  
+  
+  .tabs button:hover {
+    background-color: #999999;
+    color: #fff;
+  }
+  
+  .content-container {
+    overflow: hidden;
+    height: auto;
+  }
+  
+  .content {
+    display: none;
+    transition: all 0.5s ease;
+  }
+  
+  .content.show {
+    display: block;
+  }
+  

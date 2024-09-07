@@ -13,7 +13,7 @@
 @import url("./Venue.css");
 @import url("./Sponsors.css");
 @import url("./Prize.css");
-
+@import url("./Slider.css");
 * {
   box-sizing: border-box;
   padding: 0;

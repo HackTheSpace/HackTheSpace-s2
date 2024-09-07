@@ -1,301 +1,313 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import TeamMember from "../../components/TeamMember";
-import "@/styles/TeamMember.css"
+import Slider from "@/components/Slider"; // Assuming this is the correct import path
+import "@/styles/TeamMember.css";
+
+const organisers = [
+  {
+    name: "Himanshu",
+    role: "Kumar Sahu",
+    imageSrc: "/images/himanshurect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/himanshu",
+      behance: "https://behance.net/himanshu",
+      twitter: "https://twitter.com/himanshu",
+    },
+  },
+  {
+    name: "Fanibhusan",
+    role: "Sahu",
+    imageSrc: "/images/himanshurect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/himanshu",
+      behance: "https://behance.net/himanshu",
+      twitter: "https://twitter.com/himanshu",
+    },
+  },
+  {
+    name: "Ayush",
+    role: "Sahu",
+    imageSrc: "/images/ayushrect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/himanshu",
+      behance: "https://behance.net/himanshu",
+      twitter: "https://twitter.com/himanshu",
+    },
+  },
+  {
+    name: "Akshat",
+    role: "Sahu",
+    imageSrc: "/images/akshatrect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/himanshu",
+      behance: "https://behance.net/himanshu",
+      twitter: "https://twitter.com/himanshu",
+    },
+  },
+  {
+    name: "Mohit",
+    role: "Makda",
+    imageSrc: "/images/mohitrect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/himanshu",
+      behance: "https://behance.net/himanshu",
+      twitter: "https://twitter.com/himanshu",
+    },
+  },
+  {
+    name: "Harsh",
+    role: "Gupta",
+    imageSrc: "/images/harshrect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/himanshu",
+      behance: "https://behance.net/himanshu",
+      twitter: "https://twitter.com/himanshu",
+    },
+  },
+  {
+    name: "Smit",
+    role: "Javia",
+    imageSrc: "/images/smitrect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/himanshu",
+      behance: "https://behance.net/himanshu",
+      twitter: "https://twitter.com/himanshu",
+    },
+  },
+  {
+    name: "Shubham",
+    role: "Jha",
+    imageSrc: "/images/shubhamrect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/himanshu",
+      behance: "https://behance.net/himanshu",
+      twitter: "https://twitter.com/himanshu",
+    },
+  },
+  {
+    name: "Darshita",
+    role: "Ahuja",
+    imageSrc: "/images/darshitaerct.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/himanshu",
+      behance: "https://behance.net/himanshu",
+      twitter: "https://twitter.com/himanshu",
+    },
+  },
+  {
+    name: "Shweta",
+    role: "Cheemalapati",
+    imageSrc: "/images/shwetarect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/himanshu",
+      behance: "https://behance.net/himanshu",
+      twitter: "https://twitter.com/himanshu",
+    },
+  },
+  {
+    name: "Lomesh",
+    role: "patil",
+    imageSrc: "/images/lomeshrect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/himanshu",
+      behance: "https://behance.net/himanshu",
+      twitter: "https://twitter.com/himanshu",
+    },
+  },
+
+];
+
+const coreTeam = [
+  {
+    name: "Anubhav",
+    role: "Choubey",
+    imageSrc: "/images/anubhavrect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/fanibhushan",
+      behance: "https://behance.net/fanibhushan",
+      twitter: "https://twitter.com/fanibhushan",
+    },
+  },
+  {
+    name: "Apoorva",
+    role: "Sinha",
+    imageSrc: "/images/apoorvarect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/fanibhushan",
+      behance: "https://behance.net/fanibhushan",
+      twitter: "https://twitter.com/fanibhushan",
+    },
+  },
+  {
+    name: "Bhumika",
+    role: "Deshmukh",
+    imageSrc: "/images/bhumikarecct.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/fanibhushan",
+      behance: "https://behance.net/fanibhushan",
+      twitter: "https://twitter.com/fanibhushan",
+    },
+  },
+  {
+    name: "Diya",
+    role: "Roy",
+    imageSrc: "/images/diyarect.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/fanibhushan",
+      behance: "https://behance.net/fanibhushan",
+      twitter: "https://twitter.com/fanibhushan",
+  }
+
+    },
+    {
+      name: "Deepika",
+      role: "Guntu",
+      imageSrc: "/images/deepikarect.png",
+      socials: {
+        linkedin: "https://linkedin.com/in/fanibhushan",
+        behance: "https://behance.net/fanibhushan",
+        twitter: "https://twitter.com/fanibhushan",
+      },
+    },
+    {
+      name: "Girish",
+      role: "Sinha",
+      imageSrc: "/images/girishrect.png",
+      socials: {
+        linkedin: "https://linkedin.com/in/fanibhushan",
+        behance: "https://behance.net/fanibhushan",
+        twitter: "https://twitter.com/fanibhushan",
+      },
+    },
+    {
+      name: "Harsh",
+      role: "Naidu",
+      imageSrc: "/images/naidurect.png",
+      socials: {
+        linkedin: "https://linkedin.com/in/fanibhushan",
+        behance: "https://behance.net/fanibhushan",
+        twitter: "https://twitter.com/fanibhushan",
+      },
+    },
+    {
+      name: "Kaushal",
+      role: "Ranjan",
+      imageSrc: "/images/Kaushal.png",
+      socials: {
+        linkedin: "https://linkedin.com/in/fanibhushan",
+        behance: "https://behance.net/fanibhushan",
+        twitter: "https://twitter.com/fanibhushan",
+      },
+    },
+    {
+      name: "Rishita",
+      role: "Nair",
+      imageSrc: "/images/rishitarect.png",
+      socials: {
+        linkedin: "https://linkedin.com/in/fanibhushan",
+        behance: "https://behance.net/fanibhushan",
+        twitter: "https://twitter.com/fanibhushan",
+      },
+    },
+    {
+      name: "Ritesh",
+      role: "Sahu",
+      imageSrc: "/images/riteshrect.png",
+      socials: {
+        linkedin: "https://linkedin.com/in/fanibhushan",
+        behance: "https://behance.net/fanibhushan",
+        twitter: "https://twitter.com/fanibhushan",
+      },
+    },
+    {
+      name: "Shriya",
+      role: "Dey",
+      imageSrc: "/images/shriya.png",
+      socials: {
+        linkedin: "https://linkedin.com/in/fanibhushan",
+        behance: "https://behance.net/fanibhushan",
+        twitter: "https://twitter.com/fanibhushan",
+      },
+    },
+    {
+      name: "Shahil",
+      role: "Sinha",
+      imageSrc: "/images/shahilrect.png",
+      socials: {
+        linkedin: "https://linkedin.com/in/fanibhushan",
+        behance: "https://behance.net/fanibhushan",
+        twitter: "https://twitter.com/fanibhushan",
+      },
+    },
+    {
+      name: "Tripti",
+      role: "Sahu",
+      imageSrc: "/images/triptirect.png",
+      socials: {
+        linkedin: "https://linkedin.com/in/fanibhushan",
+        behance: "https://behance.net/fanibhushan",
+        twitter: "https://twitter.com/fanibhushan",
+      },
+    },
+    {
+      name: "Yaman",
+      role: "Sahu",
+      imageSrc: "/images/yamanrectmota.png",
+      socials: {
+        linkedin: "https://linkedin.com/in/fanibhushan",
+        behance: "https://behance.net/fanibhushan",
+        twitter: "https://twitter.com/fanibhushan",
+      },
+    },
+];
 
 const Team = () => {
+  const [activeTab, setActiveTab] = useState("organiser");
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+  };
+
   return (
-    <div className="team">
-      <div className="heading">
-        <h1 className="heading-shadow">TEAM</h1>
-        {/* Replace Heading with an h2 if it's not a custom component */}
-        <h2 className="heading-small">OUR TEAM</h2>
+    <>
+      <div className="team">
+        <div className="heading">
+          <h1 className="heading-shadow">TEAM</h1>
+          <h2 className="heading-small">OUR TEAM</h2>
+        </div>
+        <Slider activeTab={activeTab} onTabChange={handleTabChange} />
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-evenly",
+            padding: "0",
+            width: "100%",
+          }}
+        >
+          {activeTab === "organiser"
+            ? organisers.map((member, index) => (
+                <TeamMember
+                  key={index}
+                  name={member.name}
+                  role={member.role}
+                  imageSrc={member.imageSrc}
+                  socials={member.socials}
+                />
+              ))
+            : coreTeam.map((member, index) => (
+                <TeamMember
+                  key={index}
+                  name={member.name}
+                  role={member.role}
+                  imageSrc={member.imageSrc}
+                  socials={member.socials}
+                />
+              ))}
+        </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-evenly",
-          padding: "0",
-          width:"100%"
-        }}
-      >
-        <TeamMember
-          name="Himanshu "
-          role="Kumar Sahu"
-          role2=""
-          imageSrc="/images/himanshurect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/himanshu",
-            behance: "https://behance.net/himanshu",
-            twitter: "https://twitter.com/himanshu",
-          }}
-        />
-
-        <TeamMember
-          name="Fanibhushan "
-          role="Sahu"
-          role2=""
-          imageSrc="/images/himanshurect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-        <TeamMember
-          name="Ayush "
-          role="Sahu"
-          role2=""
-          imageSrc="/images/ayushrect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-<TeamMember
-          name="Akshat "
-          role="Sahu"
-          role2=""
-          imageSrc="/images/akshatrect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-        <TeamMember
-          name="Harsh Gupta"
-          role=""
-          role2=""
-          imageSrc="/images/Harshrect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-<TeamMember
-          name="Mohit"
-          role="Makda"
-          role2=""
-          imageSrc="/images/mohitrect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-
-<TeamMember
-          name="Smit "
-          role="Javia"
-          role2=""
-          imageSrc="/images/smitrect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-        <TeamMember
-          name="Shubham "
-          role="Jha"
-          role2=""
-          imageSrc="/images/shubhamrect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-<TeamMember
-          name="Darshita "
-          role="Ahuja"
-          role2=""
-          imageSrc="/images/darshitaerct.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-        <TeamMember
-          name="Lomesh"
-          role="Patil"
-          role2=""
-          imageSrc="/images/lomeshrect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-        <TeamMember
-          name="Tripti "
-          role="Sahu"
-          role2=""
-          imageSrc="/images/triptirect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-<TeamMember
-          name="Ritesh "
-          role="kumar"
-          role2=""
-          imageSrc="/images/riteshrect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-
-        <TeamMember
-          name="Shweta"
-          role="Cheemalapati"
-          role2=""
-          imageSrc="/images/shwetarect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-<TeamMember
-          name="Girish "
-          role="Sinha"
-          role2="T"
-          imageSrc="/images/girishrect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-        <TeamMember
-          name="Deepika "
-          role="Guntu"
-          role2=""
-          imageSrc="/images/deepikarect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-        <TeamMember
-          name="Diya "
-          role="Roy"
-          role2=""
-          imageSrc="/images/diyarect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/himanshu",
-            behance: "https://behance.net/himanshu",
-            twitter: "https://twitter.com/himanshu",
-          }}
-        />
-
-        <TeamMember
-          name="Shriya "
-          role="Dey"
-          role2=""
-          imageSrc="/images/shriya.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/himanshu",
-            behance: "https://behance.net/himanshu",
-            twitter: "https://twitter.com/himanshu",
-          }}
-        />
-        <TeamMember
-          name="Rishita"
-          role="Nair"
-          role2=""
-          imageSrc="/images/rishitarect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-        <TeamMember
-          name="Anubhav "
-          role="Choubey"
-          role2=""
-          imageSrc="/images/anubhavrect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-        <TeamMember
-          name="Bhumika "
-          role="Deshmukh"
-          role2=""
-          imageSrc="/images/bhumikarecct.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-        <TeamMember
-          name="Apoorva"
-          role="sinha"
-          role2=""
-          imageSrc="/images/apoorvarect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/apoorva-sinha-84bb01272",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-        
-<TeamMember
-          name="Kaushal "
-          role="Ranjan"
-          role2=""
-          imageSrc="/images/yamanrectmota.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-
-        
-<TeamMember
-          name="Yaman "
-          role="Sahu"
-          role2=""
-          imageSrc="/images/yamanrect.png"
-          socials={{
-            linkedin: "https://linkedin.com/in/fanibhushan",
-            behance: "https://behance.net/fanibhushan",
-            twitter: "https://twitter.com/fanibhushan",
-          }}
-        />
-      </div>
-
-      {/* Add more team members as needed */}
-    </div>
+    </>
   );
 };
 
