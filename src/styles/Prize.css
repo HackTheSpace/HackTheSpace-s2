@@ -1,0 +1,243 @@
+.Prize-section {
+  width: 100vw;
+  height: auto;
+  position: relative;
+}
+.prize-background {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  /* width: 100vw; */
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  z-index: 0;
+  opacity: 0.23;
+  overflow: hidden;
+}
+.trophy-container {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* align-items: baseline; */
+  margin-top: 15vw;
+  width: 100vw;
+}
+.trophy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trophy:nth-child(2) {
+  margin-top: -6vw;
+}
+.cup {
+  width: 17.028vw;
+  height: 21.403vw;
+}
+.trophy:nth-child(2) .cup {
+  width: 18.028vw;
+  height: 22.403vw;
+}
+.trophy:nth-child(2) .amount-container {
+  top: 13.5vw;
+}
+.cup path {
+  stroke-width: 1;
+}
+
+.amount-container {
+  width: 100%;
+  top: 12.5vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.amount {
+  font-size: 5.556vw;
+  font-weight: 400;
+  font-family: "Anton";
+}
+.rank {
+  width: 100%;
+  top: 5vw;
+  color: #000;
+  position: absolute;
+  line-height: 5.546vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* background-color: aliceblue; */
+}
+.rank h2 {
+  font-size: 5vw;
+  font-weight: 400;
+  font-family: "Anton";
+  line-height: 5.546vw;
+}
+.sub {
+  font-size: 2vw;
+  vertical-align: super;
+}
+.tag {
+  font-family: "roboto";
+  line-height: 1.5;
+  text-align: center;
+  /* font-size: 1.5vw; */
+  font-size: 2rem;
+}
+.spetial-prize {
+  margin-inline: 10vw;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.spetial-prize-container {
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 5vw;
+}
+.spetial-prize-container img {
+  height: 15.833vw;
+  /* width: 8.472vw; */
+  width: auto;
+}
+.spetial-amount {
+  font-size: 5.556vw;
+  font-weight: 400;
+  font-family: "Anton";
+  line-height: 5.546vw;
+}
+.prize-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #a3a3a3;
+  background-color: #0e1723;
+  position: relative;
+  height: 30.208vw;
+  width: 22.917vw;
+  min-width: 260px;
+  min-height: 360px;
+  opacity: 75%;
+  transform-origin: top left;
+}
+.prize-box::before,
+.prize-box::after {
+  content: "";
+  position: absolute;
+  background-color: #0e1723b0;
+  pointer-events: none;
+}
+.prize-box::before {
+  width: calc(100% + 2px * 2 - 50px);
+  height: calc(100% + 1px * 2);
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.prize-box::after {
+  height: calc(100% + 2px * 2 - 50px);
+  width: calc(100% + 1px * 2);
+  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.track-prize {
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  grid-template-columns: auto auto auto;
+  margin-block: 5vw;
+}
+.prize-box h2 {
+  z-index: 1;
+  font-family: Poppins;
+  font-size: 115%;
+  font-weight: bold;
+  width: 90%;
+}
+.prize-box p {
+  font-family: Roboto;
+  font-size: 100%;
+  font-weight: lighter;
+  line-height: 20px;
+  text-align: justify;
+  width: 90%;
+  height: 40%;
+  z-index: 1;
+}
+.prizeBox-img {
+  z-index: 10;
+  text-align: center;
+  height: 20%;
+  width: 87%;
+}
+.prizeBox-img img {
+  height: 83%;
+  width: auto;
+}
+@media (max-width: 1200px) {
+  .prize-box p {
+    font-size: 80%;
+  }
+}
+@media (max-width: 900px) {
+  .track-prize {
+    gap: 1.5rem;
+    grid-template-columns: auto auto;
+  }
+  .tag {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .tag {
+    font-size: 1rem;
+  }
+  .track-prize {
+    grid-template-columns: auto auto;
+  }
+  .spetial-prize-container {
+    margin-bottom: 15vw;
+  }
+}
+@media (max-width: 600px) {
+  .tag {
+    font-size: 0.7rem;
+  }
+  .prize-box {
+    min-width: 250px;
+    min-height: 350px;
+  }
+  .track-prize {
+    grid-template-columns: auto;
+    margin-block: 15vw;
+  }
+  .prize-box p {
+    font-size: 76%;
+  }
+  .trophy-container {
+    margin-top: 20vw;
+  }
+}
+.link {
+  font-family: Poppins;
+  /* color: #4c2bd9; */
+  color: white;
+  font-weight: 400;
+  z-index: 10;
+  text-align: center;
+  opacity: 70%;
+}
+.link:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
