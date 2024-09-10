@@ -5,10 +5,10 @@ export const sponsorConfig = {
     Sponsor: [
       {
         id: "1",
-        Name: "Diamante Blockchain",
-        Img: "/images/sponsors/diamante.png",
-        Link: "https://diamanteblockchain.com/",
-        para: "Diamante Blockchain is a global, decentralized finance platform successfully ​​implementing and developing a competitive blockchain-enabled ecosystem for trade, payments, and financing.",
+        Name: "Diamante",
+        Img: "/images/sponsors/diamante-new.png",
+        Link: "https://diamante.io/",
+        para: "Diamante is a global, decentralized finance platform successfully ​​implementing and developing a competitive blockchain-enabled ecosystem for trade, payments, and financing.",
       },
     ],
   },
