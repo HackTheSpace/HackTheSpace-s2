@@ -123,6 +123,12 @@ export const sponsorConfig = {
         Img: "/images/sponsors/Axure_logo_.svg",
         Link: "https://www.geeksforgeeks.org/",
       },
+      {
+        id: "7",
+        Name: "VoiceFlow",
+        Img: "/images/sponsors/voiceFlowSvg.svg",
+        Link: "https://www.voiceflow.com/",
+      },
     ],
   },
 
