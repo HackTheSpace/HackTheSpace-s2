@@ -75,8 +75,8 @@ const Glimpse = () => {
         className="glimpse-section__background"
       />
       <div className="heading-container">
-        <h1 className="title-shadow">GALLERY</h1>
-        <Heading className="section-title">Previous Events</Heading>
+        <h1 className="title-shadow">EVENTS</h1>
+        <Heading className="section-title">EVENTS</Heading>
       </div>
       <div className="glimpse-container">
         {glimpseConfig.map((item) => (
