@@ -43,6 +43,18 @@ export const prizeData = {
             para: "Render the editor with a Tiny Cloud account and use at least 3 open source plugins and 2 premium plugins in your project, for a chance to win a 3D Printing Pen for you and each of your team members!",
             link: "https://hack.mlh.io/prizes "
         },
+        {
+            img: "/images/trackPrizes/postman-white.svg",
+            title: "Best Use of Postman",
+            para: "Build a project that uses Postman and win an exclusive Postman swag kit, a certification, and stand a chance to get featured on the Postman blog.",
+            link: "https://parallel-ethernet-06d.notion.site/Best-Project-built-using-Postman-a0df1c244dc14b699003364746946e53?pvs=4"
+        },
+        {
+            img: "/images/trackPrizes/postman-white.svg",
+            title: "Best Use of Postman GenAI",
+            para: "Build a project that uses GenAI APIs and win an exclusive Postman swag kit, a certification, and stand a chance to get featured on the Postman blog.",
+            link: "https://parallel-ethernet-06d.notion.site/Best-Project-built-using-Postman-a0df1c244dc14b699003364746946e53?pvs=4"
+        },
 
     ]
 }

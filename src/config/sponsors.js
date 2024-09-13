@@ -74,12 +74,12 @@ export const sponsorConfig = {
       //   Img: "/images/sponsors/Bizthon.png",
       //   Link: "https://bizthon.com/",
       // },
-      // {
-      //   id: "3",
-      //   Name: "Postman",
-      //   Img: "/images/sponsors/SSTCLogo4.svg",
-      //   Link: "https://www.postman.com/",
-      // },
+      {
+        id: "3",
+        Name: "Postman",
+        Img: "/images/trackPrizes/postman-white.svg",
+        Link: "https://www.postman.com/",
+      }
     ],
   },
 
