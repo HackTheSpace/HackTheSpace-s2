@@ -1,0 +1,55 @@
+.schedule--section{
+  box-sizing: border-box;
+  width: 100vw;
+  height: fit-content;
+}
+
+.schedule__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.schedule--heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sponsors--heading__main {
+    position: absolute;
+    font-size: 5.556vw;
+    font-weight: 400;
+    font-family: "Anton";
+    line-height: 5.546vw;
+    margin-top: 6vw;
+    margin-left: 7.5%;
+    color: #ffffff;
+    left: 33vw;
+}
+
+.schedule--container__box {
+    width: 80vw;
+    height: 60vh; 
+    border: #ffffff solid 1px;
+    overflow-y: auto; 
+    overflow-x: hidden; 
+}
+.schedule--container__box > * {
+    width: 100%; /* Ensure child elements fit the container width */
+    white-space: normal; /* Allow line breaks to prevent horizontal scrolling */
+}
+
+.schedule--outer__container {
+    display: inline-flex;
+}
+
+.schedule--outer__container > .schedule--inner__container {
+    text-align: center;
+    line-height: 150px;
+    font-size: 18px;
+}
+  
+
+  
