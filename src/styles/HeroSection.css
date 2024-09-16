@@ -267,6 +267,10 @@
     font-size: 0.7rem;
   }
 
+  .hero-section__buttons button > a {
+    line-height: 1.2;
+  }
+
   .hero-section__image {
     height: 50%;
     top: -30%;
