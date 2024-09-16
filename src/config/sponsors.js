@@ -5,10 +5,10 @@ export const sponsorConfig = {
     Sponsor: [
       {
         id: "1",
-        Name: "Diamante Blockchain",
-        Img: "/images/sponsors/diamante.png",
-        Link: "https://diamanteblockchain.com/",
-        para: "Diamante Blockchain is a global, decentralized finance platform successfully ​​implementing and developing a competitive blockchain-enabled ecosystem for trade, payments, and financing.",
+        Name: "Diamante",
+        Img: "/images/sponsors/diamante-new.png",
+        Link: "https://diamante.io/",
+        para: "Diamante is a global, decentralized finance platform successfully ​​implementing and developing a competitive blockchain-enabled ecosystem for trade, payments, and financing.",
       },
     ],
   },
@@ -74,12 +74,12 @@ export const sponsorConfig = {
       //   Img: "/images/sponsors/Bizthon.png",
       //   Link: "https://bizthon.com/",
       // },
-      // {
-      //   id: "3",
-      //   Name: "Postman",
-      //   Img: "/images/sponsors/SSTCLogo4.svg",
-      //   Link: "https://www.postman.com/",
-      // },
+      {
+        id: "3",
+        Name: "Postman",
+        Img: "/images/trackPrizes/postman-white.svg",
+        Link: "https://www.postman.com/",
+      },
     ],
   },
 
@@ -122,6 +122,12 @@ export const sponsorConfig = {
         Name: "Axure",
         Img: "/images/sponsors/Axure_logo_.svg",
         Link: "https://www.geeksforgeeks.org/",
+      },
+      {
+        id: "7",
+        Name: "VoiceFlow",
+        Img: "/images/sponsors/voiceFlowSvg.svg",
+        Link: "https://www.voiceflow.com/",
       },
     ],
   },
