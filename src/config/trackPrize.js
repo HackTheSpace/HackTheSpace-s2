@@ -54,5 +54,11 @@ export const prizeData = {
       para: "Build a project that uses GenAI APIs and win an exclusive Postman swag kit, a certification, and stand a chance to get featured on the Postman blog.",
       link: "https://parallel-ethernet-06d.notion.site/Best-Project-built-using-Postman-a0df1c244dc14b699003364746946e53?pvs=4",
     },
+    {
+      img: "/images/trackPrizes/voiceflow.svg",
+      title: "Best Use of Voiceflow API",
+      para: "Voiceflow rewards the top 3 teams! Build creative AI agents using our APIs or deploy them on custom interfaces for a chance to win. Prizes include extended Pro Plan access, 2M AI tokens, and a feature in our showcase interview. Push the boundaries of AI and stand out as one of the best!",
+      link: "",
+    },
   ],
 };
