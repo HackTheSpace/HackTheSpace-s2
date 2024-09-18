@@ -58,7 +58,7 @@ export const prizeData = {
       img: "/images/trackPrizes/voiceflow.svg",
       title: "Best Use of Voiceflow API",
       para: "Voiceflow rewards the top 3 teams! Build creative AI agents using our APIs or deploy them on custom interfaces for a chance to win. Prizes include extended Pro Plan access, 2M AI tokens, and a feature in our showcase interview. Push the boundaries of AI and stand out as one of the best!",
-      link: "",
+      link: "https://docs.google.com/document/d/1d06a2x8Tcm2xoC3EBuHQDCqGaDgy6gKOaQ-_QS68hsc",
     },
   ],
 };
