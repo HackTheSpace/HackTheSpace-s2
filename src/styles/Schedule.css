@@ -1,0 +1,115 @@
+.schedule-section {
+  height: 300vh;
+  position: relative;
+}
+
+.horizontal-scroll {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.schedule {
+  width: fit-content;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.horizontal-scroll > hr {
+  width: 100%;
+  border-top: 5px dashed white;
+  border-bottom: none;
+  position: absolute;
+}
+
+.schedule-rocket {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 20%;
+}
+
+.card {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.card-content {
+  display: flex;
+  gap: 1rem;
+  height: 100px;
+  font-family: "Anton";
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content > h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.card-content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+  height: 100%;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.time > p:nth-child(1) {
+  font-size: 2rem;
+}
+
+.time > p:nth-child(2) {
+  transform: rotate(-90deg);
+  font-size: 1.5rem;
+}
+
+.card-content > div > p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .schedule-rocket {
+    width: 50px;
+    height: 100px;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .card-content > h1 {
+    font-size: 3rem;
+  }
+
+  .card-content > div {
+    height: 50px;
+  }
+
+  .card-content > div > p {
+    font-size: 0.8rem;
+  }
+
+  .time > p:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .time > p:nth-child(2) {
+    font-size: 1rem;
+  }
+}
