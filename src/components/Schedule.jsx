@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { scheduleConfig } from "@/config/schedule";
 import Heading from "@/components/Heading";
@@ -49,11 +49,22 @@ const Card = ({ id, time, period, content }) => {
 const Schedule = () => {
   const targetRef = useRef(null);
 
+  const [progress, setProgress] = useState(0);
+  console.log(progress);
+
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["50%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["10%", "-95%"]);
+
+  const lg = useTransform(scrollYProgress, [0, 1], ["0", "800%"]);
+
+  useEffect(() => {
+    lg.onChange((v) => {
+      setProgress(v);
+    });
+  }, []);
 
   return (
     <section id="schedule" ref={targetRef} className="schedule-section">
@@ -63,13 +74,19 @@ const Schedule = () => {
       </div>
       <div className="horizontal-scroll">
         <hr />
-        <Image
-          src="/schedule-rocket.png"
-          width={100}
-          height={200}
-          alt="Rocket"
+        <motion.div
           className="schedule-rocket"
-        />
+          style={{
+            x: lg,
+          }}
+        >
+          <Image
+            src="/schedule-rocket.png"
+            width={70}
+            height={140}
+            alt="Rocket"
+          />
+        </motion.div>
         <Image
           src="/images/backgrounds/bg_2.jpg"
           alt="Background"
@@ -77,6 +94,10 @@ const Schedule = () => {
           quality={100}
           className="venue-section__background"
         />
+        <h1 className="Day">
+          {parseInt(progress) > 500 ? "Day 2" : "Day 1"}{" "}
+          <span>{parseInt(progress) > 500 ? "Saturday" : "Friday"}</span>
+        </h1>
         <motion.div className="schedule" style={{ x }}>
           {scheduleConfig.map((item, index) => (
             <Card key={index} {...item} />
