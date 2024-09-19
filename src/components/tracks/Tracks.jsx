@@ -67,7 +67,7 @@ const Tracks = () => {
         className="spaceship"
       />
       <Image
-        src="/images/backgrounds/bg_4.png"
+        src="/images/backgrounds/bg_6.svg"
         alt="Background"
         width={2000}
         height={2000}
