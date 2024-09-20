@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <section className="AboutUsDiv" id="aboutUS">
       <Image
-        src="/astronaut.svg"
+        src="/astronaut2.svg"
         alt="Astronaut"
         width={500}
         height={500}
@@ -25,10 +25,10 @@ const AboutUs = () => {
           tech enthusiasts and career aspirants equal opportunities and exposure
           as people in metro cities or all around the world get! We are
           determined to cultivate an ambiance where individuals can coact to
-          create an inclusive environment to devise, grasp and develop solutions.
-          Our motive is not only concerned with technical but also cultural
-          development. As a team of aspirants we welcome growth as a part of our
-          journey.
+          create an inclusive environment to devise, grasp and develop
+          solutions. Our motive is not only concerned with technical but also
+          cultural development. As a team of aspirants we welcome growth as a
+          part of our journey.
         </Paragraph>
       </div>
       <div className="ParaDiv2">

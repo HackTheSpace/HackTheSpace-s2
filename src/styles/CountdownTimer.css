@@ -19,7 +19,7 @@
     line-height: 0.4;
     padding: .19em;
     overflow: hidden;
-    border: white solid 1px;
+    border: white solid 0.8px;
   }
   
   .top,
@@ -199,7 +199,7 @@
   /* For devices with max-width 450px */
   @media (max-width: 450px) {
     .counter--heading{
-        text-align: center;
+        text-align: left;
         margin-bottom: 10px;
         font-size: 1.8rem;
     }
@@ -238,7 +238,7 @@
 
   @media (max-width: 431px) {
     .counter--heading{
-        text-align: center;
+        text-align: left;
         margin-bottom: 10px;
         font-size: 1.4rem;
     }

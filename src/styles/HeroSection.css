@@ -156,9 +156,9 @@
 
 .hero-section__image {
   position: absolute;
-  right: -7%;
+  right: 0;
   top: -67%;
-  width: 59%;
+  width: fit-content;
   height: 115%;
 }
 
@@ -259,7 +259,6 @@
   .hero-section__image {
     height: 50%;
     top: -30%;
-    right: -6%;
   }
 }
 
