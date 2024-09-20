@@ -78,7 +78,7 @@ const organisers = [
   {
     name: "Shubham",
     role: "Jha",
-    imageSrc: "/images/shubhamrect.png",
+    imageSrc: "/images/shubham.png",
     socials: {
       linkedin: "https://linkedin.com/in/himanshu",
       behance: "https://behance.net/himanshu",
@@ -230,16 +230,16 @@ const coreTeam = [
         twitter: "https://twitter.com/fanibhushan",
       },
     },
-    {
-      name: "Shahil",
-      role: "Sinha",
-      imageSrc: "/images/shahilrect.png",
-      socials: {
-        linkedin: "https://linkedin.com/in/fanibhushan",
-        behance: "https://behance.net/fanibhushan",
-        twitter: "https://twitter.com/fanibhushan",
-      },
-    },
+    // {
+    //   name: "Shahil",
+    //   role: "Sinha",
+    //   imageSrc: "/images/shahilrect.png",
+    //   socials: {
+    //     linkedin: "https://linkedin.com/in/fanibhushan",
+    //     behance: "https://behance.net/fanibhushan",
+    //     twitter: "https://twitter.com/fanibhushan",
+    //   },
+    // },
     {
       name: "Tripti",
       role: "Sahu",
