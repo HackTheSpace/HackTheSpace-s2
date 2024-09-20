@@ -107,7 +107,11 @@ const HeroSection = () => {
             >
               Starts in - 
             </motion.h6>
-            <motion.div animate="enter" initial="initial" variants={buttonAnimation} custom={4}>
+            <motion.div 
+               animate="enter" 
+               initial="initial" 
+               variants={buttonAnimation} 
+               custom={4}>
               <CountdownTimer/>
             </motion.div>
 
