@@ -98,8 +98,18 @@ const HeroSection = () => {
           </div>
 
           <motion.div className="hero-section__buttons column--count">
-            <h6 className="counter--heading">Starts in - </h6>
+          <motion.h6
+              custom={4}
+              variants={buttonAnimation}
+              initial="initial"
+              animate="enter"
+              className="counter--heading"
+            >
+              Starts in - 
+            </motion.h6>
+            <motion.div animate="enter" initial="initial" variants={buttonAnimation} custom={4}>
               <CountdownTimer/>
+            </motion.div>
 
             {/* <motion.button
               variants={buttonAnimation}
