@@ -7,7 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import Image from "next/image";
-
+import CountdownTimer from "./Timer/CountdownTimer";
 const ThreeScene = dynamic(() => import("@/components/ThreeScene"), {
   ssr: false,
 });
@@ -97,18 +97,17 @@ const HeroSection = () => {
             </motion.h1>
           </div>
 
-          <motion.div className="hero-section__buttons">
-            <motion.button
+          <motion.div className="hero-section__buttons column--count">
+            <h6 className="counter--heading">Starts in - </h6>
+              <CountdownTimer/>
+
+            {/* <motion.button
               variants={buttonAnimation}
               initial="initial"
               animate="enter"
+              disabled
             >
-              <Link
-                href="https://www.hackquest.io/en/hackathon/explore/HackTheSpace-Season-2"
-                target="_blank"
-              >
-                REGISTER NOW
-              </Link>
+              REGISTRATION CLOSED
             </motion.button>
             <motion.button
               variants={buttonAnimation}
@@ -118,7 +117,7 @@ const HeroSection = () => {
               <Link href="https://discord.gg/FJKTSgdxPX" target="_blank">
                 DISCORD
               </Link>
-            </motion.button>
+            </motion.button> */}
           </motion.div>
           <div className="Date-Venue">
             <motion.h6

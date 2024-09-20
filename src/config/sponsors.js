@@ -79,7 +79,7 @@ export const sponsorConfig = {
         Name: "Postman",
         Img: "/images/trackPrizes/postman-white.svg",
         Link: "https://www.postman.com/",
-      }
+      },
     ],
   },
 
