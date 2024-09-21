@@ -7,7 +7,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import Image from "next/image";
-
+import CountdownTimer from "./Timer/CountdownTimer";
 const ThreeScene = dynamic(() => import("@/components/ThreeScene"), {
   ssr: false,
 });
@@ -97,8 +97,25 @@ const HeroSection = () => {
             </motion.h1>
           </div>
 
-          <motion.div className="hero-section__buttons">
-            <motion.button
+          <motion.div className="hero-section__buttons column--count">
+          <motion.h6
+              custom={4}
+              variants={buttonAnimation}
+              initial="initial"
+              animate="enter"
+              className="counter--heading"
+            >
+              Starts in - 
+            </motion.h6>
+            <motion.div 
+               animate="enter" 
+               initial="initial" 
+               variants={buttonAnimation} 
+               custom={4}>
+              <CountdownTimer/>
+            </motion.div>
+
+            {/* <motion.button
               variants={buttonAnimation}
               initial="initial"
               animate="enter"
@@ -114,7 +131,7 @@ const HeroSection = () => {
               <Link href="https://discord.gg/FJKTSgdxPX" target="_blank">
                 DISCORD
               </Link>
-            </motion.button>
+            </motion.button> */}
           </motion.div>
           <div className="Date-Venue">
             <motion.h6

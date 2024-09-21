@@ -78,7 +78,9 @@
 
 .hero-section__buttons {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   padding-right: 40px;
   margin-top: 20px;
 }
@@ -165,6 +167,9 @@
     font-size: 6.5rem;
     padding-left: 20px;
   }
+  .hero-section__buttons{
+    align-items: center;
+  }
 
   .hero-section__buttons button {
     width: 9.60194rem;
@@ -231,16 +236,6 @@
     font-size: 0.9rem;
   }
 
-  .hero-section__buttons {
-    margin-top: 30px;
-  }
-
-  .hero-section__buttons button {
-    width: 7.60194rem;
-    height: 2.3rem;
-    font-size: 0.8rem;
-  }
-
   .hero-section__image {
     width: auto;
     height: 65%;
@@ -259,16 +254,6 @@
 
   .Date-Venue > h6:nth-child(2) {
     font-size: 0.8rem;
-  }
-
-  .hero-section__buttons button {
-    width: 6.60194rem;
-    height: 2rem;
-    font-size: 0.7rem;
-  }
-
-  .hero-section__buttons button > a {
-    line-height: 1.2;
   }
 
   .hero-section__image {
