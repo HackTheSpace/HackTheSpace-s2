@@ -228,7 +228,7 @@ a {
     transition: smooth;
     position: fixed;
     right: 18px;
-    top: 50rem;
+    bottom: 10rem;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(0.5rem);
     border: 1px solid #ffffff38;
