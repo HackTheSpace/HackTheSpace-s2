@@ -21,8 +21,8 @@
 .Track-section__background2 {
   position: absolute;
   bottom: -130%;
-  right: -35%;
-  width: 100%;
+  right: 0;
+  width: fit-content;
   height: 160%;
   z-index: 1;
   opacity: 0.9;
@@ -226,9 +226,7 @@ img {
   }
   .Track-section__background2 {
     bottom: -71%;
-    right: -54%;
     height: 90%;
-    width: 136%;
   }
 
   .tracks-container {
