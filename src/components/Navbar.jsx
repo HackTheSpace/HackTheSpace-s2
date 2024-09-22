@@ -112,6 +112,9 @@ const Navbar = () => {
           <span onClick={() => handleScroll("#venue")}>Venue</span>
         </li>
         <li>
+          <span onClick={() => handleScroll("#schedule")}>Schedule</span>
+        </li>
+        <li>
           <span onClick={() => handleScroll("#prizes")}>Prizes</span>
         </li>
         <li>
@@ -131,14 +134,14 @@ const Navbar = () => {
         <li>
           <span onClick={() => handleScroll("#footer")}>Contact</span>
         </li>
-        <li className="sponsor-us">
+        {/* <li className="sponsor-us">
           <div className="line-wrapper">
             <div className="card-line"></div>
           </div>
           <Link href="https://bit.ly/HTS-SU" target="https://bit.ly/HTS-SU">
             Sponsor Us
           </Link>
-        </li>
+        </li> */}
       </ul>
 
       <Link
