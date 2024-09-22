@@ -50,10 +50,12 @@ const Navbar = () => {
         nav.classList.add("nav--scrolled");
         navLinks.classList.add("nav__links--scrolled");
         document.getElementById("logo").style.display = "none";
+        document.getElementById("upButton").style.opacity = "1";
       } else {
         nav.classList.remove("nav--scrolled");
         navLinks.classList.remove("nav__links--scrolled");
         document.getElementById("logo").style.display = "block";
+        document.getElementById("upButton").style.opacity = "0";
       }
     };
 
@@ -156,6 +158,13 @@ const Navbar = () => {
           height={170}
         />
       </Link>
+      <div
+        id="upButton"
+        className="goToTop"
+        onClick={() => handleScroll("#home")}
+      >
+        <Image src={"/down.png"} width={100} height={100}></Image>
+      </div>
     </motion.nav>
   );
 };
