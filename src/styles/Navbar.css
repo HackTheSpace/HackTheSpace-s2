@@ -246,7 +246,7 @@ a {
     transition: smooth;
     position: fixed;
     right: 18px;
-    bottom: 10rem;
+    bottom: 5rem;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(0.5rem);
     border: 1px solid #ffffff38;
