@@ -1,0 +1,36 @@
+.display-page {
+  padding: 30px;
+  position: relative;
+  height: 100vh;
+}
+
+.display-page__logo {
+  height: fit-content;
+  width: fit-content;
+}
+
+.display-page__content {
+  display: flex;
+}
+
+.display-page__feed {
+  flex: 2;
+}
+
+.display-page__right {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-page__timer {
+  font-size: 7rem;
+  font-family: "Anton";
+}
+
+.display-page__timeline {
+}
