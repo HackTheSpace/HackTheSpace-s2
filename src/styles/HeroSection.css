@@ -78,7 +78,9 @@
 
 .hero-section__buttons {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   padding-right: 40px;
   margin-top: 20px;
 }
@@ -154,9 +156,9 @@
 
 .hero-section__image {
   position: absolute;
-  right: -7%;
+  right: 0;
   top: -67%;
-  width: 59%;
+  width: fit-content;
   height: 115%;
 }
 
@@ -164,6 +166,9 @@
   .hero-section__content {
     font-size: 6.5rem;
     padding-left: 20px;
+  }
+  .hero-section__buttons{
+    align-items: center;
   }
 
   .hero-section__buttons button {
@@ -231,16 +236,6 @@
     font-size: 0.9rem;
   }
 
-  .hero-section__buttons {
-    margin-top: 30px;
-  }
-
-  .hero-section__buttons button {
-    width: 7.60194rem;
-    height: 2.3rem;
-    font-size: 0.8rem;
-  }
-
   .hero-section__image {
     width: auto;
     height: 65%;
@@ -261,16 +256,9 @@
     font-size: 0.8rem;
   }
 
-  .hero-section__buttons button {
-    width: 6.60194rem;
-    height: 2rem;
-    font-size: 0.7rem;
-  }
-
   .hero-section__image {
     height: 50%;
     top: -30%;
-    right: -6%;
   }
 }
 

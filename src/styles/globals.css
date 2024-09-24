@@ -13,6 +13,8 @@
 @import url("./Venue.css");
 @import url("./Sponsors.css");
 @import url("./Prize.css");
+@import url("./CountdownTimer.css");
+@import url("./Schedule.css");
 
 * {
   box-sizing: border-box;
@@ -23,8 +25,6 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
   color: white;
   background-color: black;
 }

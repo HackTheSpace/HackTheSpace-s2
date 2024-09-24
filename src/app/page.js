@@ -7,8 +7,8 @@ import Glimpse from "@/components/Glimpse";
 import Venue from "@/components/Venue";
 import Team from "./team/page";
 // import Sponsors from "@/components/Sponsors";
-import Prize from "@/components/prize/Prize"
-import TwitterFeed from "@/components/Twitterfeed";
+import Prize from "@/components/prize/Prize";
+import Schedule from "@/components/Schedule";
 
 export default function Home() {
   return (
@@ -19,6 +19,7 @@ export default function Home() {
         <AboutUs />
         <WhatIsHTS />
         <Venue />
+        <Schedule />
         <Prize />
         <Tracks />
         <Glimpse />

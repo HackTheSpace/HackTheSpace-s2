@@ -18,7 +18,8 @@ const SponsorsContainer = ({ Name, Img, linkS }) => {
 };
 
 const SponsorsCards = () => {
-  const { universe, planet, comet, galaxy, inkind, mainPartner } = sponsorConfig;
+  const { universe, planet, comet, galaxy, inkind, mainPartner } =
+    sponsorConfig;
 
   return (
     <>
@@ -74,10 +75,10 @@ const SponsorsCards = () => {
           ))}
         </div>
       </div>
-      <div className="sponsors--div__2">
-        <h2 className="sponsors--head__title">{inkind.Name}</h2>
-        <div className="sponsors--cards__container wrap__div">
-          {inkind.Sponsor.map((e) => (
+      <div className="sponsors--div__2 ruby__div">
+        <h2 className="sponsors--head__title">{mainPartner.Name}</h2>
+        <div className="sponsors--cards__container">
+          {mainPartner.Sponsor.map((e) => (
             <SponsorsContainer
               key={e.id}
               Name={e.Name}
@@ -87,10 +88,10 @@ const SponsorsCards = () => {
           ))}
         </div>
       </div>
-      <div className="sponsors--div__2 ruby__div">
-        <h2 className="sponsors--head__title">{mainPartner.Name}</h2>
-        <div className="sponsors--cards__container">
-          {mainPartner.Sponsor.map((e) => (
+      <div className="sponsors--div__2">
+        <h2 className="sponsors--head__title">{inkind.Name}</h2>
+        <div className="sponsors--cards__container wrap__div">
+          {inkind.Sponsor.map((e) => (
             <SponsorsContainer
               key={e.id}
               Name={e.Name}
