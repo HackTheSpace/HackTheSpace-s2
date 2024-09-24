@@ -165,7 +165,9 @@ a {
 }
 .goToTop {
   cursor: pointer;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: smooth;
   position: fixed;
   right: 5rem;
@@ -176,7 +178,7 @@ a {
   backdrop-filter: blur(0.5rem);
   border-radius: 40px;
   padding: 0.7rem;
-  z-index: 99;
+  z-index: 50;
 }
 .goToTop img {
   transform: rotate(180deg);
