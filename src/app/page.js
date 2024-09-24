@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <TwitterFeed/>
+
         <HeroSection />
         <AboutUs />
         <WhatIsHTS />

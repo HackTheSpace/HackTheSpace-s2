@@ -253,7 +253,7 @@ const coreTeam = [
     {
       name: "Yaman",
       role: "Sahu",
-      imageSrc: "/images/yamanrectmota.png",
+      imageSrc: "/images/yamanrect.png",
       socials: {
         linkedin: "https://linkedin.com/in/fanibhushan",
         behance: "https://behance.net/fanibhushan",
