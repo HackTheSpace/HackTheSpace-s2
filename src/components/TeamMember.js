@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaBehance, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const TeamMember = ({ name, role, role2, imageSrc, socials }) => {
   return (
@@ -24,8 +24,8 @@ const TeamMember = ({ name, role, role2, imageSrc, socials }) => {
             </a>
           )}
           {socials.behance && (
-            <a href={socials.behance} target="_blank" rel="noopener noreferrer">
-              <FaBehance  />
+            <a href={socials.github} target="_blank" rel="noopener noreferrer">
+              <FaGithub/>
             </a>
           )}
           {socials.twitter && (

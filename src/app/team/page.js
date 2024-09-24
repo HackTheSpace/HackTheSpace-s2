@@ -30,9 +30,9 @@ const organisers = [
     role: "Sahu",
     imageSrc: "/images/ayushrect.png",
     socials: {
-      linkedin: "https://linkedin.com/in/himanshu",
+      linkedin: "https://www.linkedin.com/in/ayushsahu77/",
       behance: "https://behance.net/himanshu",
-      twitter: "https://twitter.com/himanshu",
+      twitter: "https://twitter.com/Ayush_7477",
     },
   },
   {
@@ -40,9 +40,9 @@ const organisers = [
     role: "Sahu",
     imageSrc: "/images/akshatrect.png",
     socials: {
-      linkedin: "https://linkedin.com/in/himanshu",
+      linkedin: "https://www.linkedin.com/in/akshat-sahu-912521216/",
       behance: "https://behance.net/himanshu",
-      twitter: "https://twitter.com/himanshu",
+      twitter: "https://x.com/akshatx134",
     },
   },
   {
@@ -50,9 +50,9 @@ const organisers = [
     role: "Makda",
     imageSrc: "/images/mohitrect.png",
     socials: {
-      linkedin: "https://linkedin.com/in/himanshu",
-      behance: "https://behance.net/himanshu",
-      twitter: "https://twitter.com/himanshu",
+      linkedin: "https://www.linkedin.com/in/mohit-makda-608849221/",
+      behance: "/",
+      twitter: "https://x.com/mohit_makda",
     },
   },
   {
@@ -60,9 +60,9 @@ const organisers = [
     role: "Gupta",
     imageSrc: "/images/harshrect.png",
     socials: {
-      linkedin: "https://linkedin.com/in/himanshu",
-      behance: "https://behance.net/himanshu",
-      twitter: "https://twitter.com/himanshu",
+      linkedin: "https://www.linkedin.com/in/harshgupta-in/",
+      behance: "/",
+      twitter: "https://x.com/harshguptatwt",
     },
   },
   {
@@ -70,9 +70,9 @@ const organisers = [
     role: "Javia",
     imageSrc: "/images/smitrect.png",
     socials: {
-      linkedin: "https://linkedin.com/in/himanshu",
+      linkedin: "https://www.linkedin.com/in/smit-javia-824221239/",
       behance: "https://behance.net/himanshu",
-      twitter: "https://twitter.com/himanshu",
+      twitter: "https://x.com/JaviaSmit",
     },
   },
   {
@@ -80,9 +80,9 @@ const organisers = [
     role: "Jha",
     imageSrc: "/images/shubham.png",
     socials: {
-      linkedin: "https://linkedin.com/in/himanshu",
-      behance: "https://behance.net/himanshu",
-      twitter: "https://twitter.com/himanshu",
+      linkedin: "https://www.linkedin.com/in/shubham-jha-58b7b0281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      behance: "/",
+      twitter: "/",
     },
   },
   {
@@ -90,9 +90,9 @@ const organisers = [
     role: "Ahuja",
     imageSrc: "/images/darshitaerct.png",
     socials: {
-      linkedin: "https://linkedin.com/in/himanshu",
-      behance: "https://behance.net/himanshu",
-      twitter: "https://twitter.com/himanshu",
+      linkedin: "https://www.linkedin.com/in/darshita-ahuja-9a448b225/",
+      behance: "/",
+      twitter: "https://twitter.com/darshuahuja",
     },
   },
   {
@@ -100,9 +100,9 @@ const organisers = [
     role: "Cheemalapati",
     imageSrc: "/images/shwetarect.png",
     socials: {
-      linkedin: "https://linkedin.com/in/himanshu",
-      behance: "https://behance.net/himanshu",
-      twitter: "https://twitter.com/himanshu",
+      linkedin: "https://www.linkedin.com/in/shweta-cheemalapati-0082b8237/",
+      behance: "/",
+      twitter: "https://x.com/ShwetaC04389034",
     },
   },
   {
@@ -110,9 +110,9 @@ const organisers = [
     role: "patil",
     imageSrc: "/images/lomeshrect.png",
     socials: {
-      linkedin: "https://linkedin.com/in/himanshu",
+      linkedin: "https://www.linkedin.com/lomeshpatil",
       behance: "https://behance.net/himanshu",
-      twitter: "https://twitter.com/himanshu",
+      twitter: "https://www.twitter.com/lomeshhpatil",
     },
   },
 
@@ -124,9 +124,9 @@ const coreTeam = [
     role: "Choubey",
     imageSrc: "/images/anubhavrect.png",
     socials: {
-      linkedin: "https://linkedin.com/in/fanibhushan",
-      behance: "https://behance.net/fanibhushan",
-      twitter: "https://twitter.com/fanibhushan",
+      linkedin: "https://www.linkedin.com/in/anubhav-choubey-653680150?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      behance: "/",
+      twitter: "https://x.com/Anubhav0401?t=GWhKNKVRTP7SiXT4bvkIBg&s=09",
     },
   },
   {
@@ -134,9 +134,9 @@ const coreTeam = [
     role: "Sinha",
     imageSrc: "/images/apoorvarect.png",
     socials: {
-      linkedin: "https://linkedin.com/in/fanibhushan",
-      behance: "https://behance.net/fanibhushan",
-      twitter: "https://twitter.com/fanibhushan",
+      linkedin: "https://linkedin.com/in/apoorva-sinha-84bb01272",
+      behance: "/",
+      twitter: "https://x.com/vasiinaa",
     },
   },
   {
@@ -144,9 +144,9 @@ const coreTeam = [
     role: "Deshmukh",
     imageSrc: "/images/bhumikarecct.png",
     socials: {
-      linkedin: "https://linkedin.com/in/fanibhushan",
-      behance: "https://behance.net/fanibhushan",
-      twitter: "https://twitter.com/fanibhushan",
+      linkedin: "https://in.linkedin.com/in/bhumika-deshmukh",
+      behance: "/",
+      twitter: "https://x.com/Bhumikadeshmuk",
     },
   },
   {
@@ -154,8 +154,8 @@ const coreTeam = [
     role: "Roy",
     imageSrc: "/images/diyarect.png",
     socials: {
-      linkedin: "https://linkedin.com/in/fanibhushan",
-      behance: "https://behance.net/fanibhushan",
+      linkedin: "https://www.linkedin.com/in/diya-roy-509787286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      behance: "https://behance.net/diiiaa17",
       twitter: "https://twitter.com/fanibhushan",
   }
 
@@ -165,9 +165,9 @@ const coreTeam = [
       role: "Guntu",
       imageSrc: "/images/deepikarect.png",
       socials: {
-        linkedin: "https://linkedin.com/in/fanibhushan",
-        behance: "https://behance.net/fanibhushan",
-        twitter: "https://twitter.com/fanibhushan",
+        linkedin: "https://www.linkedin.com/in/deepikag1114/",
+        behance: "/",
+        twitter: "https://x.com/Deepika_1402",
       },
     },
     {
@@ -175,9 +175,9 @@ const coreTeam = [
       role: "Sinha",
       imageSrc: "/images/girishrect.png",
       socials: {
-        linkedin: "https://linkedin.com/in/fanibhushan",
-        behance: "https://behance.net/fanibhushan",
-        twitter: "https://twitter.com/fanibhushan",
+        linkedin: "/",
+        behance: "/",
+        twitter: "/",
       },
     },
     {
@@ -185,9 +185,9 @@ const coreTeam = [
       role: "Naidu",
       imageSrc: "/images/naidurect.png",
       socials: {
-        linkedin: "https://linkedin.com/in/fanibhushan",
+        linkedin: "https://www.linkedin.com/in/k-harsh-naidu-20012928a",
         behance: "https://behance.net/fanibhushan",
-        twitter: "https://twitter.com/fanibhushan",
+        twitter: "https://x.com/HarshNa92099478?t=WnZwFU3hc-GlMvNx-_00Ig&s=09",
       },
     },
     {
@@ -205,9 +205,9 @@ const coreTeam = [
       role: "Nair",
       imageSrc: "/images/rishitarect.png",
       socials: {
-        linkedin: "https://linkedin.com/in/fanibhushan",
-        behance: "https://behance.net/fanibhushan",
-        twitter: "https://twitter.com/fanibhushan",
+        linkedin: "https://www.linkedin.com/in/rishitanair/",
+        behance: "/",
+        twitter: "https://twitter.com/rishitarnair",
       },
     },
     {
@@ -225,9 +225,9 @@ const coreTeam = [
       role: "Dey",
       imageSrc: "/images/shriya.png",
       socials: {
-        linkedin: "https://linkedin.com/in/fanibhushan",
+        linkedin: "https://www.linkedin.com/in/shriya-dey-394bb726b/",
         behance: "https://behance.net/fanibhushan",
-        twitter: "https://twitter.com/fanibhushan",
+        twitter: "https://x.com/shriya_dey19",
       },
     },
     {
@@ -235,9 +235,9 @@ const coreTeam = [
       role: "Sinha",
       imageSrc: "/images/shahil.png",
       socials: {
-        linkedin: "https://linkedin.com/in/fanibhushan",
-        behance: "https://behance.net/fanibhushan",
-        twitter: "https://twitter.com/fanibhushan",
+        linkedin: "https://www.linkedin.com/in/shahil-sinha-7b1636222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        behance: "https://github.com/TR-3N",
+        twitter: "https://x.com/ShahilSinha9?t=A3KjI-Bjx4pFHcY4MV1KtQ&s=08",
       },
     },
     {
@@ -245,9 +245,9 @@ const coreTeam = [
       role: "Sahu",
       imageSrc: "/images/triptirect.png",
       socials: {
-        linkedin: "https://linkedin.com/in/fanibhushan",
+        linkedin: "https://www.linkedin.com/in/tripti-s-0a672b227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         behance: "https://behance.net/fanibhushan",
-        twitter: "https://twitter.com/fanibhushan",
+        twitter: "https://x.com/Tripti_4/status/1783801552521797766",
       },
     },
     {
@@ -255,9 +255,9 @@ const coreTeam = [
       role: "Sahu",
       imageSrc: "/images/yamanrect.png",
       socials: {
-        linkedin: "https://linkedin.com/in/fanibhushan",
+        linkedin: "https://www.linkedin.com/in/yaman-sahu-861220257/",
         behance: "https://behance.net/fanibhushan",
-        twitter: "https://twitter.com/fanibhushan",
+        twitter: "https://x.com/YAMANSAHUS",
       },
     },
 ];
