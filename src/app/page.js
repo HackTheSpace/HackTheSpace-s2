@@ -8,11 +8,13 @@ import Venue from "@/components/Venue";
 import Team from "./team/page";
 // import Sponsors from "@/components/Sponsors";
 import Prize from "@/components/prize/Prize"
+import TwitterFeed from "@/components/Twitterfeed";
 
 export default function Home() {
   return (
     <>
       <main>
+        <TwitterFeed/>
         <HeroSection />
         <AboutUs />
         <WhatIsHTS />

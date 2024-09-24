@@ -15,16 +15,16 @@ const organisers = [
       twitter: "https://twitter.com/himanshu",
     },
   },
-  {
-    name: "Fanibhusan",
-    role: "Sahu",
-    imageSrc: "/images/himanshurect.png",
-    socials: {
-      linkedin: "https://linkedin.com/in/himanshu",
-      behance: "https://behance.net/himanshu",
-      twitter: "https://twitter.com/himanshu",
-    },
-  },
+  // {
+  //   name: "Fanibhusan",
+  //   role: "Sahu",
+  //   imageSrc: "/images/himanshurect.png",
+  //   socials: {
+  //     linkedin: "https://linkedin.com/in/himanshu",
+  //     behance: "https://behance.net/himanshu",
+  //     twitter: "https://twitter.com/himanshu",
+  //   },
+  // },
   {
     name: "Ayush",
     role: "Sahu",
@@ -230,16 +230,16 @@ const coreTeam = [
         twitter: "https://twitter.com/fanibhushan",
       },
     },
-    // {
-    //   name: "Shahil",
-    //   role: "Sinha",
-    //   imageSrc: "/images/shahilrect.png",
-    //   socials: {
-    //     linkedin: "https://linkedin.com/in/fanibhushan",
-    //     behance: "https://behance.net/fanibhushan",
-    //     twitter: "https://twitter.com/fanibhushan",
-    //   },
-    // },
+    {
+      name: "Shahil",
+      role: "Sinha",
+      imageSrc: "/images/shahil.png",
+      socials: {
+        linkedin: "https://linkedin.com/in/fanibhushan",
+        behance: "https://behance.net/fanibhushan",
+        twitter: "https://twitter.com/fanibhushan",
+      },
+    },
     {
       name: "Tripti",
       role: "Sahu",
