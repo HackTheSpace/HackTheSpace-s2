@@ -122,7 +122,7 @@ const coreTeam = [
   {
     name: "Anubhav",
     role: "Choubey",
-    imageSrc: "/images/anubhavrect.png",
+    imageSrc: "/images/anubhavfinal.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/anubhav-choubey-653680150?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       behance: "/",
