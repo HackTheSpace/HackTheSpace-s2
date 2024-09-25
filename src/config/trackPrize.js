@@ -68,7 +68,7 @@ export const prizeData = {
     },
     {
       img: "/images/trackPrizes/HQ-White.svg",
-      title: "Best Use of Voiceflow API ($100)",
+      title: "Best Agent Build on Neo ($100)",
       para: "Neo is an open-source, community-driven blockchain platform, EVM-compatible, simplifying smart contract and dApp deployment. The Neo X Grind Hackathon invites developers of all levels to explore the Neo X ecosystem, innovate in decentralized applications, and showcase their skills.",
       link: "https://docs.google.com/document/d/1FAkWROisEnGdcFTrHu_DIuqVyBzVoSciO-LXXAoVxwc/edit?usp=sharing",
     },
