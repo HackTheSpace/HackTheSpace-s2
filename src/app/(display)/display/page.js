@@ -8,6 +8,14 @@ const page = () => {
   return (
     <main>
       <div className="display-page">
+        <Image
+          src="/images/backgrounds/LivePage2.png"
+          alt="Background"
+          fill
+          quality={100}
+          priority
+          className="display-page__background"
+        />
         <div className="display-page__logo">
           <Image
             id="logo"
