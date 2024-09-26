@@ -2,7 +2,9 @@
 import React, { useState, useEffect } from "react";
 
 const Timer = () => {
-  const [totalHackingTimer, setTotalHackingTimer] = useState(24 * 60 * 60 * 1000); // 24 hours in milliseconds
+  const [totalHackingTimer, setTotalHackingTimer] = useState(
+    24 * 60 * 60 * 1000
+  ); // 24 hours in milliseconds
   const [timerType, setTimerType] = useState("not started");
   const [remainingHackTime, setRemainingHackTime] = useState("24 : 00 : 00");
   const [percentTimeRemaining, setPercentTimeRemaining] = useState(100);
@@ -20,7 +22,9 @@ const Timer = () => {
       const ss = Math.floor(r_time_in_secs % 60);
 
       setRemainingHackTime(
-        `${hh < 10 ? `0${hh}` : hh} : ${mm < 10 ? `0${mm}` : mm} : ${ss < 10 ? `0${ss}` : ss}`
+        `${hh < 10 ? `0${hh}` : hh} : ${mm < 10 ? `0${mm}` : mm} : ${
+          ss < 10 ? `0${ss}` : ss
+        }`
       );
       setPercentTimeRemaining(100);
     } else if (now < endTime) {
@@ -31,7 +35,9 @@ const Timer = () => {
       const ss = Math.floor(r_time_in_secs % 60);
 
       setRemainingHackTime(
-        `${hh < 10 ? `0${hh}` : hh} : ${mm < 10 ? `0${mm}` : mm} : ${ss < 10 ? `0${ss}` : ss}`
+        `${hh < 10 ? `0${hh}` : hh} : ${mm < 10 ? `0${mm}` : mm} : ${
+          ss < 10 ? `0${ss}` : ss
+        }`
       );
       setPercentTimeRemaining((r_time_in_secs / (24 * 60 * 60)) * 100);
     } else {
