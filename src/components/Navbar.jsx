@@ -126,6 +126,11 @@ const Navbar = () => {
           <li>
             <span onClick={() => handleScroll("#tracks")}>Tracks</span>
           </li>
+          <li>
+          <Link href="/team" onClick={() => setHamBurger(false)}>
+              Team
+            </Link>
+          </li>
           {/* <li>
           <span onClick={() => handleScroll("#events")}>Events</span>
         </li> */}

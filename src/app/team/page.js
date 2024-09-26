@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
-import TeamMember from "../../components/TeamMember";
-import Slider from "@/components/Slider"; // Assuming this is the correct import path
+import TeamMember from "@/components/TeamMember";
+import Slider from "@/components/Slider"; 
 import "@/styles/TeamMember.css";
 
 const organisers = [
