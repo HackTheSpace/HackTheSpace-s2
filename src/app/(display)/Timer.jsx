@@ -9,8 +9,8 @@ const Timer = () => {
 
   const updateTimer = () => {
     const now = new Date();
-    const startTime = new Date("2024-09-26T21:25:00");
-    const endTime = new Date("2024-09-26T21:27:00");
+    const startTime = new Date("2024-09-26T21:28:00");
+    const endTime = new Date("2024-09-26T21:30:00");
 
     if (now < startTime) {
       setTimerType("not started");

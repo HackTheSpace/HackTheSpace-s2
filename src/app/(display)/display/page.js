@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Events from "../Events";
 import Timer from "../Timer";
-import TimerPage from "../TimerPage";
+
 const page = () => {
   return (
     <main>
