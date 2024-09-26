@@ -1,25 +1,21 @@
 .slider-container {
     width: 20%;
-    /* max-width: 600px; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     text-align: center;
-    /* border: 1px solid #ccc; */
     border-radius: 8px;
     padding: 16px;
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
     z-index: 1000;
     position: relative;
-    pointer-events: auto;
-    
-    
+    pointer-events: auto;    
   }
 
   .tabs {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     margin-bottom: 16px;
     gap: 10px;
     border: 2px solid white;
@@ -27,20 +23,20 @@
   }
   
   .tabs button {
-    background: transparent; /* Default transparent background */
-    border: 2px solid transparent; /* Border for alignment */
-    padding: 8px 24px; /* Adjust padding to control size */
+    background: transparent; 
+    border: 2px solid transparent; 
+    padding: 8px 24px; 
     font-size: 16px;
     cursor: pointer;
     color: white;
-    border-radius: 50px; /* Makes the button oval-shaped */
-    /* transition: background 0.3s ease, border-color 0.3s ease; Smooth transition */
+    border-radius: 50px; 
+    
   }
   
   .tabs button.active {
-    background-color: #777777; /* Background color when active */
-    color: white; /* Text color when active */
-    border-color: #777777; /* Border color when active */
+    background-color: #777777; 
+    color: white; 
+    border-color: #777777; 
   }
   
   
@@ -61,5 +57,13 @@
   
   .content.show {
     display: block;
+  }
+  @media (max-width: 480px) {
+    .sc2 {
+      width: 80% !important;
+    }
+    .tabs {
+      margin-top: 10px;    
+    }
   }
   

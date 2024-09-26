@@ -8,6 +8,15 @@
   z-index: 1;
   padding-bottom: 10vw;
 }
+.heading-shadow{
+  /* margin-top: 10px; */
+  font-family: "Anton";
+}
+
+.heading-small{
+  /* margin-top: 10px; */
+  font-family: "Anton";
+}
 
 .team h2 {
   font-size: 3rem;
