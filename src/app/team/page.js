@@ -152,7 +152,7 @@ const coreTeam = [
   {
     name: "Diya",
     role: "Roy",
-    imageSrc: "/images/diyarect.png",
+    imageSrc: "/images/Diyarect.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/diya-roy-509787286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       twitter: "/",
