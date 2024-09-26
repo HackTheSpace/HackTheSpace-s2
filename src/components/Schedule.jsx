@@ -17,15 +17,9 @@ const Card = ({ id, time, period, content }) => {
       }}
     >
       <div className="card-content">
-        <h1
-          style={{
-            color: `
-        ${id % 2 === 0 ? "#B741DD" : "#7D00F2"}
-        `,
-          }}
-        >
-          {id}
-        </h1>
+        <div>
+          <span></span>
+        </div>
         <div>
           <div className="time">
             <p>{time}</p>
@@ -58,7 +52,7 @@ const Schedule = () => {
 
   const x = useTransform(scrollYProgress, [0, 1], ["10%", "-95%"]);
 
-  const lg = useTransform(scrollYProgress, [0, 1], ["0", "800%"]);
+  const lg = useTransform(scrollYProgress, [0, 1], ["0", "200%"]);
 
   useEffect(() => {
     lg.onChange((v) => {
@@ -81,10 +75,11 @@ const Schedule = () => {
           }}
         >
           <Image
-            src="/schedule-rocket.png"
-            width={70}
-            height={140}
+            src="/schedule-rocket2.png"
+            width={250}
+            height={250}
             alt="Rocket"
+            quality={100}
           />
         </motion.div>
         <Image
@@ -95,8 +90,8 @@ const Schedule = () => {
           className="venue-section__background"
         />
         <h1 className="Day">
-          {parseInt(progress) > 500 ? "Day 2" : "Day 1"}{" "}
-          <span>{parseInt(progress) > 500 ? "Saturday" : "Friday"}</span>
+          {parseInt(progress) > 130 ? "Day 2" : "Day 1"}{" "}
+          <span>{parseInt(progress) > 130 ? "Saturday" : "Friday"}</span>
         </h1>
         <motion.div className="schedule" style={{ x }}>
           {scheduleConfig.map((item, index) => (

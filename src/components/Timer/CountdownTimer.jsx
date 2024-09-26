@@ -6,7 +6,7 @@ const CountdownTimer = () => {
 
   useEffect(() => {
     const calculateTargetDate = () => {
-    const targetDate = new Date(2024, 8, 27, 8, 30, 0);
+    const targetDate = new Date(2024, 8, 27, 10, 30, 0);
         return targetDate;
     };
 
