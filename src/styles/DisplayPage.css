@@ -30,6 +30,11 @@
   font-size: 7rem;
   font-family: "Anton";
 }
+.display-page__timeline {
+  font-size: 2rem;
+  font-family: "Anton";
+  padding: 1rem;
+}
 
 .display-page__feed {
   display: flex;
