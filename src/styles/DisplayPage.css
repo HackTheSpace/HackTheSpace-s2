@@ -11,6 +11,7 @@
 
 .display-page__content {
   display: flex;
+  height: 95%;
 }
 
 .display-page__feed {
@@ -18,9 +19,7 @@
 }
 
 .display-page__right {
-  position: absolute;
-  top: 30px;
-  right: 50px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,8 +31,44 @@
   font-family: "Anton";
 }
 
-.display-page__timeline {
-  font-size: 2rem;
-  font-family: "Anton";
-  padding: 1rem;
+.display-page__feed {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.scrollUp,
+.scrollDown {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-track__up,
+.carousel-track__down {
+  display: flex;
+  position: absolute;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  animation: slide 100s linear infinite;
+}
+
+.carousel-track__up {
+  animation-direction: reverse;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
