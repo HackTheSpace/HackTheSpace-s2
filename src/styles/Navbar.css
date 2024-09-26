@@ -165,7 +165,9 @@ a {
 }
 .goToTop {
   cursor: pointer;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: smooth;
   position: fixed;
   right: 5rem;
@@ -242,7 +244,6 @@ a {
     max-width: 60px;
   }
   .goToTop {
-    display: block;
     transition: smooth;
     position: fixed;
     right: 18px;

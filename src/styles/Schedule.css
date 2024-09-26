@@ -16,6 +16,7 @@
 
 .Day {
   font-size: 2rem;
+  font-weight: 400;
   font-family: "Anton";
   color: rgb(255, 255, 255);
   text-align: center;
@@ -137,6 +138,7 @@
 @media screen and (max-width: 900px) {
   .Day {
     font-size: 1.5rem;
+    bottom: 50px;
   }
 
   .schedule-rocket {
