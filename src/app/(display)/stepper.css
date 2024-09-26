@@ -1,0 +1,136 @@
+.scheduleBox {
+  width: 25rem;
+  height: 25rem;
+  /* background-color: aqua; */
+  overflow: scroll;
+  position: relative;
+  padding-bottom: 11rem;
+}
+.window {
+  /* position: fixed; */
+  position: sticky;
+  height: 5rem;
+  width: 15rem;
+  border: 2px solid #9634d9;
+  border-radius: 2rem;
+  top: 5.5rem;
+  z-index: 99;
+}
+.timeline {
+  position: relative;
+  /* max-width: 1200px; */
+
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  border-right: 4px dashed #9634d9;
+  /* background-color: #9634d9; */
+  top: -30px;
+  bottom: 35px;
+  left: 7%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 5px;
+  position: relative;
+  /* background-color: inherit; */
+  /* width: 50%; */
+}
+.timelineIcon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 2%;
+  background-color: black;
+  border: 2px solid #592ee2;
+  top: 30px;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container img {
+  width: 20px;
+  height: 20px;
+}
+/* The circles on the timeline */
+/* .container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #592ee2;
+
+  top: 45px;
+  border-radius: 50%;
+  z-index: 1;
+} */
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 40px;
+  width: 0;
+  z-index: 1;
+  left: 70px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: 0px;
+}
+
+/* The actual content */
+.content {
+  padding: 10px;
+  width: 100%;
+}
+
+.content h2 {
+  text-align: start;
+  font-family: "Anton";
+  font-size: 2rem;
+  display: flex;
+  width: 14rem;
+}
+.content p {
+  width: 14rem;
+  font-family: "Anton";
+  font-size: 1rem;
+  /* background-color: aqua; */
+  text-align: start;
+}
+.content h2 div {
+  padding: 2px;
+  font-size: 1.5rem;
+  transform: rotate(-90deg);
+  color: #592ee2;
+}
+.past {
+  opacity: 0.6;
+}
+.future:after {
+  border-right: 4px dashed white;
+}
+.white {
+  border: 2px solid white;
+}
+.active {
+  box-shadow: 0px 0px 20px 1px #592ee2;
+}
