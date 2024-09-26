@@ -60,5 +60,17 @@ export const prizeData = {
       para: "Voiceflow rewards the top 3 teams! Build creative AI agents using our APIs or deploy them on custom interfaces for a chance to win. Prizes include extended Pro Plan access, 2M AI tokens, and a feature in our showcase interview. Push the boundaries of AI and stand out as one of the best!",
       link: "https://docs.google.com/document/d/1d06a2x8Tcm2xoC3EBuHQDCqGaDgy6gKOaQ-_QS68hsc",
     },
+    {
+      img: "/images/trackPrizes/HQ-White.svg",
+      title: "Best Agent Build on GaiaNet ($100)",
+      para: "GaiaNet is a decentralized computing infrastructure enabling individuals and businesses to create, deploy, scale, and monetize AI services with proprietary data. Our mission is to unlock living knowledge systems, ensuring these AI services reflect the unique styles, values, and expertise of their creators.",
+      link: "https://docs.google.com/document/d/1FAkWROisEnGdcFTrHu_DIuqVyBzVoSciO-LXXAoVxwc/edit?usp=sharing",
+    },
+    {
+      img: "/images/trackPrizes/HQ-White.svg",
+      title: "Best Agent Build on Neo ($100)",
+      para: "Neo is an open-source, community-driven blockchain platform, EVM-compatible, simplifying smart contract and dApp deployment. The Neo X Grind Hackathon invites developers of all levels to explore the Neo X ecosystem, innovate in decentralized applications, and showcase their skills.",
+      link: "https://docs.google.com/document/d/1FAkWROisEnGdcFTrHu_DIuqVyBzVoSciO-LXXAoVxwc/edit?usp=sharing",
+    },
   ],
 };
