@@ -50,10 +50,12 @@ const Navbar = () => {
         nav.classList.add("nav--scrolled");
         navLinks.classList.add("nav__links--scrolled");
         document.getElementById("logo").style.display = "none";
+        document.getElementById("upButton").style.opacity = "1";
       } else {
         nav.classList.remove("nav--scrolled");
         navLinks.classList.remove("nav__links--scrolled");
         document.getElementById("logo").style.display = "block";
+        document.getElementById("upButton").style.opacity = "0";
       }
     };
 
@@ -72,69 +74,73 @@ const Navbar = () => {
   }, []);
 
   return (
-    <motion.nav
-      ref={navRef}
-      initial="initial"
-      animate="animate"
-      variants={navAnimation}
-    >
-      <Link href="/">
-        <Image
-          id="logo"
-          src="/logo-main.webp"
-          alt="logo"
-          width={130}
-          height={55}
-        />
-      </Link>
-
-      <button className="nav__toggle" onClick={() => setHamBurger(!HamBurger)}>
-        <Image
-          src={HamBurger ? "/close-64.png" : "/hamburger-48.png"}
-          width={40}
-          height={40}
-          alt="toggle"
-          id="hamburger"
-        />
-      </button>
-
-      <ul
-        ref={nanLinksRef}
-        className={`nav__links ${HamBurger ? "nav__links--open" : ""}`}
+    <>
+      <motion.nav
+        ref={navRef}
+        initial="initial"
+        animate="animate"
+        variants={navAnimation}
       >
-        <li>
-          <span onClick={() => handleScroll("#home")}>Home</span>
-        </li>
-        {/* <li>
+        <Link href="/">
+          <Image
+            id="logo"
+            src="/logo-main.webp"
+            alt="logo"
+            width={130}
+            height={55}
+          />
+        </Link>
+
+        <button
+          className="nav__toggle"
+          onClick={() => setHamBurger(!HamBurger)}
+        >
+          <Image
+            src={HamBurger ? "/close-64.png" : "/hamburger-48.png"}
+            width={40}
+            height={40}
+            alt="toggle"
+            id="hamburger"
+          />
+        </button>
+
+        <ul
+          ref={nanLinksRef}
+          className={`nav__links ${HamBurger ? "nav__links--open" : ""}`}
+        >
+          <li>
+            <span onClick={() => handleScroll("#home")}>Home</span>
+          </li>
+          {/* <li>
           <span onClick={() => handleScroll("#aboutUS")}>About Us</span>
         </li> */}
-        <li>
-          <span onClick={() => handleScroll("#venue")}>Venue</span>
-        </li>
-        <li>
-          <span onClick={() => handleScroll("#schedule")}>Schedule</span>
-        </li>
-        <li>
-          <span onClick={() => handleScroll("#prizes")}>Prizes</span>
-        </li>
-        <li>
-          <span onClick={() => handleScroll("#tracks")}>Tracks</span>
-        </li>
-        {/* <li>
+          <li>
+            <span onClick={() => handleScroll("#venue")}>Venue</span>
+          </li>
+          <li>
+            <span onClick={() => handleScroll("#schedule")}>Schedule</span>
+          </li>
+          <li>
+            <span onClick={() => handleScroll("#prizes")}>Prizes</span>
+          </li>
+          <li>
+            <span onClick={() => handleScroll("#tracks")}>Tracks</span>
+          </li>
+          {/* <li>
           <span onClick={() => handleScroll("#events")}>Events</span>
         </li> */}
-        <li>
-          <Link href="/partners" onClick={() => setHamBurger(false)}>
-            Partners
-          </Link>
-        </li>
-        <li>
-          <span onClick={() => handleScroll("#faqs")}>Faqs</span>
-        </li>
-        <li>
-          <span onClick={() => handleScroll("#footer")}>Contact</span>
-        </li>
-        {/* <li className="sponsor-us">
+          <li>
+            <Link href="/partners" onClick={() => setHamBurger(false)}>
+              Partners
+            </Link>
+          </li>
+          <li>
+            <span onClick={() => handleScroll("#faqs")}>Faqs</span>
+          </li>
+          <li>
+            <span onClick={() => handleScroll("#footer")}>Contact</span>
+          </li>
+          {/* <li className="sponsor-us">
           <div className="line-wrapper">
             <div className="card-line"></div>
           </div>
@@ -142,21 +148,29 @@ const Navbar = () => {
             Sponsor Us
           </Link>
         </li> */}
-      </ul>
+        </ul>
 
-      <Link
-        id="mlh-trust-badge"
-        href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
-        target="_blank"
+        <Link
+          id="mlh-trust-badge"
+          href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
+          target="_blank"
+        >
+          <Image
+            src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
+            alt="Major League Hacking 2025 Hackathon Season"
+            width={100}
+            height={170}
+          />
+        </Link>
+      </motion.nav>
+      <div
+        id="upButton"
+        className="goToTop"
+        onClick={() => handleScroll("#home")}
       >
-        <Image
-          src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
-          alt="Major League Hacking 2025 Hackathon Season"
-          width={100}
-          height={170}
-        />
-      </Link>
-    </motion.nav>
+        <Image src={"/down.png"} width={100} height={100}></Image>
+      </div>
+    </>
   );
 };
 

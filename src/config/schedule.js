@@ -31,7 +31,7 @@ export const scheduleConfig = [
   },
   {
     id: "6",
-    time: "1:30",
+    time: "1:",
     period: "PM",
     content: "Lunch",
   },
@@ -60,7 +60,7 @@ export const scheduleConfig = [
     content: "Mini Events",
   },
   {
-    id: "11",
+    id: "11:",
     time: "8:00",
     period: "AM",
     content: "Breakfast",
@@ -78,7 +78,7 @@ export const scheduleConfig = [
     content: "Lunch",
   },
   {
-    id: "14",
+    id: "1:30",
     time: "12:30",
     period: "PM",
     content: "Judging Starts",

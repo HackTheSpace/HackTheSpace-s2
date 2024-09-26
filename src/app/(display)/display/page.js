@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-
+import Events from "../Events";
+import Timer from "../Timer";
 const page = () => {
   return (
     <main>
@@ -17,8 +18,10 @@ const page = () => {
         <section className="display-page__content">
           <div className="display-page__feed">Feed</div>
           <div className="display-page__right">
-            <div className="display-page__timer">24:00:00</div>
+            <div className="display-page__timer"><Timer /></div>
             <div className="display-page__timeline">Ongoing Events</div>
+            <Events />
+
           </div>
         </section>
       </div>
