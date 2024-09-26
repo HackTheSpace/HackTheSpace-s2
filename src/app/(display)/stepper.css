@@ -1,19 +1,26 @@
 .scheduleBox {
   width: 25rem;
-  height: 25rem;
+  height: 18rem;
   /* background-color: aqua; */
-  overflow: scroll;
+  overflow-y: auto;
   position: relative;
   padding-bottom: 11rem;
+  padding-top: 5.5rem;
+  /* background-color: #592ee2; */
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25);
 }
+/* .wraper {
+  background-color: #9634d9;
+  
+} */
 .window {
-  /* position: fixed; */
-  position: sticky;
+  position: fixed;
+  /* position: sticky; */
   height: 5rem;
-  width: 15rem;
+  width: 18rem;
   border: 2px solid #9634d9;
   border-radius: 2rem;
-  top: 5.5rem;
+  top: 24rem;
   z-index: 99;
 }
 .timeline {
@@ -59,23 +66,9 @@
   justify-content: center;
 }
 .container img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
-/* The circles on the timeline */
-/* .container::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #592ee2;
-
-  top: 45px;
-  border-radius: 50%;
-  z-index: 1;
-} */
 
 /* Add arrows to the right container (pointing left) */
 .right::before {

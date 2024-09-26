@@ -33,4 +33,7 @@
 }
 
 .display-page__timeline {
+  font-size: 2rem;
+  font-family: "Anton";
+  padding: 1rem;
 }
