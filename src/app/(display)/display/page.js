@@ -21,9 +21,6 @@ const page = () => {
             <div className="display-page__timer"><Timer /></div>
             <div className="display-page__timeline">Ongoing Events</div>
             <Events />
-
-
-
           </div>
         </section>
       </div>

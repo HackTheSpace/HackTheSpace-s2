@@ -1,13 +1,13 @@
 export const scheduleConfig = [
   {
     id: "1",
-    time: "8:30",
+    time: "7:45",
     period: "AM",
     content: "Check-in & Welcome Kit Distribution",
   },
   {
     id: "2",
-    time: "9:00",
+    time: "8:30",
     period: "AM",
     content: "Light Breakfast & Ice Breaker",
   },
@@ -31,7 +31,7 @@ export const scheduleConfig = [
   },
   {
     id: "6",
-    time: "1:",
+    time: "1:30",
     period: "PM",
     content: "Lunch",
   },
@@ -60,7 +60,7 @@ export const scheduleConfig = [
     content: "Mini Events",
   },
   {
-    id: "11:",
+    id: "11",
     time: "8:00",
     period: "AM",
     content: "Breakfast",
@@ -73,19 +73,19 @@ export const scheduleConfig = [
   },
   {
     id: "13",
-    time: "12:00",
-    period: "PM",
-    content: "Lunch",
-  },
-  {
-    id: "1:30",
     time: "12:30",
     period: "PM",
     content: "Judging Starts",
   },
   {
+    id: "14",
+    time: "2:00",
+    period: "PM",
+    content: "Lunch",
+  },
+  {
     id: "15",
-    time: "2:45",
+    time: "3:00",
     period: "PM",
     content: "Closing Ceremony",
   },
