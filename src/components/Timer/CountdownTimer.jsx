@@ -1,13 +1,13 @@
-"use client"
+"use client";
 import React, { useEffect, useState, useRef } from "react";
 
 const CountdownTimer = () => {
-    const [timeLeft, setTimeLeft] = useState(0); // Time left in seconds
+  const [timeLeft, setTimeLeft] = useState(0); // Time left in seconds
 
   useEffect(() => {
     const calculateTargetDate = () => {
-    const targetDate = new Date(2024, 8, 27, 10, 30, 0);
-        return targetDate;
+      const targetDate = new Date(2024, 8, 27, 10, 30, 0);
+      return targetDate;
     };
 
     // Check if there's already a saved countdown target in localStorage
@@ -27,7 +27,9 @@ const CountdownTimer = () => {
     }
 
     const interval = setInterval(() => {
-      const newTimeLeft = Math.ceil((targetDate.getTime() - new Date().getTime()) / 1000);
+      const newTimeLeft = Math.ceil(
+        (targetDate.getTime() - new Date().getTime()) / 1000
+      );
       setTimeLeft(newTimeLeft);
       flipAllCards(newTimeLeft);
     }, 250);
@@ -86,38 +88,38 @@ const CountdownTimer = () => {
 
   return (
     <div className="countdown">
-      <div className="flip-card" data-days-tens >
+      <div className="flip-card" data-days-tens>
         <div className="top">0</div>
         <div className="bottom">0</div>
       </div>
-      <div className="flip-card" data-days-ones >
-        <div className="top">0</div>
-        <div className="bottom">0</div>
-      </div>
-      <span className="colon">:</span>
-      <div className="flip-card" data-hours-tens >
-        <div className="top">0</div>
-        <div className="bottom">0</div>
-      </div>
-      <div className="flip-card" data-hours-ones >
+      <div className="flip-card" data-days-ones>
         <div className="top">0</div>
         <div className="bottom">0</div>
       </div>
       <span className="colon">:</span>
-      <div className="flip-card" data-minutes-tens >
+      <div className="flip-card" data-hours-tens>
         <div className="top">0</div>
         <div className="bottom">0</div>
       </div>
-      <div className="flip-card" data-minutes-ones >
+      <div className="flip-card" data-hours-ones>
         <div className="top">0</div>
         <div className="bottom">0</div>
       </div>
       <span className="colon">:</span>
-      <div className="flip-card" data-seconds-tens >
+      <div className="flip-card" data-minutes-tens>
         <div className="top">0</div>
         <div className="bottom">0</div>
       </div>
-      <div className="flip-card" data-seconds-ones >
+      <div className="flip-card" data-minutes-ones>
+        <div className="top">0</div>
+        <div className="bottom">0</div>
+      </div>
+      <span className="colon">:</span>
+      <div className="flip-card" data-seconds-tens>
+        <div className="top">0</div>
+        <div className="bottom">0</div>
+      </div>
+      <div className="flip-card" data-seconds-ones>
         <div className="top">0</div>
         <div className="bottom">0</div>
       </div>

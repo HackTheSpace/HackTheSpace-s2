@@ -13,7 +13,6 @@ const TwitterFeed = () => {
       const data = await res.json();
 
       setTweets(data);
-      console.log("fetchTweets");
     } catch (error) {}
   };
 
@@ -21,11 +20,9 @@ const TwitterFeed = () => {
     fetchTweets();
   }, []);
 
-  console.log(tweets);
-
   return (
     <div className="display-page__feed">
-      {tweets ? (
+      {/* {tweets ? (
         <>
           <div className="scrollUp">
             <div className="carousel-track__up">
@@ -47,7 +44,15 @@ const TwitterFeed = () => {
         </>
       ) : (
         <div>Loading...</div>
-      )}
+      )} */}
+      <iframe
+        allowFullScreen
+        id="wallsio-iframe"
+        src="https://my.walls.io/h4sir?nobackground=1&show_header=0&show_post_info=1&accessibility=0"
+        style={{ border: "0", height: "600px", width: "100%" }}
+        loading="lazy"
+        title="My social wall"
+      ></iframe>
     </div>
   );
 };

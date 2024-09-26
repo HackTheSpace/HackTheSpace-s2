@@ -44,7 +44,6 @@ const Schedule = () => {
   const targetRef = useRef(null);
 
   const [progress, setProgress] = useState(0);
-  console.log(progress);
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
