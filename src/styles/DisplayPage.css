@@ -84,3 +84,8 @@
 #wallsio-iframe::-webkit-scrollbar {
   display: none;
 }
+
+.timerType {
+  text-align: center;
+  font-size: 2rem;
+}

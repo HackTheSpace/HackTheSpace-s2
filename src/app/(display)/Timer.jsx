@@ -11,11 +11,11 @@ const Timer = () => {
 
   const updateTimer = () => {
     const now = new Date();
-    const startTime = new Date("2024-09-27T01:42:00");
-    const endTime = new Date("2024-09-27T01:43:00");
+    const startTime = new Date("2024-09-27T10:30:00");
+    const endTime = new Date("2024-09-28T10:30:00");
 
     if (now < startTime) {
-      setTimerType("not started");
+      setTimerType("Start's in");
       const r_time_in_secs = (startTime.getTime() - now.getTime()) / 1000;
       const hh = Math.floor(r_time_in_secs / 3600);
       const mm = Math.floor((r_time_in_secs % 3600) / 60);
@@ -28,7 +28,7 @@ const Timer = () => {
       );
       setPercentTimeRemaining(100);
     } else if (now < endTime) {
-      setTimerType("ongoing");
+      setTimerType("end's in");
       const r_time_in_secs = (endTime.getTime() - now.getTime()) / 1000;
       const hh = Math.floor(r_time_in_secs / 3600);
       const mm = Math.floor((r_time_in_secs % 3600) / 60);
@@ -56,6 +56,7 @@ const Timer = () => {
 
   return (
     <div>
+      <p className="timerType">{timerType}</p>
       <p>{remainingHackTime}</p>
     </div>
   );

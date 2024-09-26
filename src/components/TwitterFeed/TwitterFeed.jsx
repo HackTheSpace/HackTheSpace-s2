@@ -4,21 +4,21 @@ import React, { useState, useEffect, useMemo } from "react";
 import { Tweet } from "react-tweet";
 
 const TwitterFeed = () => {
-  const [tweets, setTweets] = useState([]);
+  // const [tweets, setTweets] = useState([]);
 
-  const fetchTweets = async () => {
-    try {
-      const res = await fetch("http://localhost:3000/api/display");
+  // const fetchTweets = async () => {
+  //   try {
+  //     const res = await fetch("http://localhost:3000/api/display");
 
-      const data = await res.json();
+  //     const data = await res.json();
 
-      setTweets(data);
-    } catch (error) {}
-  };
+  //     setTweets(data);
+  //   } catch (error) {}
+  // };
 
-  useEffect(() => {
-    fetchTweets();
-  }, []);
+  // useEffect(() => {
+  //   fetchTweets();
+  // }, []);
 
   return (
     <div className="display-page__feed">
