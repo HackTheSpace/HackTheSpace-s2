@@ -15,6 +15,8 @@
 @import url("./Prize.css");
 @import url("./CountdownTimer.css");
 @import url("./Schedule.css");
+@import url("./CountdownTimer.css");
+@import url("./Schedule.css");
 
 * {
   box-sizing: border-box;
