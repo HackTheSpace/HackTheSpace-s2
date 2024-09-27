@@ -112,7 +112,7 @@ const HeroSection = () => {
                initial="initial" 
                variants={buttonAnimation} 
                custom={4}>
-              <CountdownTimer/>
+{/*               <CountdownTimer/> */}
             </motion.div>
 
             {/* <motion.button
