@@ -66,28 +66,41 @@ export const timeconfig = [
         content: "Breakfast",
     },
     {
-        id: "12",
-        time: "10:30",
-        period: "AM",
-        content: "Hacking Ends",
-    },
-    {
-        id: "13",
-        time: "12:30",
-        period: "PM",
-        content: "Judging Starts",
-    },
-    {
-        id: "14",
-        time: "2:00",
-        period: "PM",
-        content: "Lunch",
-    },
-    {
-        id: "15",
-        time: "3:00",
-        period: "PM",
-        content: "Closing Ceremony",
-    },
+    id: "12",
+    time: "9:00",
+    period: "AM",
+    content: "Submission Starts",
+  },
+  {
+    id: "13",
+    time: "10:30",
+    period: "AM",
+    content: "Hacking and Submission Ends(Soft Deadline)",
+  },
+  {
+    id: "14",
+    time: "11:30",
+    period: "AM",
+    content: "Hacking and Submission Ends(Hard Deadline)",
+  },
+  {
+    id: "15",
+    time: "12:00",
+    period: "PM",
+    content: "Judging Starts",
+  },
+  {
+    id: "16",
+    time: "2:00",
+    period: "PM",
+    content: "Lunch",
+  },
+  {
+    id: "17",
+    time: "3:00",
+    period: "PM",
+    content: "Closing Ceremony",
+  },
+
 
 ];
