@@ -185,7 +185,7 @@ const coreTeam = [
       },
     },
     {
-      name: "k Harsh",
+      name: "K Harsh",
       role: "Naidu",
       imageSrc: "/images/naidurect.png",
       socials: {
