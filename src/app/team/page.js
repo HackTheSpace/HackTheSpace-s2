@@ -31,6 +31,7 @@ const organisers = [
     imageSrc: "/images/ayushrect.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/ayushsahu77/",
+      github:"https://github.com/AyushSahu77",
       twitter: "https://twitter.com/Ayush_7477",
     },
   },
