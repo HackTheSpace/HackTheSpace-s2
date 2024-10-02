@@ -102,7 +102,7 @@ export default function Index() {
     ];
 
     return () => timeouts.forEach((timeout) => clearTimeout(timeout));
-  }, [myAnimation, myAnimation2, myAnimation3]);
+  }, []);
 
   return (
     <motion.section
