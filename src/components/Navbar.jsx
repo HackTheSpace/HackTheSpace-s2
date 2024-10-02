@@ -173,7 +173,7 @@ const Navbar = () => {
         className="goToTop"
         onClick={() => handleScroll("#home")}
       >
-        <Image src={"/down.png"} width={100} height={100}></Image>
+        <Image src={"/down.png"} width={100} height={100} alt="Go to top"></Image>
       </div>
     </>
   );
