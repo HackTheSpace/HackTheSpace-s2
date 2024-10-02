@@ -31,8 +31,17 @@ const organisers = [
     imageSrc: "/images/ayushrect.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/ayushsahu77/",
-      github: "",
       twitter: "https://twitter.com/Ayush_7477",
+    },
+  },
+  {
+    name: "Toukir",
+    role: "Khan",
+    imageSrc: "/images/toukir.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/toukirkhan",
+      github:"https://github.com/toukirkhan",
+      instagram: "https://instagram.com/toukirkhan__",
     },
   },
   {
@@ -81,7 +90,6 @@ const organisers = [
     imageSrc: "/images/shubham.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/shubham-jha-58b7b0281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      behance: "/",
       instagram: "https://www.instagram.com/___the___who___?igsh=MXU0MHNmZml1NHFiaw==",
     },
   },
@@ -101,7 +109,6 @@ const organisers = [
     imageSrc: "/images/shwetarect.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/shweta-cheemalapati-0082b8237/",
-      github: "/",
       twitter: "https://x.com/ShwetaC04389034",
     },
   },
@@ -125,7 +132,6 @@ const coreTeam = [
     imageSrc: "/images/anubhavfinal.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/anubhav-choubey-653680150?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      github: "/",
       twitter: "https://x.com/Anubhav0401?t=GWhKNKVRTP7SiXT4bvkIBg&s=09",
     },
   },
@@ -135,7 +141,6 @@ const coreTeam = [
     imageSrc: "/images/apoorvarect.png",
     socials: {
       linkedin: "https://linkedin.com/in/apoorva-sinha-84bb01272",
-      github: "/",
       twitter: "https://x.com/vasiinaa",
     },
   },
@@ -145,7 +150,6 @@ const coreTeam = [
     imageSrc: "/images/bhumikarecct.png",
     socials: {
       linkedin: "https://in.linkedin.com/in/bhumika-deshmukh",
-      github: "/",
       twitter: "https://x.com/Bhumikadeshmuk",
     },
   },
@@ -155,7 +159,6 @@ const coreTeam = [
     imageSrc: "/images/Diyarect.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/diya-roy-509787286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      twitter: "/",
       instagram: "https://instagram.com/diya_roy_17",
   }
 
@@ -167,7 +170,6 @@ const coreTeam = [
       socials: {
         linkedin: "https://www.linkedin.com/in/deepikag1114/",
         twitter: "https://x.com/Deepika_1402",
-        instagram: "/",
         
       },
     },
@@ -197,7 +199,6 @@ const coreTeam = [
       imageSrc: "/images/rishitarect.png",
       socials: {
         linkedin: "https://www.linkedin.com/in/rishitanair/",
-        instagram: "/",
         twitter: "https://twitter.com/rishitarnair",
       },
     },
