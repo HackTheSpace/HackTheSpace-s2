@@ -9,7 +9,7 @@ const Slider = ({ activeTab, onTabChange }) => {
           className={activeTab === 'organiser' ? 'active' : ''}
           onClick={() => onTabChange('organiser')}
         >
-          Organiser
+          Organizer
         </button>
         <button
           className={activeTab === 'coreTeam' ? 'active' : ''}

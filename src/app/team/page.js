@@ -36,16 +36,6 @@ const organisers = [
     },
   },
   {
-    name: "Toukir",
-    role: "Khan",
-    imageSrc: "/images/toukir.png",
-    socials: {
-      linkedin: "https://linkedin.com/in/toukirkhan",
-      github:"https://github.com/toukirkhan",
-      instagram: "https://instagram.com/toukirkhan__",
-    },
-  },
-  {
     name: "Akshat",
     role: "Sahu",
     imageSrc: "/images/akshatrect.png",
@@ -53,45 +43,6 @@ const organisers = [
       linkedin: "https://www.linkedin.com/in/akshat-sahu-912521216/",
       twitter: "https://x.com/akshatx134",
       instagram: "https://www.instagram.com/proof.akshat/",
-    },
-  },
-  {
-    name: "Mohit",
-    role: "Makda",
-    imageSrc: "/images/mohitmakda.png",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/mohit-makda-608849221/",
-      github: "https://github.com/mohitmakda/",
-      twitter: "https://x.com/mohit_makda",
-    },
-  },
-  {
-    name: "Harsh",
-    role: "Gupta",
-    imageSrc: "/images/harshrect.png",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/harshgupta-in/",
-      github: "https://github.com/Harsh3341",
-      twitter: "https://x.com/harshguptatwt",
-    },
-  },
-  {
-    name: "Smit",
-    role: "Javia",
-    imageSrc: "/images/smitrect.png",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/smit-javia-824221239/",
-      twitter: "https://x.com/JaviaSmit",
-      instagram: "https://www.instagram.com/smit__javia/",
-    },
-  },
-  {
-    name: "Shubham",
-    role: "Jha",
-    imageSrc: "/images/shubham.png",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/shubham-jha-58b7b0281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      instagram: "https://www.instagram.com/___the___who___?igsh=MXU0MHNmZml1NHFiaw==",
     },
   },
   {
@@ -105,12 +56,13 @@ const organisers = [
     },
   },
   {
-    name: "Shweta",
-    role: "Cheemalapati",
-    imageSrc: "/images/shwetarect.png",
+    name: "Harsh",
+    role: "Gupta",
+    imageSrc: "/images/harshrect.png",
     socials: {
-      linkedin: "https://www.linkedin.com/in/shweta-cheemalapati-0082b8237/",
-      twitter: "https://x.com/ShwetaC04389034",
+      linkedin: "https://www.linkedin.com/in/harshgupta-in/",
+      github: "https://github.com/Harsh3341",
+      twitter: "https://x.com/harshguptatwt",
     },
   },
   {
@@ -123,7 +75,55 @@ const organisers = [
       instagram: "https://www.instagram.com/lomeshhpatil",
     },
   },
+  {
+    name: "Mohit",
+    role: "Makda",
+    imageSrc: "/images/mohitmakda.png",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/mohit-makda-608849221/",
+      github: "https://github.com/mohitmakda/",
+      twitter: "https://x.com/mohit_makda",
+    },
+  },
+  {
+    name: "Shubham",
+    role: "Jha",
+    imageSrc: "/images/shubham.png",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/shubham-jha-58b7b0281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      instagram: "https://www.instagram.com/___the___who___?igsh=MXU0MHNmZml1NHFiaw==",
+    },
+  },
 
+  {
+    name: "Shweta",
+    role: "Cheemalapati",
+    imageSrc: "/images/shwetarect.png",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/shweta-cheemalapati-0082b8237/",
+      twitter: "https://x.com/ShwetaC04389034",
+    },
+  },
+  {
+    name: "Smit",
+    role: "Javia",
+    imageSrc: "/images/smitrect.png",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/smit-javia-824221239/",
+      twitter: "https://x.com/JaviaSmit",
+      instagram: "https://www.instagram.com/smit__javia/",
+    },
+  },
+  {
+    name: "Toukir",
+    role: "Khan",
+    imageSrc: "/images/toukir.png",
+    socials: {
+      linkedin: "https://linkedin.com/in/toukirkhan",
+      github:"https://github.com/toukirkhan",
+      instagram: "https://instagram.com/toukirkhan__",
+    },
+  },
 ];
 
 const coreTeam = [

@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'next/image'; 
 import { FaLinkedin, FaGithub, FaInstagram, FaBehance } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai"; 
-const TeamMember = ({ name, role, role2, imageSrc, socials }) => {
+const TeamMember = ({ name, role, imageSrc, socials }) => {
   return (
     <div className="team-member">
       <div className="team-member-image bw-image">
