@@ -8,7 +8,7 @@ const organisers = [
   {
     name: "Himanshu",
     role: "Kumar Sahu",
-    imageSrc: "/images/himanshurect.png",
+    imageSrc: "/team/himanshurect.png",
     socials: {
       linkedin: "https://linkedin.com/in/himanshu",
       behance: "https://behance.net/himanshu",
@@ -18,7 +18,7 @@ const organisers = [
   {
     name: "Fanibhusan",
     role: "Sahu",
-    imageSrc: "/images/fanishau.png",
+    imageSrc: "/team/fanishau.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/fanibhushan-sahu-347697234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       behance: "https://www.behance.net/FaniSahu",
@@ -28,7 +28,7 @@ const organisers = [
   {
     name: "Ayush",
     role: "Sahu",
-    imageSrc: "/images/ayushrect.png",
+    imageSrc: "/team/ayushrect.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/ayushsahu77/",
       github:"https://github.com/AyushSahu77",
@@ -38,7 +38,7 @@ const organisers = [
   {
     name: "Akshat",
     role: "Sahu",
-    imageSrc: "/images/akshatrect.png",
+    imageSrc: "/team/akshatrect.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/akshat-sahu-912521216/",
       twitter: "https://x.com/akshatx134",
@@ -48,7 +48,7 @@ const organisers = [
   {
     name: "Darshita",
     role: "Ahuja",
-    imageSrc: "/images/darshitaerct.png",
+    imageSrc: "/team/darshitaerct.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/darshita-ahuja-9a448b225/",
       twitter: "https://twitter.com/darshuahuja",
@@ -58,7 +58,7 @@ const organisers = [
   {
     name: "Harsh",
     role: "Gupta",
-    imageSrc: "/images/harshrect.png",
+    imageSrc: "/team/harshrect.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/harshgupta-in/",
       github: "https://github.com/Harsh3341",
@@ -68,7 +68,7 @@ const organisers = [
   {
     name: "Lomesh",
     role: "patil",
-    imageSrc: "/images/lomeshrect.png",
+    imageSrc: "/team/lomeshrect.png",
     socials: {
       linkedin: "https://www.linkedin.com/lomeshpatil",
       twitter: "https://www.twitter.com/lomeshhpatil",
@@ -78,7 +78,7 @@ const organisers = [
   {
     name: "Mohit",
     role: "Makda",
-    imageSrc: "/images/mohitmakda.png",
+    imageSrc: "/team/mohitmakda.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/mohit-makda-608849221/",
       github: "https://github.com/mohitmakda/",
@@ -88,7 +88,7 @@ const organisers = [
   {
     name: "Shubham",
     role: "Jha",
-    imageSrc: "/images/shubham.png",
+    imageSrc: "/team/shubham.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/shubham-jha-58b7b0281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       instagram: "https://www.instagram.com/___the___who___?igsh=MXU0MHNmZml1NHFiaw==",
@@ -98,7 +98,7 @@ const organisers = [
   {
     name: "Shweta",
     role: "Cheemalapati",
-    imageSrc: "/images/shwetarect.png",
+    imageSrc: "/team/shwetarect.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/shweta-cheemalapati-0082b8237/",
       twitter: "https://x.com/ShwetaC04389034",
@@ -107,7 +107,7 @@ const organisers = [
   {
     name: "Smit",
     role: "Javia",
-    imageSrc: "/images/smitrect.png",
+    imageSrc: "/team/smitrect.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/smit-javia-824221239/",
       twitter: "https://x.com/JaviaSmit",
@@ -117,7 +117,7 @@ const organisers = [
   {
     name: "Toukir",
     role: "Khan",
-    imageSrc: "/images/toukir.png",
+    imageSrc: "/team/toukir.png",
     socials: {
       linkedin: "https://linkedin.com/in/toukirkhan",
       github:"https://github.com/toukirkhan",
@@ -130,7 +130,7 @@ const coreTeam = [
   {
     name: "Anubhav",
     role: "Choubey",
-    imageSrc: "/images/anubhavfinal.png",
+    imageSrc: "/team/anubhavfinal.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/anubhav-choubey-653680150?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       twitter: "https://x.com/Anubhav0401?t=GWhKNKVRTP7SiXT4bvkIBg&s=09",
@@ -139,7 +139,7 @@ const coreTeam = [
   {
     name: "Apoorva",
     role: "Sinha",
-    imageSrc: "/images/apoorvarect.png",
+    imageSrc: "/team/apoorvarect.png",
     socials: {
       linkedin: "https://linkedin.com/in/apoorva-sinha-84bb01272",
       twitter: "https://x.com/vasiinaa",
@@ -148,7 +148,7 @@ const coreTeam = [
   {
     name: "Bhumika",
     role: "Deshmukh",
-    imageSrc: "/images/bhumikarecct.png",
+    imageSrc: "/team/bhumikarecct.png",
     socials: {
       linkedin: "https://in.linkedin.com/in/bhumika-deshmukh",
       twitter: "https://x.com/Bhumikadeshmuk",
@@ -157,7 +157,7 @@ const coreTeam = [
   {
     name: "Diya",
     role: "Roy",
-    imageSrc: "/images/Diyarect.png",
+    imageSrc: "/team/Diyarect.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/diya-roy-509787286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       instagram: "https://instagram.com/diya_roy_17",
@@ -167,7 +167,7 @@ const coreTeam = [
     {
       name: "Deepika",
       role: "Guntu",
-      imageSrc: "/images/deepikarect.png",
+      imageSrc: "/team/deepikarect.png",
       socials: {
         linkedin: "https://www.linkedin.com/in/deepikag1114/",
         twitter: "https://x.com/Deepika_1402",
@@ -177,7 +177,7 @@ const coreTeam = [
     {
       name: "Girish",
       role: "Sinha",
-      imageSrc: "/images/girishrect.png",
+      imageSrc: "/team/girishrect.png",
       socials: {
         linkedin: "https://www.linkedin.com/in/girish-sinha-20ab3a258/",
         github: "https://github.com/girishsinha",
@@ -187,7 +187,7 @@ const coreTeam = [
     {
       name: "K Harsh",
       role: "Naidu",
-      imageSrc: "/images/naidurect.png",
+      imageSrc: "/team/naidurect.png",
       socials: {
         linkedin: "https://www.linkedin.com/in/k-harsh-naidu-20012928a",
         github: "https://github.com/Harsh7258",
@@ -197,7 +197,7 @@ const coreTeam = [
     {
       name: "Rishita",
       role: "Nair",
-      imageSrc: "/images/rishitarect.png",
+      imageSrc: "/team/rishitarect.png",
       socials: {
         linkedin: "https://www.linkedin.com/in/rishitanair/",
         twitter: "https://twitter.com/rishitarnair",
@@ -206,7 +206,7 @@ const coreTeam = [
     {
       name: "Shriya",
       role: "Dey",
-      imageSrc: "/images/shriya.png",
+      imageSrc: "/team/shriya.png",
       socials: {
         linkedin: "https://www.linkedin.com/in/shriya-dey-394bb726b/",
         behance: "https://behance.net/fanibhushan",
@@ -216,7 +216,7 @@ const coreTeam = [
     {
       name: "Shahil",
       role: "Sinha",
-      imageSrc: "/images/shahil.png",
+      imageSrc: "/team/shahil.png",
       socials: {
         linkedin: "https://www.linkedin.com/in/shahil-sinha-7b1636222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         github: "https://github.com/TR-3N",
@@ -226,7 +226,7 @@ const coreTeam = [
     {
       name: "Tripti",
       role: "Sahu",
-      imageSrc: "/images/triptirect.png",
+      imageSrc: "/team/triptirect.png",
       socials: {
         linkedin: "https://www.linkedin.com/in/tripti-s-0a672b227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         behance: "https://www.behance.net/triptisahu4UIUX", 
@@ -236,7 +236,7 @@ const coreTeam = [
     {
       name: "Yaman",
       role: "Sahu",
-      imageSrc: "/images/yamanrect.png",
+      imageSrc: "/team/yamanrect.png",
       socials: {
         linkedin: "https://www.linkedin.com/in/yaman-sahu-861220257/",
         twitter: "https://x.com/YAMANSAHUS",
