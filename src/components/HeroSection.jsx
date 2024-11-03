@@ -86,7 +86,7 @@ const HeroSection = () => {
             >
               SPACE
             </motion.h1>
-            <motion.h1
+            {/* <motion.h1
               custom={3}
               variants={headingAnimation}
               initial="initial"
@@ -94,34 +94,21 @@ const HeroSection = () => {
               className="outlined-text"
             >
               2.0
-            </motion.h1>
+            </motion.h1> */}
           </div>
 
           <motion.div className="hero-section__buttons column--count">
-            {/* <motion.h6
-              custom={4}
+            <motion.button
               variants={buttonAnimation}
               initial="initial"
               animate="enter"
-              className="counter--heading"
             >
-              Starts in - 
-            </motion.h6>
-            <motion.div 
-               animate="enter" 
-               initial="initial" 
-               variants={buttonAnimation} 
-               custom={4}>
-              <CountdownTimer/>
-            </motion.div> */}
-
-            {/* <motion.button
-              variants={buttonAnimation}
-              initial="initial"
-              animate="enter"
-              disabled
-            >
-              REGISTRATION CLOSED
+              <Link
+                href="https://www.hackquest.io/en/hackathon/projects/hackathons/HackTheSpace-Season-2"
+                target="_blank"
+              >
+                Past Projects
+              </Link>
             </motion.button>
             <motion.button
               variants={buttonAnimation}
@@ -131,33 +118,8 @@ const HeroSection = () => {
               <Link href="https://discord.gg/FJKTSgdxPX" target="_blank">
                 DISCORD
               </Link>
-            </motion.button> */}
+            </motion.button>
           </motion.div>
-          <div className="Date-Venue">
-            <motion.h6
-              custom={4}
-              variants={buttonAnimation}
-              initial="initial"
-              animate="enter"
-            >
-              27 & 28 September 2024
-            </motion.h6>
-            <motion.h6
-              custom={5}
-              variants={buttonAnimation}
-              initial="initial"
-              animate="enter"
-              onClick={() =>
-                window.open(
-                  "https://maps.app.goo.gl/4mAvhnY6f3gbt6ns7",
-                  "_blank"
-                )
-              }
-            >
-              SHRI SHANKARACHARYA TECHNICAL CAMPUS, BHILAI, CHHATTISGARH, INDIA
-              {/* <MdArrowOutward /> */}
-            </motion.h6>
-          </div>
         </div>
       </div>
     </section>

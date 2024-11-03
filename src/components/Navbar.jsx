@@ -114,7 +114,7 @@ const Navbar = () => {
           {/* <li>
           <span onClick={() => handleScroll("#aboutUS")}>About Us</span>
         </li> */}
-          <li>
+          {/* <li>
             <span onClick={() => handleScroll("#venue")}>Venue</span>
           </li>
           <li>
@@ -122,10 +122,10 @@ const Navbar = () => {
           </li>
           <li>
             <span onClick={() => handleScroll("#prizes")}>Prizes</span>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <span onClick={() => handleScroll("#tracks")}>Tracks</span>
-          </li>
+          </li> */}
           {/* <li>
           <span onClick={() => handleScroll("#events")}>Events</span>
         </li> */}
@@ -134,9 +134,9 @@ const Navbar = () => {
               Partners
             </Link>
           </li>
-          <li>
+          {/* <li>
             <span onClick={() => handleScroll("#faqs")}>Faqs</span>
-          </li>
+          </li> */}
           <li>
             <span onClick={() => handleScroll("#footer")}>Contact</span>
           </li>
@@ -150,7 +150,7 @@ const Navbar = () => {
         </li> */}
         </ul>
 
-        <Link
+        {/* <Link
           id="mlh-trust-badge"
           href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
           target="_blank"
@@ -161,14 +161,14 @@ const Navbar = () => {
             width={100}
             height={170}
           />
-        </Link>
+        </Link> */}
       </motion.nav>
       <div
         id="upButton"
         className="goToTop"
         onClick={() => handleScroll("#home")}
       >
-        <Image src={"/down.png"} width={100} height={100}></Image>
+        <Image src={"/down.png"} width={100} height={100} alt=""></Image>
       </div>
     </>
   );
