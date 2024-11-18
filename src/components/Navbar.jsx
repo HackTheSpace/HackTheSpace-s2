@@ -141,13 +141,13 @@ const Navbar = () => {
             <span onClick={() => handleScroll("#footer")}>Contact</span>
           </li>
           {/* <li className="sponsor-us">
-          <div className="line-wrapper">
-            <div className="card-line"></div>
-          </div>
-          <Link href="https://bit.ly/HTS-SU" target="https://bit.ly/HTS-SU">
-            Sponsor Us
-          </Link>
-        </li> */}
+            <div className="line-wrapper">
+              <div className="card-line"></div>
+            </div>
+            <Link href="https://bit.ly/HTS-SU" target="https://bit.ly/HTS-SU">
+              Sponsor Us
+            </Link>
+          </li> */}
         </ul>
 
         {/* <Link
@@ -163,12 +163,28 @@ const Navbar = () => {
           />
         </Link> */}
       </motion.nav>
-      <div
-        id="upButton"
-        className="goToTop"
-        onClick={() => handleScroll("#home")}
-      >
-        <Image src={"/down.png"} width={100} height={100} alt=""></Image>
+      <div>
+        <div
+          id="upButton"
+          className="goToTop"
+          onClick={() => handleScroll("#home")}
+        >
+          {" "}
+          <div className="line-wrapper">
+            <div className="card-line"></div>
+          </div>
+          <div
+            style={{
+              background: "black",
+              zIndex: 4,
+
+              borderRadius: "40px",
+              padding: "0.7rem",
+            }}
+          >
+            <Image src={"/down.png"} width={100} height={100} alt=""></Image>
+          </div>
+        </div>
       </div>
     </>
   );

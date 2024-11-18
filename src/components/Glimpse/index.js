@@ -68,7 +68,7 @@ const Glimpse = () => {
       id="events"
     >
       <Image
-        src="/images/backgrounds/bg_2.jpg"
+        src="/images/backgrounds/bg_1.jpg"
         alt="Background"
         fill
         quality={100}
@@ -101,8 +101,8 @@ const Glimpse = () => {
             />
           </div>
           <div className="content">
-            <h2>50+</h2>
-            <p>Community Events</p>
+            <h2>30+</h2>
+            <p>Successful Events</p>
           </div>
           <div className="container-border">
             <Image

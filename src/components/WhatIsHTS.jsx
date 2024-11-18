@@ -11,7 +11,7 @@ const WhatIsHTS = () => {
   return (
     <section className="whatIs--section">
       <Image
-        src="/images/backgrounds/bg_1.jpg"
+        src="/images/backgrounds/bg_3.jpg"
         alt="Background"
         fill
         quality={100}
@@ -48,14 +48,13 @@ const WhatIsHTS = () => {
           </div>
           <div className="whatIs-text__para">
             <Paragraph className="whatIs-text__para1">
-              HackTheSpace is an exciting 24-hour event that takes place in
-              Bhilai, India. It is a time-limited event that encourages
-              participants to brainstorm, develop, and present their ideas to a
-              panel of judges. This event is designed to foster creativity,
-              collaboration, and innovation among participants. It offers an
-              excellent opportunity for participants to showcase their skills,
-              network with peers, and potentially win prizes and recognition for
-              their work.
+              HackTheSpace is an exciting event that takes place in Bhilai,
+              India. It is a time-limited event that encourages participants to
+              brainstorm, develop, and present their ideas to a panel of judges.
+              This event is designed to foster creativity, collaboration, and
+              innovation among participants. It offers an excellent opportunity
+              for participants to showcase their skills, network with peers, and
+              potentially win prizes and recognition for their work.
             </Paragraph>
             <Paragraph className="whatIs-text__para2">
               During the event, participants will work in teams to develop
