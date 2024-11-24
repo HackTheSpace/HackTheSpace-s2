@@ -14,7 +14,7 @@ export default function Home() {
         <WhatIsHTS />
         <Glimpse />
         <Judge />
-        <Organizers />
+        {/* <Organizers /> */}
       </main>
     </>
   );

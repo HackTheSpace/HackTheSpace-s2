@@ -252,7 +252,7 @@ a {
     bottom: 5rem;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(0.5rem);
-    border: 1px solid #ffffff38;
+
     backdrop-filter: blur(0.5rem);
     border-radius: 40px;
     /* padding: 0.5rem; */

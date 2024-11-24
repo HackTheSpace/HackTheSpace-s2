@@ -18,11 +18,11 @@
   font-family: "Anton";
 }
 
-.team h2 {
+/* .team h2 {
   font-size: 3rem;
   margin-bottom: 50px;
   letter-spacing: 5px;
-}
+} */
 
 .team-member {
   display: flex;
@@ -37,9 +37,10 @@
 .team-member-image {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 50%;
   height: 100%;
+  /* background-color: #777777; */
 }
 
 .bw-image img {
@@ -114,25 +115,26 @@
     padding: 100px 0;
   }
   .team-member {
-    gap: 0.1rem;
-    margin-bottom: 30px;
+    gap: 1.1rem;
+    margin-bottom: -20px;
+    justify-content: center;
   }
-  .team h2 {
-    font-size: 1.8rem;
+  /* .team h2 {
+    font-size: 1.6rem;
     margin-bottom: 50px;
     letter-spacing: 5px;
-  }
+  } */
   .team-member-image {
-    width: 50%;
-    height: 90%;
+    width: 35%;
+    height: 70%;
   }
   .bw-image img {
     width: 80%;
     height: 80%;
   }
   .team-member-details {
-    height: 70%;
-    width: 40%;
+    height: 60%;
+    width: 46%;
   }
   .person-name {
     margin-top: 10px;

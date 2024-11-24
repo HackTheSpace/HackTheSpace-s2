@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Judge = () => {
   return (
-    <section className="team">
+    <section className="team" id="judge">
       <Image
         src="/images/backgrounds/bg_1.jpg"
         alt="Background"

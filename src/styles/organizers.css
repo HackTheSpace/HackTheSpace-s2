@@ -25,4 +25,7 @@
     flex-direction: column;
     align-items: center;
   }
+  .organizers {
+    margin-bottom: 25vw;
+  }
 }

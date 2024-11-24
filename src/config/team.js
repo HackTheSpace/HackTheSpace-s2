@@ -8,7 +8,7 @@ export const judges =
             socials: {
                 linkedin: "https://www.linkedin.com/in/harshitajain16/",
                 twitter: "https://x.com/harshitajain561",
-                github: "https://github.com/harshitajain165"
+                // github: "https://github.com/harshitajain165"
             },
         },
         {
@@ -23,7 +23,7 @@ export const judges =
         {
             name: "Khushi Mahawar",
             position: "MLH Coach",
-            imageSrc: "/images/judges/Khushi Mahawar.png",
+            imageSrc: "/images/judges/Khushi mahawar.png",
             socials: {
                 linkedin: "https://www.linkedin.com/in/khushi-mahawar/",
                 twitter: "#",
@@ -36,7 +36,7 @@ export const judges =
             socials: {
                 linkedin: "https://www.linkedin.com/in/akashverma095",
                 twitter: "https://x.com/AkashV_095",
-                github: "https://github.com/Akash-095"
+                //  github: "https://github.com/Akash-095"
             },
         },
         {
@@ -55,13 +55,13 @@ export const judges =
             socials: {
                 linkedin: "https://linkedin.com/in/ayush-kumar-984443191",
                 twitter: "https://x.com/AyushKu38757918",
-                github: "https://github.com/Ayush7614"
+                // github: "https://github.com/Ayush7614"
             },
         },
         {
             name: "F. Calvin ",
             position: "Diamante Blockchain",
-            imageSrc: "/images/judges/F Calvin joshua.png",
+            imageSrc: "/images/judges/F Calvin Joshua.png",
             socials: {
                 linkedin: "https://www.linkedin.com/in/f-calvin-joshua-3039b7213/",
                 twitter: "https://x.com/im_calvin1",
@@ -71,7 +71,7 @@ export const judges =
         {
             name: "Manish Kumar",
             position: "HackQuest",
-            imageSrc: "/images/judges/Manish Kumar.png",
+            imageSrc: "/images/judges/manish kumar.png",
             socials: {
                 linkedin: "https://www.linkedin.com/in/imanishbarnwal/",
                 twitter: "https://twitter.com/imanishbarnwal",
@@ -85,7 +85,7 @@ export const judges =
             socials: {
                 linkedin: "https://www.linkedin.com/in/mdmemonyasin",
                 twitter: "https://x.com/mdmemonyasin",
-                github: "https://github.com/mdmemonyasin"
+                //  github: "https://github.com/mdmemonyasin"
             },
         },
         {
@@ -95,7 +95,7 @@ export const judges =
             socials: {
                 linkedin: "https://www.linkedin.com/in/nikeight",
                 twitter: "https://x.com/nikeight_",
-                github: "https://github.com/nikeight"
+                // github: "https://github.com/nikeight"
             },
         },
         {
@@ -105,11 +105,11 @@ export const judges =
             socials: {
                 linkedin: "https://linkedin.com/in/sanskriti-harmukh",
                 twitter: "https://x.com/Senzkriti",
-                github: "https://github.com/SanskritiHarmukh"
+                // github: "https://github.com/SanskritiHarmukh"
             },
         },
         {
-            name: "Suryakanta Mahanty",
+            name: "Suryakanta",
             position: "Diamante Blockchain",
             imageSrc: "/images/judges/Suryakanta Mahanty.png",
             socials: {
@@ -198,16 +198,16 @@ export const judges =
 
             },
         },
-        {
-            name: "Aayush Bisen",
-            position: "Health Vectors",
-            imageSrc: "/images/judges/Aayush Bisen.png",
-            socials: {
-                linkedin: "https://www.linkedin.com/in/aayushbisen/",
-                twitter: "https://twitter.com/aayushbisen_",
+        // {
+        //     name: "Aayush Bisen",
+        //     position: "Health Vectors",
+        //     imageSrc: "/images/judges/Aayush Bisen.png",
+        //     socials: {
+        //         linkedin: "https://www.linkedin.com/in/aayushbisen/",
+        //         twitter: "https://twitter.com/aayushbisen_",
 
-            },
-        },
+        //     },
+        // },
         {
             name: "Param Siddharth",
             position: "TravelopiaGroup",
