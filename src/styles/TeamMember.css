@@ -1,0 +1,149 @@
+.team {
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+  background: black;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 10vw;
+}
+.heading-shadow {
+  /* margin-top: 10px; */
+  font-family: "Anton";
+}
+
+.heading-small {
+  /* margin-top: 10px; */
+  font-family: "Anton";
+}
+
+/* .team h2 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  letter-spacing: 5px;
+} */
+
+.team-member {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  width: 400px;
+  margin: 10px;
+  margin-bottom: 50px;
+  gap: 1rem;
+}
+
+.team-member-image {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 50%;
+  height: 100%;
+  /* background-color: #777777; */
+}
+
+.bw-image img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  object-fit: cover;
+}
+
+.team-member-details {
+  text-align: left;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Anton";
+}
+
+.person-name {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member-details h3 {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.team-member-details .role {
+  font-weight: 400;
+}
+.team-member-details .position {
+  font-weight: 500;
+  color: #7d00f2;
+  font-size: 1rem;
+}
+
+.team-member-details .role2 {
+  color: #8e44ad;
+  font-weight: bold;
+}
+
+.team-member-socials {
+  margin-top: 15px;
+}
+
+.team-member-socials a {
+  margin-right: 15px;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.team-member-socials a > svg {
+  width: 25px;
+  height: 25px;
+}
+.team-member-socials a:hover {
+  color: #777777;
+}
+
+.bw-image img:hover {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 480px) {
+  .team {
+    padding: 100px 0;
+  }
+  .team-member {
+    gap: 1.1rem;
+    margin-bottom: -20px;
+    justify-content: center;
+  }
+  /* .team h2 {
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+  } */
+  .team-member-image {
+    width: 35%;
+    height: 70%;
+  }
+  .bw-image img {
+    width: 80%;
+    height: 80%;
+  }
+  .team-member-details {
+    height: 60%;
+    width: 46%;
+  }
+  .person-name {
+    margin-top: 10px;
+  }
+  .team-member-details h3 {
+    font-size: 1.4rem;
+  }
+  .team-member-socials a > svg {
+    width: 20px;
+    height: 20px;
+  }
+}

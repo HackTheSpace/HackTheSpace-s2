@@ -71,6 +71,7 @@
   color: #ffffff;
   padding-right: 10px;
   transition: all 0.3s ease;
+  width: 50px;
 }
 
 .footer--section a:hover {
@@ -150,9 +151,10 @@
   .contact--list a {
     font-size: 95%;
   }
-  .social--links {
+  /* .social--links {
+    width: 40px;
     left: 35%;
-  }
+  } */
   .footer--title::after {
     left: 25%;
   }

@@ -103,13 +103,22 @@ const HeroSection = () => {
               initial="initial"
               animate="enter"
             >
+              <Link href="mailto:support@hackthespace.co" target="_blank">
+                Interested in S3?
+              </Link>
+            </motion.button>
+            {/* <motion.button
+              variants={buttonAnimation}
+              initial="initial"
+              animate="enter"
+            >
               <Link
                 href="https://www.hackquest.io/en/hackathon/projects/hackathons/HackTheSpace-Season-2"
                 target="_blank"
               >
                 Past Projects
               </Link>
-            </motion.button>
+            </motion.button> */}
             <motion.button
               variants={buttonAnimation}
               initial="initial"
