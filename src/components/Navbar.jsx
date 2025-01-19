@@ -111,15 +111,15 @@ const Navbar = () => {
           <li>
             <span onClick={() => handleScroll("#home")}>Home</span>
           </li>
-          {/* <li>
-          <span onClick={() => handleScroll("#aboutUS")}>About Us</span>
-        </li> */}
+          <li>
+            <span onClick={() => handleScroll("#aboutUS")}>About Us</span>
+          </li>
           <li>
             <span onClick={() => handleScroll("#venue")}>Venue</span>
           </li>
-          <li>
+          {/* <li>
             <span onClick={() => handleScroll("#schedule")}>Schedule</span>
-          </li>
+          </li> */}
           <li>
             <span onClick={() => handleScroll("#prizes")}>Prizes</span>
           </li>
@@ -130,13 +130,18 @@ const Navbar = () => {
           <span onClick={() => handleScroll("#events")}>Events</span>
         </li> */}
           <li>
+            <Link href="/team" onClick={() => setHamBurger(false)}>
+              Team
+            </Link>
+          </li>
+          <li>
             <Link href="/partners" onClick={() => setHamBurger(false)}>
               Partners
             </Link>
           </li>
-          <li>
+          {/* <li>
             <span onClick={() => handleScroll("#faqs")}>Faqs</span>
-          </li>
+          </li> */}
           <li>
             <span onClick={() => handleScroll("#footer")}>Contact</span>
           </li>
@@ -163,12 +168,28 @@ const Navbar = () => {
           />
         </Link>
       </motion.nav>
-      <div
-        id="upButton"
-        className="goToTop"
-        onClick={() => handleScroll("#home")}
-      >
-        <Image src={"/down.png"} width={100} height={100}></Image>
+      <div>
+        <div
+          id="upButton"
+          className="goToTop"
+          onClick={() => handleScroll("#home")}
+        >
+          {" "}
+          <div className="line-wrapper">
+            <div className="card-line"></div>
+          </div>
+          <div
+            style={{
+              background: "black",
+              zIndex: 4,
+
+              borderRadius: "40px",
+              padding: "0.7rem",
+            }}
+          >
+            <Image src={"/down.png"} width={100} height={100} alt=""></Image>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -78,7 +78,6 @@
 
 .hero-section__buttons {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
   padding-right: 40px;
@@ -167,7 +166,7 @@
     font-size: 6.5rem;
     padding-left: 20px;
   }
-  .hero-section__buttons{
+  .hero-section__buttons {
     align-items: center;
   }
 

@@ -1,0 +1,66 @@
+.slider-container {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 1000;
+  position: relative;
+  pointer-events: auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  gap: 10px;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.tabs button {
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 8px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  border-radius: 50px;
+}
+
+.tabs button.active {
+  background-color: #777777;
+  color: white;
+  border-color: #777777;
+}
+
+.tabs button:hover {
+  background-color: #999999;
+  color: #fff;
+}
+
+.content-container {
+  overflow: hidden;
+  height: auto;
+}
+
+.content {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.content.show {
+  display: block;
+}
+@media (max-width: 480px) {
+  .sc2 {
+    width: 80% !important;
+  }
+  .tabs {
+    margin-top: 10px;
+  }
+}
