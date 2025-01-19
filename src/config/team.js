@@ -23,7 +23,7 @@ export const judges =
         {
             name: "Khushi Mahawar",
             position: "MLH Coach",
-            imageSrc: "/images/judges/Khushi mahawar.png",
+            imageSrc: "/images/judges/khushi mahawar.png",
             socials: {
                 linkedin: "https://www.linkedin.com/in/khushi-mahawar/",
                 twitter: "#",
