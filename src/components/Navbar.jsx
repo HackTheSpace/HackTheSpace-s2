@@ -130,6 +130,11 @@ const Navbar = () => {
           <span onClick={() => handleScroll("#events")}>Events</span>
         </li> */}
           <li>
+            <Link href="/team" onClick={() => setHamBurger(false)}>
+              Team
+            </Link>
+          </li>
+          <li>
             <Link href="/partners" onClick={() => setHamBurger(false)}>
               Partners
             </Link>
@@ -150,7 +155,7 @@ const Navbar = () => {
         </li> */}
         </ul>
 
-        {/* <Link
+        <Link
           id="mlh-trust-badge"
           href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
           target="_blank"
@@ -161,14 +166,30 @@ const Navbar = () => {
             width={100}
             height={170}
           />
-        </Link> */}
+        </Link>
       </motion.nav>
-      <div
-        id="upButton"
-        className="goToTop"
-        onClick={() => handleScroll("#home")}
-      >
-        <Image src={"/down.png"} width={100} height={100} alt=""></Image>
+      <div>
+        <div
+          id="upButton"
+          className="goToTop"
+          onClick={() => handleScroll("#home")}
+        >
+          {" "}
+          <div className="line-wrapper">
+            <div className="card-line"></div>
+          </div>
+          <div
+            style={{
+              background: "black",
+              zIndex: 4,
+
+              borderRadius: "40px",
+              padding: "0.7rem",
+            }}
+          >
+            <Image src={"/down.png"} width={100} height={100} alt=""></Image>
+          </div>
+        </div>
       </div>
     </>
   );

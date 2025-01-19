@@ -164,6 +164,7 @@ a {
   display: none;
 }
 .goToTop {
+  overflow: hidden;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -174,10 +175,11 @@ a {
   bottom: 5rem;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(0.5rem);
-  border: 1px solid #ffffff38;
+  border: none;
   backdrop-filter: blur(0.5rem);
   border-radius: 40px;
-  padding: 0.7rem;
+  /* padding: 0.7rem; */
+  padding: 0.14rem;
   z-index: 9;
 }
 .goToTop img {
@@ -250,10 +252,10 @@ a {
     bottom: 5rem;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(0.5rem);
-    border: 1px solid #ffffff38;
+
     backdrop-filter: blur(0.5rem);
     border-radius: 40px;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     z-index: 9;
   }
   .goToTop img {
