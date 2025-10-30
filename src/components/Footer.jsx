@@ -60,7 +60,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer--logo">
-          <Image src="/logo-main.webp" alt="HTS-logo" width={170} height={70} />
+          <Image src="/logo-main.png" alt="HTS-logo" width={170} height={130} />
           <p>THINK. BUILD. LAUNCH</p>
           <div className="social--links">
             <Link href="mailto:support@hackthespace.co" target="_blank">

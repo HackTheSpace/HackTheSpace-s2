@@ -84,10 +84,10 @@ const Navbar = () => {
         <Link href="/">
           <Image
             id="logo"
-            src="/logo-main.webp"
+            src="/logo-main.png"
             alt="logo"
-            width={130}
-            height={55}
+            width={90}
+            height={70}
           />
         </Link>
 

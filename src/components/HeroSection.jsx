@@ -104,7 +104,7 @@ const HeroSection = () => {
               animate="enter"
             >
               <Link href="mailto:support@hackthespace.co" target="_blank">
-                Interested in S3?
+                Coming Soon...
               </Link>
             </motion.button>
             {/* <motion.button
