@@ -48,8 +48,8 @@ const Organizers = () => {
         className="organizers-section__background"
       />
       <div className="heading">
-        <h1 className="heading-shadow">ORGANIZERS</h1>
-        <Heading className="heading-small">ORGANIZERS</Heading>
+        <h1 className="heading-shadow">Team</h1>
+        <Heading className="heading-small">Team</Heading>
       </div>
       <div className="people">
         {organisers.map((member, index) => (
